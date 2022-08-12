@@ -1,0 +1,161 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8041190452312107960
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8041190452312107967}
+  - component: {fileID: 8041190452312107966}
+  m_Layer: 0
+  m_Name: Audio Manager
+  m_TagString: AudioManager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8041190452312107967
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8041190452312107960}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.321182, y: 8.022872, z: -7.105026}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8041190452312107966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8041190452312107960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31825005727aa9643b91186c335ed46c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Theme_1
+    clip: {fileID: 8300000, guid: 47348a16b7ee8624893bee2fc4ef6846, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Theme_2
+    clip: {fileID: 8300000, guid: 88588b0b14b0a4648af15069ba9551ee, type: 3}
+    volume: 0.761
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Bridge_Theme
+    clip: {fileID: 8300000, guid: 4f980d9e20379ef49a8b5e8019ea5447, type: 3}
+    volume: 0.314
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Pop
+    clip: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
+    volume: 0.934
+    pitch: 1.47
+    loop: 0
+    source: {fileID: 0}
+  - name: Jump
+    clip: {fileID: 8300000, guid: 2c5292ba5cf254919a6b9e2b18e04f49, type: 3}
+    volume: 0.645
+    pitch: 1.47
+    loop: 0
+    source: {fileID: 0}
+  - name: Land
+    clip: {fileID: 8300000, guid: 29bde6326b4c34ad8a12da475f79b50a, type: 3}
+    volume: 0.681
+    pitch: 1.47
+    loop: 0
+    source: {fileID: 0}
+  - name: Move
+    clip: {fileID: 8300000, guid: 75833f0b71ed3ff45b7e90f28452585c, type: 3}
+    volume: 0.304
+    pitch: 1.47
+    loop: 0
+    source: {fileID: 0}
+  - name: Boop
+    clip: {fileID: 8300000, guid: 881e3f52c86c94f26a60718d35627cd8, type: 3}
+    volume: 0.737
+    pitch: 0.71
+    loop: 0
+    source: {fileID: 0}
+  - name: Hurt
+    clip: {fileID: 8300000, guid: 7e26c9daf4c32483b9c2790e662d3f1b, type: 3}
+    volume: 0.545
+    pitch: 3
+    loop: 0
+    source: {fileID: 0}
+  - name: Faller Split
+    clip: {fileID: 8300000, guid: b7911ea0576326f4ca768d4ec49ccdd9, type: 3}
+    volume: 0.298
+    pitch: 0.51
+    loop: 0
+    source: {fileID: 0}
+  - name: Faller Impact
+    clip: {fileID: 8300000, guid: 04ace35fbeb447845b76ebad10987a2f, type: 3}
+    volume: 0.35
+    pitch: 0.75
+    loop: 0
+    source: {fileID: 0}
+  - name: Dash
+    clip: {fileID: 8300000, guid: dc1974f389a942545b12b85fb9367085, type: 3}
+    volume: 0.421
+    pitch: 1.4
+    loop: 0
+    source: {fileID: 0}
+  - name: DashOut
+    clip: {fileID: 8300000, guid: c35be3dc4a732f2429a967bf710cae7d, type: 3}
+    volume: 0.356
+    pitch: 0.6
+    loop: 0
+    source: {fileID: 0}
+  - name: Wipe
+    clip: {fileID: 8300000, guid: 4e1ff8faed12a475eba9be0e46072269, type: 3}
+    volume: 0.5
+    pitch: 2.79
+    loop: 0
+    source: {fileID: 0}
+  - name: Wipe_Out
+    clip: {fileID: 8300000, guid: 1643a8fa3ecee0b4689a8d14c42c6b68, type: 3}
+    volume: 0.4
+    pitch: 2.79
+    loop: 0
+    source: {fileID: 0}
+  - name: Open
+    clip: {fileID: 8300000, guid: fe0b1f9aeb45b41b089175aeeabd5d95, type: 3}
+    volume: 0.774
+    pitch: 0.5
+    loop: 0
+    source: {fileID: 0}
+  - name: Close
+    clip: {fileID: 8300000, guid: d46323e22e74e46baa241cbf48c85671, type: 3}
+    volume: 0.15
+    pitch: 0.85
+    loop: 0
+    source: {fileID: 0}
+  - name: GameOver
+    clip: {fileID: 8300000, guid: a235d590ef2a04d1b85b61ef4c21337c, type: 3}
+    volume: 0.53
+    pitch: 0.85
+    loop: 0
+    source: {fileID: 0}
+  - name: coin
+    clip: {fileID: 8300000, guid: 9b6f86f1dbf05574b800b8e24a117503, type: 3}
+    volume: 0.566
+    pitch: 1.13
+    loop: 0
+    source: {fileID: 0}

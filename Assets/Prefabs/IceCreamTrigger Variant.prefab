@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4465486523467690012
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4765028959961362610, guid: 7a7e7c7831836ee4cac56849cd5ea7bd, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4765028959961362610, guid: 7a7e7c7831836ee4cac56849cd5ea7bd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4765028959961362610, guid: 7a7e7c7831836ee4cac56849cd5ea7bd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4765028959961362610, guid: 7a7e7c7831836ee4cac56849cd5ea7bd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4765028959961362610, guid: 7a7e7c7831836ee4cac56849cd5ea7bd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4765028959961362610, guid: 7a7e7c7831836ee4cac56849cd5ea7bd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4765028959961362610, guid: 7a7e7c7831836ee4cac56849cd5ea7bd, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4765028959961362610, guid: 7a7e7c7831836ee4cac56849cd5ea7bd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4765028959961362610, guid: 7a7e7c7831836ee4cac56849cd5ea7bd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4765028959961362610, guid: 7a7e7c7831836ee4cac56849cd5ea7bd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4765028959961362610, guid: 7a7e7c7831836ee4cac56849cd5ea7bd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4765028959961362611, guid: 7a7e7c7831836ee4cac56849cd5ea7bd, type: 3}
+      propertyPath: m_Name
+      value: IceCreamTrigger Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 4765028959961362620, guid: 7a7e7c7831836ee4cac56849cd5ea7bd, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1535795831, guid: 4eaf913fa8d69804c979d82a8ab68573, type: 3}
+    - target: {fileID: 4765028959961362623, guid: 7a7e7c7831836ee4cac56849cd5ea7bd, type: 3}
+      propertyPath: doorBody
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4765028959961362623, guid: 7a7e7c7831836ee4cac56849cd5ea7bd, type: 3}
+      propertyPath: cakeTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7a7e7c7831836ee4cac56849cd5ea7bd, type: 3}
