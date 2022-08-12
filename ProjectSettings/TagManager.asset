@@ -7,7 +7,6 @@ TagManager:
   - AudioManager
   - Bounds
   - Projectile
-  - Cube
   layers:
   - Default
   - TransparentFX
