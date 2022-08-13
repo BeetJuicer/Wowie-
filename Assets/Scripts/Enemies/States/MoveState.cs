@@ -19,8 +19,9 @@ public class MoveState : State {
 	protected bool isScared;
 
 	protected int amountOfStops;
-	
+	//-Dodge
 	protected float strength;
+	protected Vector2 angle;
 
 	public MoveState(Entity etity, FiniteStateMachine stateMachine, string animBoolName, D_MoveState stateData) : base(etity, stateMachine, animBoolName) {
 		this.stateData = stateData;
@@ -60,7 +61,8 @@ public class MoveState : State {
 			movement.Flip();
 		}
 
-		strength = (scarer.transform.position.y - movement.RB.transform.position.y >= 1f) ? 20 : 10;
+		strength = (scarer.transform.position.y - movement.RB.transform.position.y >= 1f) ? 40 : 20;
+		angle = new Vector2(2f, 1f);
 		isScared = true;
 	}
 

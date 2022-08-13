@@ -29,10 +29,11 @@ public class E1_IdleState : IdleState
             switchToMove = false;
             stateMachine.ChangeState(enemy.moveState);
         }
-        else if (isScared)
+        else if (isScared && isGrounded)
         {
             isScared = false;
             enemy.dodgeState.dodgeSpeed = strength;
+            enemy.dodgeState.dodgeAngle = angle;
             stateMachine.ChangeState(enemy.dodgeState);
         }
     }

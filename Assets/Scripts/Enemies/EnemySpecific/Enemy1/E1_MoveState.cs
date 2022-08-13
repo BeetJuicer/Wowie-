@@ -33,6 +33,7 @@ public class E1_MoveState : MoveState
         {
             isScared = false;
             enemy.dodgeState.dodgeSpeed = strength;
+            enemy.dodgeState.dodgeAngle = angle;
             stateMachine.ChangeState(enemy.dodgeState);
         }
         else if (isDetectingWall || !isDetectingLedge)

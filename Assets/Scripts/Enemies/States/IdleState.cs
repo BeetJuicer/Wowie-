@@ -17,9 +17,12 @@ public class IdleState : State {
 
 	protected bool switchToMove;
 	protected bool isScared;
+	protected bool isGrounded;
 
 	protected float idleTime;
+	//-Dodge
 	protected float strength;
+	protected Vector2 angle;
 
 	public IdleState(Entity etity, FiniteStateMachine stateMachine, string animBoolName, D_IdleState stateData) : base(etity, stateMachine, animBoolName) {
 		this.stateData = stateData;
@@ -28,6 +31,7 @@ public class IdleState : State {
 	public override void DoChecks() {
 		base.DoChecks();
 		isPlayerInMinAgroRange = entity.CheckPlayerInMinAgroRange();
+		isGrounded = CollisionSenses.Ground;
 	}
 
 	public override void Enter() {
@@ -76,7 +80,8 @@ public class IdleState : State {
 			movement.Flip();
 		}
 
-		strength = (scarer.transform.position.y - movement.RB.transform.position.y >= 1f) ? 20 : 10;
+		strength = (scarer.transform.position.y - movement.RB.transform.position.y >= 1f) ? 40 : 20;
+		angle = new Vector2 (1f,1f);
 		isScared = true;
 	}
 

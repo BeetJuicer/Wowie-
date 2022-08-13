@@ -14,7 +14,7 @@ public class FiniteStateMachine
 
     public void ChangeState(State newState)
     {
-        Debug.Log($"Moving from {currentState} to {newState}.");
+        Debug.Log($"Moving from {currentState} to {newState}");
         currentState.Exit();
         currentState = newState;
         currentState.Enter();

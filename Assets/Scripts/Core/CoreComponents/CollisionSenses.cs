@@ -45,6 +45,8 @@ public class CollisionSenses : CoreComponent {
 	[SerializeField] private float ledgeCheckDistance;
 	[SerializeField] private float wallCheckDistance;
 
+	[SerializeField] private Vector2 groundCheckSize = new Vector2 (1f,1f);
+
 	[SerializeField] private LayerMask whatIsGround;
 
 	#endregion
@@ -79,7 +81,10 @@ public class CollisionSenses : CoreComponent {
 		Gizmos.DrawLine(ledgeCheckVertical.position, ledgeCheckVertical.position + (Vector3)(Vector2.down * ledgeCheckDistance));
 		Gizmos.DrawLine(wallCheck.position, wallCheck.position + Vector3.right * Movement.FacingDirection * wallCheckDistance);
 
+		Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+
 		DebugPanel.Log("isDetectingWall", WallFront);
 		DebugPanel.Log("isDetectingLedge", LedgeVertical);
+		DebugPanel.Log("Ground", Ground);
 	}
 }
