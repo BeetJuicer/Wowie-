@@ -12,6 +12,7 @@ public class Enemy1 : Entity
     public E1_MeleeAttackState meleeAttackState { get; private set; }
     public E1_StunState stunState { get; private set; }
     public E1_DeadState deadState { get; private set; }
+    public E1_DodgeState dodgeState { get; private set; }
 
     [SerializeField]
     private D_IdleState idleStateData;
@@ -29,6 +30,8 @@ public class Enemy1 : Entity
     private D_StunState stunStateData;
     [SerializeField]
     private D_DeadState deadStateData;
+    [SerializeField]
+    private D_DodgeState dodgeStateData;
 
 
     [SerializeField]
@@ -50,6 +53,7 @@ public class Enemy1 : Entity
         meleeAttackState = new E1_MeleeAttackState(this, stateMachine, "meleeAttack", meleeAttackPosition, meleeAttackStateData, this);
         stunState = new E1_StunState(this, stateMachine, "stun", stunStateData, this);
         deadState = new E1_DeadState(this, stateMachine, "dead", deadStateData, this);
+        dodgeState = new E1_DodgeState(this, stateMachine, "dodge", dodgeStateData, this);
     }
 
     private void Start()
@@ -67,6 +71,17 @@ public class Enemy1 : Entity
         else if (stateMachine.currentState == moveState)
         {
             moveState.Call(caller);
+        }
+    }
+    public void Scare(Transform Scarer)
+    {
+        if (stateMachine.currentState == idleState)
+        {
+            idleState.Scare(Scarer);
+        }
+        else if (stateMachine.currentState == moveState)
+        {
+            moveState.Scare(Scarer);
         }
     }
 

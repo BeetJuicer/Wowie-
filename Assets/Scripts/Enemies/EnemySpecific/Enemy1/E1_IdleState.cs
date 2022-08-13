@@ -24,12 +24,16 @@ public class E1_IdleState : IdleState
     {
         base.LogicUpdate();
 
-        DebugPanel.Log("flipAfterIdle", flipAfterIdle);
-
         if (switchToMove)
         {
             switchToMove = false;
             stateMachine.ChangeState(enemy.moveState);
+        }
+        else if (isScared)
+        {
+            isScared = false;
+            enemy.dodgeState.dodgeSpeed = strength;
+            stateMachine.ChangeState(enemy.dodgeState);
         }
     }
 

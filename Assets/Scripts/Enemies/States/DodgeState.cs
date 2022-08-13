@@ -16,6 +16,10 @@ public class DodgeState : State {
 	protected bool isGrounded;
 	protected bool isDodgeOver;
 
+	protected float dodgeTime;
+
+	public float dodgeSpeed;
+
 	public DodgeState(Entity etity, FiniteStateMachine stateMachine, string animBoolName, D_DodgeState stateData) : base(etity, stateMachine, animBoolName) {
 		this.stateData = stateData;
 	}
@@ -33,7 +37,7 @@ public class DodgeState : State {
 
 		isDodgeOver = false;
 
-		Movement?.SetVelocity(stateData.dodgeSpeed, stateData.dodgeAngle, -Movement.FacingDirection);
+		Movement?.SetVelocity(dodgeSpeed, stateData.dodgeAngle, Movement.FacingDirection);
 	}
 
 	public override void Exit() {
@@ -43,7 +47,7 @@ public class DodgeState : State {
 	public override void LogicUpdate() {
 		base.LogicUpdate();
 
-		if (Time.time >= startTime + stateData.dodgeTime && isGrounded) {
+		if (isGrounded) {
 			isDodgeOver = true;
 		}
 	}

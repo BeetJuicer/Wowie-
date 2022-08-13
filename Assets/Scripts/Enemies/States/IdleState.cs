@@ -16,8 +16,10 @@ public class IdleState : State {
 	protected bool isPlayerInMinAgroRange;
 
 	protected bool switchToMove;
+	protected bool isScared;
 
 	protected float idleTime;
+	protected float strength;
 
 	public IdleState(Entity etity, FiniteStateMachine stateMachine, string animBoolName, D_IdleState stateData) : base(etity, stateMachine, animBoolName) {
 		this.stateData = stateData;
@@ -66,6 +68,17 @@ public class IdleState : State {
         }
 		switchToMove = true;
     }
+	public void Scare(Transform scarer)
+	{
+		int direction = (scarer.transform.position.x > movement.RB.transform.position.x) ? 1 : -1;
+		if (direction != movement.FacingDirection)
+		{
+			movement.Flip();
+		}
+
+		strength = (scarer.transform.position.y - movement.RB.transform.position.y >= 1f) ? 20 : 10;
+		isScared = true;
+	}
 
 	public override void PhysicsUpdate() {
 		base.PhysicsUpdate();

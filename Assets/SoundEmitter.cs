@@ -4,26 +4,41 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using DG.Tweening;
 
-public class SoundEmitter : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
+public class SoundEmitter : MonoBehaviour
 {
-    private bool isMouseOn;
+    [SerializeField] Enemy1 cat;
+    private bool isPlayerDetected;
 
-    void IPointerEnterHandler.OnPointerEnter(PointerEventData eventData)
+    private void Update()
     {
-        isMouseOn = true;
-    }
-
-    public void OnPointerExit(PointerEventData eventData)
-    {
-        isMouseOn = false;
-    }
-
-    public void OnPointerClick(PointerEventData eventData)
-    {
-        if (isMouseOn)
+        if (isPlayerDetected)
         {
-            gameObject.transform.DOPunchScale(new Vector3(1f,1f,0f), .2f).SetEase(Ease.OutBack);
-            AudioManager.instance.Play("fart");
+            if (PlayerInputHandler.GetInstance().GetInteractPressed())
+            {
+                Ring();
+            }
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            isPlayerDetected = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            isPlayerDetected = false;
+        }
+    }
+
+    private void Ring()
+    {
+        Debug.Log("Bell has been pressed");
+        cat.Scare(transform);
     }
 }

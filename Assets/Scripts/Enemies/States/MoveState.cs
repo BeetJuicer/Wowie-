@@ -16,8 +16,11 @@ public class MoveState : State {
 	protected bool isPlayerInMinAgroRange;
 
 	protected bool callFlip;
+	protected bool isScared;
 
 	protected int amountOfStops;
+	
+	protected float strength;
 
 	public MoveState(Entity etity, FiniteStateMachine stateMachine, string animBoolName, D_MoveState stateData) : base(etity, stateMachine, animBoolName) {
 		this.stateData = stateData;
@@ -47,6 +50,18 @@ public class MoveState : State {
 		{
 			movement.Flip();
 		}
+	}
+
+	public void Scare(Transform scarer)
+    {
+		int direction = (scarer.transform.position.x > movement.RB.transform.position.x) ? 1 : -1;
+		if (direction != movement.FacingDirection)
+		{
+			movement.Flip();
+		}
+
+		strength = (scarer.transform.position.y - movement.RB.transform.position.y >= 1f) ? 20 : 10;
+		isScared = true;
 	}
 
 	public override void LogicUpdate() {

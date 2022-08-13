@@ -29,7 +29,13 @@ public class E1_MoveState : MoveState
         {
             stateMachine.ChangeState(enemy.idleState);
         }
-        if(isDetectingWall || !isDetectingLedge)
+        else if (isScared)
+        {
+            isScared = false;
+            enemy.dodgeState.dodgeSpeed = strength;
+            stateMachine.ChangeState(enemy.dodgeState);
+        }
+        else if (isDetectingWall || !isDetectingLedge)
         {
             enemy.idleState.SetFlipAfterIdle(true);
             stateMachine.ChangeState(enemy.idleState);
