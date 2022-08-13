@@ -1,5 +1,5 @@
 {
-    "name": "Player 1",
+    "name": "Player",
     "maps": [
         {
             "name": "Gameplay",
@@ -60,15 +60,6 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Interact",
-                    "type": "Button",
-                    "id": "fb7b611c-e836-4380-a295-95e19c3f8da1",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "Fire",
                     "type": "Button",
                     "id": "9b720491-3631-4236-94fb-f661cc47df3c",
@@ -99,6 +90,24 @@
                     "name": "SecondaryAttack",
                     "type": "Button",
                     "id": "fb05dad5-ad8b-4754-93da-6acd4009827f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Interact",
+                    "type": "Button",
+                    "id": "fb7b611c-e836-4380-a295-95e19c3f8da1",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Whisper",
+                    "type": "Button",
+                    "id": "bf2cf70d-4c07-4a42-b2e5-0eb5e8020d8a",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -284,28 +293,6 @@
                 },
                 {
                     "name": "",
-                    "id": "baf0fbd2-2cae-41f0-9f85-79ae248d6d1b",
-                    "path": "<Keyboard>/e",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard",
-                    "action": "Interact",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "1e7c2e5f-4add-4731-84ad-18def75b42a1",
-                    "path": "<Gamepad>/buttonEast",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Gamepad",
-                    "action": "Interact",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "e1f64310-2f9f-41ab-9aa7-64fd440a1c8a",
                     "path": "<Keyboard>/r",
                     "interactions": "",
@@ -378,6 +365,39 @@
                     "processors": "",
                     "groups": "Gamepad",
                     "action": "SecondaryAttack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6600d191-0258-4986-b5bb-f091021254e2",
+                    "path": "<Keyboard>/j",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Whisper",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "baf0fbd2-2cae-41f0-9f85-79ae248d6d1b",
+                    "path": "<Keyboard>/k",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1e7c2e5f-4add-4731-84ad-18def75b42a1",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Interact",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -50,7 +50,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
 
     private void Start()
     {
-        SetPlayerPosition();
+       // SetPlayerPosition();
 
         //Inward scene fade.
         fader.gameObject.SetActive(true);

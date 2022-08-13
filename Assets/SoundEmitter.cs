@@ -6,19 +6,24 @@ using DG.Tweening;
 
 public class SoundEmitter : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
+    private bool isMouseOn;
+
     void IPointerEnterHandler.OnPointerEnter(PointerEventData eventData)
     {
-        Debug.Log($"Mouse detected by: {name}");
+        isMouseOn = true;
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        Debug.Log($"Mouse exited from: {name}");
+        isMouseOn = false;
     }
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        Debug.Log("Mouse clicked");
-        gameObject.transform.DOPunchScale(new Vector3(1f,1f,0f), .2f).SetEase(Ease.OutBack);;
+        if (isMouseOn)
+        {
+            gameObject.transform.DOPunchScale(new Vector3(1f,1f,0f), .2f).SetEase(Ease.OutBack);
+            AudioManager.instance.Play("fart");
+        }
     }
 }

@@ -24,6 +24,7 @@ public class PlayerInputHandler : MonoBehaviour
     public bool DashInputStop { get; private set; }
 
     public bool InteractInput { get; private set; }
+    public bool WhisperInput { get; private set; }
     public bool SubmitInput { get; private set; }
     public bool FireInput { get; private set; }
     public bool EscapeInput { get; private set; }
@@ -170,6 +171,19 @@ public class PlayerInputHandler : MonoBehaviour
             InteractInput = false;
         }
     }
+    
+    public void OnWhisperInput(InputAction.CallbackContext context)
+    {
+        if (context.started)
+        {
+            WhisperInput = true;
+        }
+
+        if (context.canceled)
+        {
+            WhisperInput = false;
+        }
+    }
 
     public void OnSubmitInput(InputAction.CallbackContext context)
     {
@@ -255,6 +269,13 @@ public class PlayerInputHandler : MonoBehaviour
         SubmitInput = false;
         return result;
     }
+    
+    public bool GetWhisperPressed()
+    {
+        bool result = WhisperInput;
+        WhisperInput = false;
+        return result;
+    }
 
     public bool GetFirePressed()
     {
@@ -262,11 +283,6 @@ public class PlayerInputHandler : MonoBehaviour
         FireInput = false;
         return result;
     }
-
-    //public void RegisterSubmitPressed()
-    //{
-    //    SubmitInput = false;
-    //}
 }
 
 public enum CombatInputs
