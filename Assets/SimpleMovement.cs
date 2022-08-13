@@ -23,10 +23,6 @@ public class SimpleMovement : MonoBehaviour
         xInput = inputHandler.NormInputX;
         yInput = inputHandler.NormInputY;
         
-        if (inputHandler.GetWhisperPressed())
-        {
-            Debug.Log("Whisper pressed.");
-        }
 
         DebugPanel.Log("xInput", xInput);
         DebugPanel.Log("yInput", yInput);

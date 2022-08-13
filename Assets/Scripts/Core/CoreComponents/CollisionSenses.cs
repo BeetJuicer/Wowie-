@@ -78,5 +78,8 @@ public class CollisionSenses : CoreComponent {
 		Gizmos.color = Color.yellow;
 		Gizmos.DrawLine(ledgeCheckVertical.position, ledgeCheckVertical.position + (Vector3)(Vector2.down * ledgeCheckDistance));
 		Gizmos.DrawLine(wallCheck.position, wallCheck.position + Vector3.right * Movement.FacingDirection * wallCheckDistance);
+
+		DebugPanel.Log("isDetectingWall", WallFront);
+		DebugPanel.Log("isDetectingLedge", LedgeVertical);
 	}
 }

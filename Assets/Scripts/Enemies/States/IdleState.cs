@@ -15,6 +15,8 @@ public class IdleState : State {
 	protected bool isIdleTimeOver;
 	protected bool isPlayerInMinAgroRange;
 
+	protected bool isBeingCalled;
+
 	protected float idleTime;
 
 	public IdleState(Entity etity, FiniteStateMachine stateMachine, string animBoolName, D_IdleState stateData) : base(etity, stateMachine, animBoolName) {
@@ -51,6 +53,11 @@ public class IdleState : State {
 			isIdleTimeOver = true;
 		}
 	}
+
+	public void Call()
+    {
+		isBeingCalled = true;
+    }
 
 	public override void PhysicsUpdate() {
 		base.PhysicsUpdate();
