@@ -20,7 +20,7 @@ public class Ghost : MonoBehaviour
         if (inputHandler.GetWhisperPressed())
         {
             Debug.Log("Whisper pressed.");
-            enemy.Call();
+            enemy.Call(transform);
         }
     }
 }

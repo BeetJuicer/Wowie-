@@ -54,8 +54,18 @@ public class IdleState : State {
 		}
 	}
 
-	public void Call()
+	public void Call(Transform caller)
     {
+
+		int direction = (caller.transform.position.x > movement.RB.transform.position.x) ? 1 : -1;
+		if (direction == movement.FacingDirection)
+        {
+			SetFlipAfterIdle(false);
+        }
+        else
+        {
+			SetFlipAfterIdle(true);
+        }
 		isBeingCalled = true;
     }
 

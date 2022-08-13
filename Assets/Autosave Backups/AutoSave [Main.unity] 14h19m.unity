@@ -450,7 +450,7 @@ GameObject:
   m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &133112772
 Transform:
   m_ObjectHideFlags: 0
@@ -1291,6 +1291,7 @@ GameObject:
   - component: {fileID: 280444172}
   - component: {fileID: 280444171}
   - component: {fileID: 280444170}
+  - component: {fileID: 280444174}
   m_Layer: 0
   m_Name: Ghost
   m_TagString: Untagged
@@ -1577,6 +1578,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &280444174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280444168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1cdde29807505a4db42aceaddba7ab9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 986147885}
 --- !u!1 &320959949
 GameObject:
   m_ObjectHideFlags: 0
@@ -11903,7 +11917,7 @@ GameObject:
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &986147879
 Transform:
   m_ObjectHideFlags: 0
@@ -11912,7 +11926,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 986147878}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.87, y: -5.65, z: 0}
+  m_LocalPosition: {x: -1.66, y: 1.99, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -48650,7 +48664,7 @@ MonoBehaviour:
   ledgeCheckVertical: {fileID: 387086606}
   ceilingCheck: {fileID: 0}
   groundCheckRadius: 0.3
-  ledgeCheckDistance: 0
+  ledgeCheckDistance: 0.3
   wallCheckDistance: 0.3
   whatIsGround:
     serializedVersion: 2

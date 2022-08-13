@@ -53,9 +53,9 @@ public class Enemy1 : Entity
         stateMachine.Initialize(moveState);        
     }
 
-    public void Call()
+    public void Call(Transform caller)
     {
-        idleState.Call();
+        idleState.Call(caller);
     }
 
     public override void OnDrawGizmos()
