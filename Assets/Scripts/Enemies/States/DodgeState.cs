@@ -48,9 +48,7 @@ public class DodgeState : State {
 	public override void LogicUpdate() {
 		base.LogicUpdate();
 
-		DebugPanel.Log("isGrounded", isGrounded);
-
-		if (collisionSenses.Ground) {
+		if (isGrounded) {
 			isDodgeOver = true;
 		}
 	}

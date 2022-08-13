@@ -36,6 +36,7 @@ public class E1_DodgeState : DodgeState
 
         if (isDodgeOver)
         {
+            enemy.idleState.SetFlipAfterIdle(false);
             stateMachine.ChangeState(enemy.idleState);
         }
     }

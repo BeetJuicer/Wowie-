@@ -13,6 +13,7 @@ public class MoveState : State {
 
 	protected bool isDetectingWall;
 	protected bool isDetectingLedge;
+	protected bool isGrounded;
 	protected bool isPlayerInMinAgroRange;
 
 	protected bool callFlip;
@@ -32,6 +33,7 @@ public class MoveState : State {
 
 		isDetectingLedge = CollisionSenses.LedgeVertical;
 		isDetectingWall = CollisionSenses.WallFront;
+		isGrounded = CollisionSenses.Ground;
 		isPlayerInMinAgroRange = entity.CheckPlayerInMinAgroRange();
 	}
 
