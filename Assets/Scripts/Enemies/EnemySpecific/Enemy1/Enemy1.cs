@@ -36,6 +36,7 @@ public class Enemy1 : Entity
 
     public Transform Caller;
     public bool isBeingCalled;
+    public float callDuration = 1f;
 
     public override void Awake()
     {

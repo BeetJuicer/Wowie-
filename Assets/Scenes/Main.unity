@@ -12096,6 +12096,7 @@ MonoBehaviour:
   meleeAttackPosition: {fileID: 1111674814}
   Caller: {fileID: 0}
   isBeingCalled: 0
+  callDuration: 1
 --- !u!1 &1007974624
 GameObject:
   m_ObjectHideFlags: 0
