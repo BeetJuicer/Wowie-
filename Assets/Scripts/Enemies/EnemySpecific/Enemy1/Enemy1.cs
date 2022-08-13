@@ -34,6 +34,9 @@ public class Enemy1 : Entity
     [SerializeField]
     private Transform meleeAttackPosition;
 
+    public Transform Caller;
+    public bool isBeingCalled;
+
     public override void Awake()
     {
         base.Awake();
@@ -55,7 +58,15 @@ public class Enemy1 : Entity
 
     public void Call(Transform caller)
     {
-        idleState.Call(caller);
+        Caller = caller;
+        if (stateMachine.currentState == idleState)
+        {
+            idleState.Call(caller);
+        }
+        else if (stateMachine.currentState == moveState)
+        {
+            moveState.Call(caller);
+        }
     }
 
     public override void OnDrawGizmos()

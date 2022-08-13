@@ -12094,6 +12094,8 @@ MonoBehaviour:
   stunStateData: {fileID: 11400000, guid: feb476734f45df242b04c3b50b211dc5, type: 2}
   deadStateData: {fileID: 11400000, guid: 803c5f6895b75114087f77743674c1bc, type: 2}
   meleeAttackPosition: {fileID: 1111674814}
+  Caller: {fileID: 0}
+  isBeingCalled: 0
 --- !u!1 &1007974624
 GameObject:
   m_ObjectHideFlags: 0

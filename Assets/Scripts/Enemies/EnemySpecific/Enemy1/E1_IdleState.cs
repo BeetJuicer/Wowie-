@@ -26,8 +26,9 @@ public class E1_IdleState : IdleState
 
         DebugPanel.Log("flipAfterIdle", flipAfterIdle);
 
-        if (isBeingCalled)
+        if (switchToMove)
         {
+            switchToMove = false;
             stateMachine.ChangeState(enemy.moveState);
         }
     }

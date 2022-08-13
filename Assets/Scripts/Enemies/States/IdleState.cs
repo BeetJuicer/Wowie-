@@ -15,7 +15,7 @@ public class IdleState : State {
 	protected bool isIdleTimeOver;
 	protected bool isPlayerInMinAgroRange;
 
-	protected bool isBeingCalled;
+	protected bool switchToMove;
 
 	protected float idleTime;
 
@@ -53,10 +53,8 @@ public class IdleState : State {
 			isIdleTimeOver = true;
 		}
 	}
-
 	public void Call(Transform caller)
     {
-
 		int direction = (caller.transform.position.x > movement.RB.transform.position.x) ? 1 : -1;
 		if (direction == movement.FacingDirection)
         {
@@ -66,7 +64,7 @@ public class IdleState : State {
         {
 			SetFlipAfterIdle(true);
         }
-		isBeingCalled = true;
+		switchToMove = true;
     }
 
 	public override void PhysicsUpdate() {

@@ -15,6 +15,8 @@ public class MoveState : State {
 	protected bool isDetectingLedge;
 	protected bool isPlayerInMinAgroRange;
 
+	protected bool callFlip;
+
 	protected int amountOfStops;
 
 	public MoveState(Entity etity, FiniteStateMachine stateMachine, string animBoolName, D_MoveState stateData) : base(etity, stateMachine, animBoolName) {
@@ -32,11 +34,19 @@ public class MoveState : State {
 	public override void Enter() {
 		base.Enter();
 		Movement?.SetVelocityX(stateData.movementSpeed * Movement.FacingDirection);
-
 	}
 
 	public override void Exit() {
 		base.Exit();
+	}
+
+	public void Call(Transform caller)
+	{
+		int direction = (caller.transform.position.x > movement.RB.transform.position.x) ? 1 : -1;
+		if (direction != movement.FacingDirection)
+		{
+			movement.Flip();
+		}
 	}
 
 	public override void LogicUpdate() {
