@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DodgeState : State {
-	private Movement Movement { get => movement ?? core.GetCoreComponent(ref movement); }
+	protected Movement Movement { get => movement ?? core.GetCoreComponent(ref movement); }
 	private CollisionSenses CollisionSenses { get => collisionSenses ?? core.GetCoreComponent(ref collisionSenses); }
 
 	private Movement movement;
@@ -18,9 +18,6 @@ public class DodgeState : State {
 
 	protected float dodgeTime;
 
-	public float dodgeSpeed;
-	public Vector2 dodgeAngle;
-
 	public DodgeState(Entity etity, FiniteStateMachine stateMachine, string animBoolName, D_DodgeState stateData) : base(etity, stateMachine, animBoolName) {
 		this.stateData = stateData;
 	}
@@ -28,8 +25,6 @@ public class DodgeState : State {
 	public override void DoChecks() {
 		base.DoChecks();
 
-		performCloseRangeAction = entity.CheckPlayerInCloseRangeAction();
-		isPlayerInMaxAgroRange = entity.CheckPlayerInMaxAgroRange();
 		isGrounded = CollisionSenses.Ground;
 	}
 
@@ -37,8 +32,6 @@ public class DodgeState : State {
 		base.Enter();
 
 		isDodgeOver = false;
-
-		Movement?.SetVelocity(dodgeSpeed, dodgeAngle, Movement.FacingDirection);
 	}
 
 	public override void Exit() {

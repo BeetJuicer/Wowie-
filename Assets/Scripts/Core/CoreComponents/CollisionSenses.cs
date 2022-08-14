@@ -82,9 +82,5 @@ public class CollisionSenses : CoreComponent {
 		Gizmos.DrawLine(wallCheck.position, wallCheck.position + Vector3.right * Movement.FacingDirection * wallCheckDistance);
 
 		Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
-
-		DebugPanel.Log("isDetectingWall", WallFront);
-		DebugPanel.Log("isDetectingLedge", LedgeVertical);
-		DebugPanel.Log("Ground", Ground);
 	}
 }

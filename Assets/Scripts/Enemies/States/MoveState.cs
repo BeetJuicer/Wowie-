@@ -19,11 +19,6 @@ public class MoveState : State {
 	protected bool callFlip;
 	protected bool isScared;
 
-	protected int amountOfStops;
-	//-Dodge
-	protected float strength;
-	protected Vector2 angle;
-
 	public MoveState(Entity etity, FiniteStateMachine stateMachine, string animBoolName, D_MoveState stateData) : base(etity, stateMachine, animBoolName) {
 		this.stateData = stateData;
 	}
@@ -34,7 +29,6 @@ public class MoveState : State {
 		isDetectingLedge = CollisionSenses.LedgeVertical;
 		isDetectingWall = CollisionSenses.WallFront;
 		isGrounded = CollisionSenses.Ground;
-		isPlayerInMinAgroRange = entity.CheckPlayerInMinAgroRange();
 	}
 
 	public override void Enter() {
@@ -48,7 +42,7 @@ public class MoveState : State {
 
 	public void Call(Transform caller)
 	{
-		int direction = (caller.transform.position.x > movement.RB.transform.position.x) ? 1 : -1;
+		int direction = (caller.transform.position.x > movement.RB.transform.position.x + 0.5f) ? 1 : -1;
 		if (direction != movement.FacingDirection)
 		{
 			movement.Flip();
@@ -57,14 +51,12 @@ public class MoveState : State {
 
 	public void Scare(Transform scarer)
     {
-		int direction = (scarer.transform.position.x > movement.RB.transform.position.x) ? 1 : -1;
+		int direction = (scarer.transform.position.x > movement.RB.transform.position.x + 0.5f) ? 1 : -1;
 		if (direction != movement.FacingDirection)
 		{
 			movement.Flip();
 		}
 
-		strength = (scarer.transform.position.y - movement.RB.transform.position.y >= 1f) ? 40 : 20;
-		angle = new Vector2(2f, 1f);
 		isScared = true;
 	}
 

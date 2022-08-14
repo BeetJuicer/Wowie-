@@ -25,15 +25,9 @@ public class E1_MoveState : MoveState
     {
         base.LogicUpdate();
 
-        if (Time.time > startTime + enemy.callDuration)
-        {
-            stateMachine.ChangeState(enemy.idleState);
-        }
-        else if (isScared && isGrounded)
+        if (isScared && isGrounded)
         {
             isScared = false;
-            enemy.dodgeState.dodgeSpeed = strength;
-            enemy.dodgeState.dodgeAngle = angle;
             stateMachine.ChangeState(enemy.dodgeState);
         }
         else if (isDetectingWall)

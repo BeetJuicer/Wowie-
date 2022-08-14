@@ -20,9 +20,6 @@ public class IdleState : State {
 	protected bool isGrounded;
 
 	protected float idleTime;
-	//-Dodge
-	protected float strength;
-	protected Vector2 angle;
 
 	public IdleState(Entity etity, FiniteStateMachine stateMachine, string animBoolName, D_IdleState stateData) : base(etity, stateMachine, animBoolName) {
 		this.stateData = stateData;
@@ -38,8 +35,6 @@ public class IdleState : State {
 		base.Enter();
 
 		Movement?.SetVelocityX(0f);
-		isIdleTimeOver = false;
-		SetRandomIdleTime();
 	}
 
 	public override void Exit() {
@@ -55,13 +50,10 @@ public class IdleState : State {
 
 		Movement?.SetVelocityX(0f);
 
-		if (Time.time >= startTime + idleTime) {
-			isIdleTimeOver = true;
-		}
 	}
 	public void Call(Transform caller)
     {
-		int direction = (caller.transform.position.x > movement.RB.transform.position.x) ? 1 : -1;
+		int direction = (caller.transform.position.x > movement.RB.transform.position.x + 0.5f) ? 1 : -1;
 		if (direction == movement.FacingDirection)
         {
 			SetFlipAfterIdle(false);
@@ -74,14 +66,12 @@ public class IdleState : State {
     }
 	public void Scare(Transform scarer)
 	{
-		int direction = (scarer.transform.position.x > movement.RB.transform.position.x) ? 1 : -1;
+		int direction = (scarer.transform.position.x > movement.RB.transform.position.x + 0.5f) ? 1 : -1;
 		if (direction != movement.FacingDirection)
 		{
 			movement.Flip();
 		}
 
-		strength = (scarer.transform.position.y - movement.RB.transform.position.y >= 1f) ? 40 : 20;
-		angle = new Vector2 (1f,1f);
 		isScared = true;
 	}
 
@@ -91,9 +81,5 @@ public class IdleState : State {
 
 	public void SetFlipAfterIdle(bool flip) {
 		flipAfterIdle = flip;
-	}
-
-	private void SetRandomIdleTime() {
-		idleTime = Random.Range(stateData.minIdleTime, stateData.maxIdleTime);
 	}
 }

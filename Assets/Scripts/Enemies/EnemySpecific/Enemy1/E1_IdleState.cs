@@ -32,8 +32,6 @@ public class E1_IdleState : IdleState
         else if (isScared && isGrounded)
         {
             isScared = false;
-            enemy.dodgeState.dodgeSpeed = strength;
-            enemy.dodgeState.dodgeAngle = angle;
             stateMachine.ChangeState(enemy.dodgeState);
         }
     }

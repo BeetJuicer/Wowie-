@@ -19,10 +19,9 @@ public class E1_DodgeState : DodgeState
     {
         base.Enter();
 
-        if (isDodgeOver)
-        {
-            Debug.Log("Dodge Over");
-        }
+       // Movement?.SetVelocityY(enemy.jumpY);
+        Movement?.SetVelocity(enemy.jumpY, new Vector2(1f,1f), Movement.FacingDirection);
+//        Movement.RB.AddForce(new Vector2(enemy.jumpX, enemy.jumpY), ForceMode2D.Impulse);
     }
 
     public override void Exit()
@@ -33,12 +32,13 @@ public class E1_DodgeState : DodgeState
     public override void LogicUpdate()
     {
         base.LogicUpdate();
-
+        
+        /*
         if (isDodgeOver)
         {
             enemy.idleState.SetFlipAfterIdle(false);
             stateMachine.ChangeState(enemy.idleState);
-        }
+        }*/
     }
 
     public override void PhysicsUpdate()
