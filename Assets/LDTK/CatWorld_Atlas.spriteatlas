@@ -44,6 +44,12 @@ SpriteAtlas:
     secondaryTextureSettings: {}
     variantMultiplier: 1
     packables:
+    - {fileID: -5935572324841845341, guid: 75928b0f3f2a43f42a19ceda035ea391, type: 3}
+    - {fileID: 3664563910957251911, guid: 75928b0f3f2a43f42a19ceda035ea391, type: 3}
+    - {fileID: 7232611809415327179, guid: 75928b0f3f2a43f42a19ceda035ea391, type: 3}
+    - {fileID: -4891557846165704287, guid: 75928b0f3f2a43f42a19ceda035ea391, type: 3}
+    - {fileID: 6503648863645880301, guid: 75928b0f3f2a43f42a19ceda035ea391, type: 3}
+    - {fileID: 6590759513880542129, guid: 75928b0f3f2a43f42a19ceda035ea391, type: 3}
     - {fileID: 4678349191359059237, guid: 75928b0f3f2a43f42a19ceda035ea391, type: 3}
     - {fileID: 2784939445589400719, guid: 75928b0f3f2a43f42a19ceda035ea391, type: 3}
     - {fileID: -2969795686857401779, guid: 75928b0f3f2a43f42a19ceda035ea391, type: 3}
@@ -53,15 +59,27 @@ SpriteAtlas:
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 7232611809415327179, guid: 75928b0f3f2a43f42a19ceda035ea391, type: 3}
+  - {fileID: 6590759513880542129, guid: 75928b0f3f2a43f42a19ceda035ea391, type: 3}
+  - {fileID: -5935572324841845341, guid: 75928b0f3f2a43f42a19ceda035ea391, type: 3}
   - {fileID: 4788336388930496025, guid: 75928b0f3f2a43f42a19ceda035ea391, type: 3}
   - {fileID: 4678349191359059237, guid: 75928b0f3f2a43f42a19ceda035ea391, type: 3}
   - {fileID: -2969795686857401779, guid: 75928b0f3f2a43f42a19ceda035ea391, type: 3}
+  - {fileID: -4891557846165704287, guid: 75928b0f3f2a43f42a19ceda035ea391, type: 3}
   - {fileID: 2784939445589400719, guid: 75928b0f3f2a43f42a19ceda035ea391, type: 3}
+  - {fileID: 6503648863645880301, guid: 75928b0f3f2a43f42a19ceda035ea391, type: 3}
+  - {fileID: 3664563910957251911, guid: 75928b0f3f2a43f42a19ceda035ea391, type: 3}
   m_PackedSpriteNamesToIndex:
+  - Terrain (32x32)_32_160_32_32
+  - Terrain (32x32)_64_160_32_32
+  - Terrain (32x32)_32_96_32_32
   - Terrain (32x32)_544_224_32_32
   - Terrain (32x32)_64_224_32_32
   - Terrain (32x32)_160_352_32_32
+  - Terrain (32x32)_64_96_32_32
   - Terrain (32x32)_160_320_32_32
+  - Terrain (32x32)_64_128_32_32
+  - Terrain (32x32)_32_128_32_32
   m_RenderDataMap: {}
   m_Tag: CatWorld_Atlas
   m_IsVariant: 0
