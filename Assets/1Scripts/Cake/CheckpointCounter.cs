@@ -8,11 +8,11 @@ public class CheckpointCounter : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(pointNumber > GameManager.GetInstance().checkPointCount)
+        if(pointNumber > GameManager.GetInstance().checkpointCount)
         {
             if (collision.CompareTag("Player"))
             {
-                GameManager.GetInstance().checkPointCount++;
+                GameManager.GetInstance().checkpointCount++;
                 AudioManager.instance.Play("coin"); 
             }
         }

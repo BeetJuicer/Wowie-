@@ -6659,7 +6659,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091538422392414514, guid: 166f6a0c2c2e6354a81aca522c324538, type: 3}
       propertyPath: fileName
-      value: candyLand.save
+      value: ghost.save
       objectReference: {fileID: 0}
     - target: {fileID: 6091538422392414514, guid: 166f6a0c2c2e6354a81aca522c324538, type: 3}
       propertyPath: initializeDataIfNull

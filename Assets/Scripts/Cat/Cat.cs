@@ -241,8 +241,8 @@ public class Cat : MonoBehaviour
 
     private void Flip()
     {
-        facingDirection *= -1;
         rb.transform.Rotate(0.0f, 180.0f, 0.0f);
+        facingDirection *= -1;
     }
 
     public bool CheckIfTouchingWall()
@@ -262,7 +262,7 @@ public class Cat : MonoBehaviour
 
     private void CheckForFlip(Transform target)
     {
-        int direction = (target.transform.position.x > rb.transform.position.x + 0.5f) ? 1 : -1;
+        int direction = (target.transform.position.x > rb.transform.position.x) ? 1 : -1;
         if (facingDirection != direction) { Flip(); }
     }
 }

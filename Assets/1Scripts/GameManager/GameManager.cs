@@ -15,22 +15,36 @@ public class GameManager : MonoBehaviour, IDataPersistence
     [SerializeField]
     private RectTransform fader;
 
+    [SerializeField]
     private GameObject player;
+    [SerializeField]
+    private GameObject cat;
 
     //----Respawn Values---
     [SerializeField]
     private float respawnTime;
 
     [SerializeField] 
-    private Vector2[] respawnPoints = new Vector2[3];
+    private Transform[] respawnPoints;
 
-    public int checkPointCount;
+    public int checkpointCount;
 
     private static GameManager instance;
+
+    public void LoadData(GameData data)
+    {
+        this.checkpointCount = data.checkpointCount;
+    }
+
+    public void SaveData(GameData data)
+    {
+        data.checkpointCount = this.checkpointCount;
+    }
 
     private void Awake()
     {
         instance = this;
+
     }
 
     public static GameManager GetInstance()
@@ -38,20 +52,9 @@ public class GameManager : MonoBehaviour, IDataPersistence
         return instance;
     } 
 
-    public void LoadData(GameData data)
-    {
-        this.checkPointCount = data.checkpointCount;
-    }
-
-    public void SaveData(GameData data)
-    {
-        data.checkpointCount = this.checkPointCount;
-    }
-
     private void Start()
     {
-       // SetPlayerPosition();
-
+        SetPlayerPosition();
         //Inward scene fade.
         fader.gameObject.SetActive(true);
         AudioManager.instance.Play("Open");
@@ -63,6 +66,11 @@ public class GameManager : MonoBehaviour, IDataPersistence
 
     private void Update()
     {
+        if (PlayerInputHandler.GetInstance().GetFirePressed())
+        {
+            Debug.Log("Fire Pressed");
+            Respawn();
+        }
     }
 
     public void Respawn()
@@ -79,7 +87,8 @@ public class GameManager : MonoBehaviour, IDataPersistence
 
     private void SetPlayerPosition()
     {
-        player.transform.position = respawnPoints[checkPointCount];
+        player.transform.position = respawnPoints[checkpointCount].position;
+        cat.transform.position = respawnPoints[checkpointCount].position;
     }
 
     private void LoadScene()

@@ -28,11 +28,14 @@ public class Ghost : MonoBehaviour
             cat.Call(targetLocation);
         }
 
-        DebugPanel.Log("distance of target to cat", cat.gameObject.transform.position.x - targetLocation.position.x);
-
         if (Mathf.Abs(cat.gameObject.transform.position.x - targetLocation.position.x) < 0.5f)
         {
             targetLocation.gameObject.SetActive(false);
         }
+    }
+
+    private void OnBecameInvisible()
+    {
+        transform.position = cat.gameObject.transform.position;
     }
 }
