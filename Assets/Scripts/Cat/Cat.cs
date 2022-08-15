@@ -101,7 +101,7 @@ public class Cat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        DebugPanel.Log("Cat can be tempted?", canBeTempted);
+        Debug.Log($"isBeingCalled? {isBeingCalled}");
 
         Checks();
 
