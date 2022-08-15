@@ -48,6 +48,8 @@ public class Cat : MonoBehaviour
     [SerializeField] private Vector2 fishCheckSize = new Vector2(1f,1f);
     [SerializeField] private float wallCheckDistance = 1f;
 
+    [SerializeField] GameObject target;
+
     private Transform Caller;
     private Transform Tempter;
     private Transform Scarer;
@@ -103,9 +105,11 @@ public class Cat : MonoBehaviour
     {
         Checks();
 
+        Debug.Log($"isGrounded? {isGrounded}. inAir? {inAir}. isBeingScared? {isBeingScared}.");
+
         if (!inAir && isGrounded)
         {
-            if (isBeingScared && !inAir)
+            if (isBeingScared)
             {
                 Jump();
                 inAir = true;
@@ -117,6 +121,7 @@ public class Cat : MonoBehaviour
                 if (Mathf.Abs(transform.position.x - Caller.position.x) < 0.5f || isTouchingWall)
                 {
                     isBeingCalled = false;
+                    target.gameObject.SetActive(false);
                     StartCoroutine(GoodCatForSeconds(1f));
                 }
             }
