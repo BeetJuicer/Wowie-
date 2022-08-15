@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
+
 
 public class Schmeckle : MonoBehaviour
 {
@@ -8,7 +10,7 @@ public class Schmeckle : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        transform.DOMoveY(transform.position.y + .2f, .5f).SetEase(Ease.InOutQuart).SetLoops(-1, LoopType.Yoyo);
     }
 
     // Update is called once per frame
@@ -19,12 +21,10 @@ public class Schmeckle : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Enemy"))
         {
-            AudioManager.instance.Play("coin");
-            Instantiate(pickUpEffect, transform.position, Quaternion.identity);
-           // add score
-            Destroy(gameObject);
+            Instantiate(pickUpEffect);
+            gameObject.SetActive(false);
         }
     }
 }

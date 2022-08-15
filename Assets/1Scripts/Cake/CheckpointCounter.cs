@@ -10,7 +10,7 @@ public class CheckpointCounter : MonoBehaviour
     {
         if(pointNumber > GameManager.GetInstance().checkpointCount)
         {
-            if (collision.CompareTag("Player"))
+            if (collision.CompareTag("Enemy"))
             {
                 GameManager.GetInstance().checkpointCount++;
                 AudioManager.instance.Play("coin"); 

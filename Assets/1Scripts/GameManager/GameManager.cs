@@ -58,6 +58,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
         //Inward scene fade.
         fader.gameObject.SetActive(true);
         AudioManager.instance.Play("Open");
+        AudioManager.instance.Play("Theme_2");
         LeanTween.scale(fader, new Vector3(1, 1, 1), 0);
         LeanTween.scale(fader, Vector3.zero, 0.5f).setEase(LeanTweenType.easeInOutQuad).setOnComplete(() => {
             fader.gameObject.SetActive(false);

@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31471dfd53d5490a956a89a1b2d11ad9, type: 3}
   m_Name: Platform
   m_EditorClassIdentifier: 
-  _colliderType: 1
+  _colliderType: 0
   _customPhysicsSprite: {fileID: 0}
   _tilemapTag: Untagged
-  _tilemapLayerMask: 6
+  _tilemapLayerMask: 8
   _physicsMaterial: {fileID: 0}
   _gameObject: {fileID: 6818027362341160924, guid: 9ebe9b71b05dca842b969d85bf5bc178, type: 3}

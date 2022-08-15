@@ -8,6 +8,12 @@ public class Bell : MonoBehaviour
 {
     [SerializeField] Cat cat;
     private bool isPlayerDetected;
+    private Animator animator;
+
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
 
     private void Update()
     {
@@ -15,6 +21,7 @@ public class Bell : MonoBehaviour
         {
             if (PlayerInputHandler.GetInstance().GetInteractPressed())
             {
+                animator.SetBool("scare", true);
                 Ring();
             }
         }

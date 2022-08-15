@@ -52,6 +52,7 @@ SpriteAtlas:
     - {fileID: 6503648863645880301, guid: 75928b0f3f2a43f42a19ceda035ea391, type: 3}
     - {fileID: 6590759513880542129, guid: 75928b0f3f2a43f42a19ceda035ea391, type: 3}
     - {fileID: 4678349191359059237, guid: 75928b0f3f2a43f42a19ceda035ea391, type: 3}
+    - {fileID: -4397365656806861843, guid: 75928b0f3f2a43f42a19ceda035ea391, type: 3}
     - {fileID: -4938307938758930454, guid: 75928b0f3f2a43f42a19ceda035ea391, type: 3}
     - {fileID: -4547149039800292380, guid: 75928b0f3f2a43f42a19ceda035ea391, type: 3}
     - {fileID: 2784939445589400719, guid: 75928b0f3f2a43f42a19ceda035ea391, type: 3}
@@ -69,6 +70,7 @@ SpriteAtlas:
   - {fileID: -7704976604420454252, guid: 75928b0f3f2a43f42a19ceda035ea391, type: 3}
   - {fileID: 5740224434273012129, guid: 75928b0f3f2a43f42a19ceda035ea391, type: 3}
   - {fileID: 6590759513880542129, guid: 75928b0f3f2a43f42a19ceda035ea391, type: 3}
+  - {fileID: -4397365656806861843, guid: 75928b0f3f2a43f42a19ceda035ea391, type: 3}
   - {fileID: -4938307938758930454, guid: 75928b0f3f2a43f42a19ceda035ea391, type: 3}
   - {fileID: -5935572324841845341, guid: 75928b0f3f2a43f42a19ceda035ea391, type: 3}
   - {fileID: -8633660435060850734, guid: 75928b0f3f2a43f42a19ceda035ea391, type: 3}
@@ -85,6 +87,7 @@ SpriteAtlas:
   - Terrain (32x32)_224_320_32_32
   - Terrain (32x32)_512_224_32_32
   - Terrain (32x32)_64_160_32_32
+  - Terrain (32x32)_64_320_32_32
   - Terrain (32x32)_64_352_32_32
   - Terrain (32x32)_32_96_32_32
   - Terrain (32x32)_32_352_32_32
