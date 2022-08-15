@@ -101,8 +101,6 @@ public class Cat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log($"isBeingCalled? {isBeingCalled}");
-
         Checks();
 
         if (!inAir && isGrounded)

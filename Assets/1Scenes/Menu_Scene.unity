@@ -225,7 +225,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &27836644
 Transform:
   m_ObjectHideFlags: 0
@@ -9904,6 +9904,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 353371269650261451, guid: 0a68be1bd13d8694e8d8fe85574ac075, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 353397034309236827, guid: 0a68be1bd13d8694e8d8fe85574ac075, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -10166,7 +10170,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 393194567867878790, guid: 0a68be1bd13d8694e8d8fe85574ac075, type: 3}
       propertyPath: sceneName
-      value: SampleScene
+      value: Main
       objectReference: {fileID: 0}
     - target: {fileID: 393194567867878790, guid: 0a68be1bd13d8694e8d8fe85574ac075, type: 3}
       propertyPath: newGameMenu
@@ -11170,13 +11174,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2537747010786439891, guid: 0a68be1bd13d8694e8d8fe85574ac075, type: 3}
       propertyPath: m_text
-      value: 'Adventures of
+      value: 'Title
 
-        <color=#F765A3>Ice Cream</color>
+        <color=#F765A3>of</color>
 
-        &
+        the
 
-        <color=#8c5638>Cake</color> '
+        <color=#8c5638>Game</color> '
       objectReference: {fileID: 0}
     - target: {fileID: 2537747010786439891, guid: 0a68be1bd13d8694e8d8fe85574ac075, type: 3}
       propertyPath: m_margin.z

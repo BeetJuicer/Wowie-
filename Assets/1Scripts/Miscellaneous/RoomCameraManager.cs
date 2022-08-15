@@ -8,22 +8,24 @@ public class RoomCameraManager : MonoBehaviour
     [SerializeField]
     GameObject virtualCam;
 
+    private void Start()
+    {
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
-        
-        if (other.CompareTag("Player") &&  !other.isTrigger)
+
+        if (other.CompareTag("Enemy"))
         {
             virtualCam.SetActive(true);
-           // Debug.Log("Player has activated: " + gameObject.name);
         }
         
     }
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Player") &&  !other.isTrigger)
+        if (other.CompareTag("Enemy"))
         {
             virtualCam.SetActive(false);
-            //Debug.Log("Player has deactivated: " + gameObject.name);
         }
     }
 

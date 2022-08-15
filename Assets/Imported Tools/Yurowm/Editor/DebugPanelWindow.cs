@@ -48,6 +48,7 @@ public class DebugPanelWindow : EditorWindow {
 	float width;
 	float cursor = 0;
 
+
 	// OnCreate
 	DebugPanelWindow () {
 		valueTextStyle = new GUIStyle ();
