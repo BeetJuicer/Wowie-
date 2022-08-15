@@ -37,6 +37,13 @@ public class Cat : MonoBehaviour
     private bool isBeingTempted;
     private bool canBeTempted;
 
+    RaycastHit2D fish;
+    RaycastHit2D wallFront;
+    RaycastHit2D wallBack;
+    float fishDistance;
+    float wallFrontDistance;
+    float wallBackDistance;
+
     [SerializeField] private Vector2 groundCheckSize = new Vector2(1f,1f);
     [SerializeField] private Vector2 fishCheckSize = new Vector2(1f,1f);
     [SerializeField] private float wallCheckDistance = 1f;
@@ -56,20 +63,47 @@ public class Cat : MonoBehaviour
         canBeTempted = true;
     }
 
-    // Update is called once per frame
-    void Update()
+    void Checks()
     {
-        DebugPanel.Log("Cat Grounded", isGrounded);
-        DebugPanel.Log("Cat Called", isBeingCalled);
-        DebugPanel.Log("Cat See Fish?", isSeeingFish);
-        DebugPanel.Log("Cat tempted?", isBeingTempted);
-        DebugPanel.Log("Cat scared?", isBeingScared);
-        DebugPanel.Log("Cat in Air?", inAir);
-        DebugPanel.Log("Cat Jump strength", jumpStrength);
-
         isSeeingFish = CheckForFish();
         isGrounded = CheckIfGrounded();
         isTouchingWall = CheckIfTouchingWall();
+
+        wallFront = Physics2D.Raycast(wallCheck.position, Vector2.right, Mathf.Infinity, whatIsGround);
+        wallBack = Physics2D.Raycast(wallCheck.position, Vector2.left, Mathf.Infinity, whatIsGround);
+
+        if (wallFront.collider != null)
+        {
+            wallFrontDistance = Mathf.Abs(wallFront.point.x - transform.position.x);
+        }
+
+        if (wallBack.collider != null)
+        {
+            wallBackDistance = Mathf.Abs(wallBack.point.x - transform.position.x);
+        }
+
+        if (fish.collider != null)
+        {
+            fishDistance = (fish.point.x - transform.position.x);
+        }
+
+        if (fishDistance > wallFrontDistance && (Mathf.Sign(fishDistance) != -1)|| 
+            fishDistance > wallBackDistance && (Mathf.Sign(fishDistance) == -1))
+        {
+            canBeTempted = false;
+        }
+        else
+        {
+            canBeTempted = true;
+        }
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        DebugPanel.Log("Cat can be tempted?", canBeTempted);
+
+        Checks();
 
         if (!inAir && isGrounded)
         {
@@ -92,7 +126,7 @@ public class Cat : MonoBehaviour
             {
                 GoToX(Tempter, movementSpeed / 2);
 
-                if (Mathf.Abs(transform.position.x - Tempter.position.x) < 0.2f)
+                if (Mathf.Abs(transform.position.x - Tempter.position.x) < 0.3f)
                 {
                     isBeingTempted = false;
                 }
@@ -224,6 +258,7 @@ public class Cat : MonoBehaviour
 
     private bool CheckForFish()
     {
+        fish = BoxCastDrawer.BoxCastAndDraw(transform.position, fishCheckSize, 0f, Vector2.right, .02f, whatIsFish);
         return BoxCastDrawer.BoxCastAndDraw(transform.position, fishCheckSize, 0f, Vector2.right, .02f, whatIsFish);
     }
 

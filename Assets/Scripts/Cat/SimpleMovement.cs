@@ -13,8 +13,8 @@ public class SimpleMovement : MonoBehaviour
 
     public float movementSpeed = 2f;
 
-    public float xRotation;
-    public float yRotation;
+    private float xRotation;
+    private float yRotation;
 
     // Start is called before the first frame update
     void Start()
@@ -39,9 +39,6 @@ public class SimpleMovement : MonoBehaviour
         if (xInput == 0 && yInput == -1) { sprite.transform.rotation = Quaternion.Euler(0f, 0f, 180f); }
         if (xInput == 1 && yInput == -1) { sprite.transform.rotation = Quaternion.Euler(0f, 0f, 225f); }
         if (xInput == -1 && yInput == -1) { sprite.transform.rotation = Quaternion.Euler(0f, 0f, 135f); }
-
-
-        sprite.transform.rotation = Quaternion.Euler(0f, 0f, yRotation - xRotation);
 
         transform.Translate(new Vector2(xInput, yInput) * Time.deltaTime * movementSpeed);
     }
