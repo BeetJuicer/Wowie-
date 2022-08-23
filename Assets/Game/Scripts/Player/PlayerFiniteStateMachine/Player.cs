@@ -85,6 +85,7 @@ public class Player : MonoBehaviour
     {
         Core.LogicUpdate();
         StateMachine.CurrentState.LogicUpdate();
+        DebugPanel.Log("Current State", StateMachine.CurrentState);
     }
 
     private void FixedUpdate()
