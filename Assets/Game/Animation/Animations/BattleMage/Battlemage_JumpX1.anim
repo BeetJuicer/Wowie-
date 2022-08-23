@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Battlemage_Jump3
+  m_Name: Battlemage_JumpX1
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,7 +20,7 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 1003795177, guid: e6415c1a6f4a68e41af980739559d189, type: 3}
+      value: {fileID: -1079085353, guid: c189ff5f198142c4196fd05603160f9c, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -40,7 +40,7 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 1003795177, guid: e6415c1a6f4a68e41af980739559d189, type: 3}
+    - {fileID: -1079085353, guid: c189ff5f198142c4196fd05603160f9c, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

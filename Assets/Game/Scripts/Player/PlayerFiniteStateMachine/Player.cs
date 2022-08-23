@@ -86,6 +86,7 @@ public class Player : MonoBehaviour
         Core.LogicUpdate();
         StateMachine.CurrentState.LogicUpdate();
         DebugPanel.Log("Current State", StateMachine.CurrentState);
+        DebugPanel.Log("Player Y Velocity:", RB.velocity.y);
     }
 
     private void FixedUpdate()
@@ -109,7 +110,7 @@ public class Player : MonoBehaviour
 
     private void AnimationTrigger() => StateMachine.CurrentState.AnimationTrigger();
 
-    private void AnimtionFinishTrigger() => StateMachine.CurrentState.AnimationFinishTrigger();
+    private void AnimationFinishTrigger() => StateMachine.CurrentState.AnimationFinishTrigger();
 
    
     #endregion
