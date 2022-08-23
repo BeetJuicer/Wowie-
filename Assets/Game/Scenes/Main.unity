@@ -869,7 +869,19 @@ MonoBehaviour:
     m_ActionId: fb7b611c-e836-4380-a295-95e19c3f8da1
     m_ActionName: Gameplay/Interact[/Keyboard/k]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 225787430}
+        m_TargetAssemblyTypeName: PlayerInputHandler, Assembly-CSharp
+        m_MethodName: OnDodgeInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: bf2cf70d-4c07-4a42-b2e5-0eb5e8020d8a
     m_ActionName: Gameplay/Whisper[/Keyboard/j]
   m_NeverAutoSwitchControlSchemes: 0
@@ -919,8 +931,8 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6660502, y: 1.5963818}
-  m_EdgeRadius: 0.02
+  m_Size: {x: 0.55, y: 1.5963818}
+  m_EdgeRadius: 0.03
 --- !u!50 &225787434
 Rigidbody2D:
   serializedVersion: 4
@@ -45947,7 +45959,7 @@ GameObject:
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1372236344
 Transform:
   m_ObjectHideFlags: 0
@@ -47683,7 +47695,7 @@ GameObject:
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1671423153
 Transform:
   m_ObjectHideFlags: 0
@@ -48348,7 +48360,7 @@ GameObject:
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1763226643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50290,7 +50302,7 @@ GameObject:
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2027729902
 Transform:
   m_ObjectHideFlags: 0

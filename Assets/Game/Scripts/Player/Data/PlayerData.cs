@@ -41,6 +41,13 @@ public class PlayerData : ScriptableObject
     public float dashEndYMultiplier = 0.2f;
     public float distBetweenAfterImages = 0.5f;
 
+    [Header("Dodge State")]
+    public int amountOfDodges = 1;
+    public float dodgeVelocity = 15f;
+    public float dodgeCooldown = .75f;
+    public float dodgeDuration = .5f;
+
+
     [Header("Crouch States")]
     public float crouchMovementVelocity = 5f;
     public float crouchColliderHeight = 0.8f;

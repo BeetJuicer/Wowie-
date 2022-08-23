@@ -24,7 +24,7 @@ public class PlayerInputHandler : MonoBehaviour
     public bool DashInputStop { get; private set; }
 
     public bool InteractInput { get; private set; }
-    public bool WhisperInput { get; private set; }
+    public bool DodgeInput { get; private set; }
     public bool SubmitInput { get; private set; }
     public bool FireInput { get; private set; }
     public bool EscapeInput { get; private set; }
@@ -146,6 +146,18 @@ public class PlayerInputHandler : MonoBehaviour
             DashInputStop = true;
         }
     }
+    public void OnDodgeInput(InputAction.CallbackContext context)
+    {
+        if (context.started)
+        {
+            DodgeInput = true;
+        }
+
+        if (context.canceled)
+        {
+            DodgeInput = false;
+        }
+    }
 
     public void OnDashDirectionInput(InputAction.CallbackContext context)
     {
@@ -169,19 +181,6 @@ public class PlayerInputHandler : MonoBehaviour
         if (context.canceled)
         {
             InteractInput = false;
-        }
-    }
-    
-    public void OnWhisperInput(InputAction.CallbackContext context)
-    {
-        if (context.started)
-        {
-            WhisperInput = true;
-        }
-
-        if (context.canceled)
-        {
-            WhisperInput = false;
         }
     }
 
@@ -224,6 +223,7 @@ public class PlayerInputHandler : MonoBehaviour
 
     public void UseJumpInput() => JumpInput = false;
     public void UseDashInput() => DashInput = false;
+    public void UseDodgeInput() => DodgeInput = false;
 
     private void CheckJumpInputHoldTime()
     {
@@ -267,13 +267,6 @@ public class PlayerInputHandler : MonoBehaviour
     {
         bool result = SubmitInput;
         SubmitInput = false;
-        return result;
-    }
-    
-    public bool GetWhisperPressed()
-    {
-        bool result = WhisperInput;
-        WhisperInput = false;
         return result;
     }
 

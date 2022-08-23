@@ -16,6 +16,7 @@ public class PlayerInAirState : PlayerState {
 	private bool jumpInputStop;
 	private bool grabInput;
 	private bool dashInput;
+	private bool dodgeInput;
 
 	//Checks
 	private bool isGrounded;
@@ -80,10 +81,14 @@ public class PlayerInAirState : PlayerState {
 		jumpInputStop = player.InputHandler.JumpInputStop;
 		grabInput = player.InputHandler.GrabInput;
 		dashInput = player.InputHandler.DashInput;
+		dodgeInput = player.InputHandler.DodgeInput;
 
 		CheckJumpMultiplier();
 
-		if (player.InputHandler.AttackInputs[(int)CombatInputs.primary]) {
+		if (dodgeInput && player.DodgeState.CanDodge())
+		{
+			stateMachine.ChangeState(player.DodgeState);
+		} else if (player.InputHandler.AttackInputs[(int)CombatInputs.primary]) {
 			stateMachine.ChangeState(player.PrimaryAttackState);
 		} else if (player.InputHandler.AttackInputs[(int)CombatInputs.secondary]) {
 			stateMachine.ChangeState(player.SecondaryAttackState);
@@ -104,12 +109,13 @@ public class PlayerInAirState : PlayerState {
 			stateMachine.ChangeState(player.WallSlideState);*/
 		} else if (dashInput && player.DashState.CheckIfCanDash()) {
 			stateMachine.ChangeState(player.DashState);
-		} else {
-			Movement?.CheckIfShouldFlip(xInput);
-			Movement?.SetVelocityX(playerData.movementVelocity * xInput);
+		} else 
+		{
+		  Movement?.CheckIfShouldFlip(xInput);
+		  Movement?.SetVelocityX(playerData.movementVelocity * xInput);
 
-			player.Anim.SetFloat("yVelocity", Movement.CurrentVelocity.y);
-			player.Anim.SetFloat("xVelocity", Mathf.Abs(Movement.CurrentVelocity.x));
+		  player.Anim.SetFloat("yVelocity", Movement.CurrentVelocity.y);
+		  player.Anim.SetFloat("xVelocity", Mathf.Abs(Movement.CurrentVelocity.x));
 		}
 
 	}

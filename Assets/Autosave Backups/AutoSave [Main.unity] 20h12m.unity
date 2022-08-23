@@ -869,7 +869,19 @@ MonoBehaviour:
     m_ActionId: fb7b611c-e836-4380-a295-95e19c3f8da1
     m_ActionName: Gameplay/Interact[/Keyboard/k]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 225787430}
+        m_TargetAssemblyTypeName: PlayerInputHandler, Assembly-CSharp
+        m_MethodName: OnDodgeInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: bf2cf70d-4c07-4a42-b2e5-0eb5e8020d8a
     m_ActionName: Gameplay/Whisper[/Keyboard/j]
   m_NeverAutoSwitchControlSchemes: 0
@@ -919,8 +931,8 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6660502, y: 1.5963818}
-  m_EdgeRadius: 0.02
+  m_Size: {x: 0.55, y: 1.5963818}
+  m_EdgeRadius: 0.03
 --- !u!50 &225787434
 Rigidbody2D:
   serializedVersion: 4
@@ -936,7 +948,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 5
+  m_GravityScale: 8
   m_Material: {fileID: 6200000, guid: 03301e8e8906d2941bd4c0e90755c817, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -50669,7 +50681,7 @@ MonoBehaviour:
   groundCheck: {fileID: 118650069}
   wallCheck: {fileID: 3865878}
   ledgeCheckHorizontal: {fileID: 320959950}
-  ledgeCheckVertical: {fileID: 0}
+  ledgeCheckVertical: {fileID: 320959950}
   ceilingCheck: {fileID: 800112516}
   groundCheckRadius: 0.3
   ledgeCheckDistance: 0.98

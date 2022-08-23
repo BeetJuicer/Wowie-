@@ -869,7 +869,19 @@ MonoBehaviour:
     m_ActionId: fb7b611c-e836-4380-a295-95e19c3f8da1
     m_ActionName: Gameplay/Interact[/Keyboard/k]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 225787430}
+        m_TargetAssemblyTypeName: PlayerInputHandler, Assembly-CSharp
+        m_MethodName: OnDodgeInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: bf2cf70d-4c07-4a42-b2e5-0eb5e8020d8a
     m_ActionName: Gameplay/Whisper[/Keyboard/j]
   m_NeverAutoSwitchControlSchemes: 0
@@ -919,8 +931,8 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6660502, y: 1.5963818}
-  m_EdgeRadius: 0.02
+  m_Size: {x: 0.55, y: 1.5963818}
+  m_EdgeRadius: 0.03
 --- !u!50 &225787434
 Rigidbody2D:
   serializedVersion: 4
@@ -2243,9 +2255,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.055555556
-    width: 0.33333334
-    height: 0.3333333
+    y: 0
+    width: 1
+    height: 1
   near clip plane: 0.1
   far clip plane: 5000
   field of view: 40
@@ -49180,7 +49192,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7777779, y: 1}
+    m_SensorSize: {x: 1.7777778, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0

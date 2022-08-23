@@ -7,6 +7,7 @@ public class PlayerMoveState : PlayerGroundedState {
 	}
 
 	private bool dashInput;
+	private bool dodgeInput;
 
 	public override void DoChecks() {
 		base.DoChecks();
@@ -28,10 +29,15 @@ public class PlayerMoveState : PlayerGroundedState {
 		Movement?.SetVelocityX(playerData.movementVelocity * xInput);
 
 		dashInput = player.InputHandler.DashInput;
+		dodgeInput = player.InputHandler.DodgeInput;
 
 		if (!isExitingState) {
 
-			if (dashInput && player.DashState.CheckIfCanDash())
+			if (dodgeInput && player.DodgeState.CanDodge())
+			{
+				stateMachine.ChangeState(player.DodgeState);
+			}
+			else if (dashInput && player.DashState.CheckIfCanDash())
 			{
 				stateMachine.ChangeState(player.DashState);
 			}

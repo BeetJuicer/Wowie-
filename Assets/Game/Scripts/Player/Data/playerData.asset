@@ -32,6 +32,10 @@ MonoBehaviour:
   drag: 10
   dashEndYMultiplier: 0.2
   distBetweenAfterImages: 0.5
+  amountOfDodges: 1
+  dodgeVelocity: 15
+  dodgeCooldown: 0.75
+  dodgeDuration: 0.5
   crouchMovementVelocity: 5
   crouchColliderHeight: 0.8
   standColliderHeight: 1.6
