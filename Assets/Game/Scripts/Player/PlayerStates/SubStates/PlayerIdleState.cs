@@ -25,9 +25,9 @@ public class PlayerIdleState : PlayerGroundedState {
 		if (!isExitingState) {
 			if (xInput != 0) {
 				stateMachine.ChangeState(player.MoveState);
-			} else if (yInput == -1) {
+			}/* else if (yInput == -1) {
 				stateMachine.ChangeState(player.CrouchIdleState);
-			}
+			}*/
 		}
 
 	}
