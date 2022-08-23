@@ -33,7 +33,7 @@ public class PlayerMoveState : PlayerGroundedState {
 
 		if (!isExitingState) {
 
-			if (dodgeInput && player.DodgeState.CanDodge())
+			if (dodgeInput && player.DodgeState.CheckIfCanDodge())
 			{
 				stateMachine.ChangeState(player.DodgeState);
 			}

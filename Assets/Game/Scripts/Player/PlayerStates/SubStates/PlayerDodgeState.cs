@@ -8,6 +8,9 @@ public class PlayerDodgeState : PlayerAbilityState
 
     private float lastDodgeTime;
     private float origGravity;
+
+    private Vector2 lastAIPos;
+
     public PlayerDodgeState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName)
     {
         amountOfDodgesLeft = playerData.amountOfDodges;
@@ -18,12 +21,14 @@ public class PlayerDodgeState : PlayerAbilityState
         base.Enter();
 
         player.InputHandler.UseDodgeInput();
+        Combat?.SetInvincible(true);
 
-        // Store the original gravity in a older and turn off gravity
+        // Turn off gravity and set velocity to 0 to mae sure that the player doesn't fall while dodging.
         origGravity = player.RB.gravityScale;
         player.TurnOffGravity();
-
         Movement?.SetVelocityY(0f);
+
+        player.RB.drag = playerData.drag;
         Movement?.SetVelocityX(playerData.dodgeVelocity * Movement.FacingDirection);
 
         startTime = Time.time;
@@ -41,25 +46,27 @@ public class PlayerDodgeState : PlayerAbilityState
     public override void LogicUpdate()
     {
         base.LogicUpdate();
-
-        DebugPanel.Log("Player Gravity", player.RB.gravityScale);
+        CheckIfCanDodge();
 
         if (!isExitingState)
         {
-            Movement?.SetVelocityY(0f);
+            CheckIfShouldPlaceAfterImage();
             Movement?.SetVelocityX(playerData.dodgeVelocity * Movement.FacingDirection);
-            // Set invincible
+
+            // Set drag
 
             if (Time.time > startTime + playerData.dodgeDuration)
             {
+                player.RB.drag = 0f;
                 player.RB.gravityScale = origGravity;
                 isAbilityDone = true;
+                Combat.SetInvincible(false);
                 lastDodgeTime = Time.time;
             }
         }
     }
 
-    public bool CanDodge()
+    public bool CheckIfCanDodge()
     {
         if (Time.time >= lastDodgeTime + playerData.dashCooldown) 
         {
@@ -76,9 +83,18 @@ public class PlayerDodgeState : PlayerAbilityState
         }
     }
 
-    public bool CheckIfCanDodge()
+    private void CheckIfShouldPlaceAfterImage()
     {
-        return CanDodge() && Time.time >= lastDodgeTime + playerData.dodgeCooldown;
+        if (Vector2.Distance(player.transform.position, lastAIPos) >= playerData.distBetweenAfterImages)
+        {
+            PlaceAfterImage();
+        }
+    }
+
+    private void PlaceAfterImage()
+    {
+        PlayerAfterImagePool.Instance.GetFromPool();
+        lastAIPos = player.transform.position;
     }
 
     public void ResetAmountOfDodgesLeft() => amountOfDodgesLeft = playerData.amountOfJumps;

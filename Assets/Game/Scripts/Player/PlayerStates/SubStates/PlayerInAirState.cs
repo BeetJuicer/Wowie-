@@ -85,7 +85,7 @@ public class PlayerInAirState : PlayerState {
 
 		CheckJumpMultiplier();
 
-		if (dodgeInput && player.DodgeState.CanDodge())
+		if (dodgeInput && player.DodgeState.CheckIfCanDodge())
 		{
 			stateMachine.ChangeState(player.DodgeState);
 		} else if (player.InputHandler.AttackInputs[(int)CombatInputs.primary]) {

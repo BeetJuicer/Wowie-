@@ -16,6 +16,8 @@ public class Combat : CoreComponent, IDamageable, IKnockbackable {
 
 	[SerializeField] private float maxKnockbackTime = 0.2f;
 
+	private bool isInvincible;
+
 	private bool isKnockbackActive;
 	private float knockbackStartTime;
 
@@ -24,24 +26,37 @@ public class Combat : CoreComponent, IDamageable, IKnockbackable {
 	}
 
 	public void Damage(float amount) {
-		Debug.Log(core.transform.parent.name + " Damaged!");
-		Stats?.DecreaseHealth(amount);
+		if (!isInvincible)
+        {
+			Debug.Log(core.transform.parent.name + " Damaged!");
+			Stats?.DecreaseHealth(amount);
+        }
 	}
 
-	public void Knockback(Vector2 angle, float strength, int direction) {
-		Movement?.SetVelocity(strength, angle, direction);
-		Movement.CanSetVelocity = false;
-		isKnockbackActive = true;
-		knockbackStartTime = Time.time;
+	public void Knockback(Vector2 angle, float strength, int direction) 
+	{
+		if (!isInvincible)
+        {
+			Movement?.SetVelocity(strength, angle, direction);
+			Movement.CanSetVelocity = false;
+			isKnockbackActive = true;
+			knockbackStartTime = Time.time;
+        }
 	}
 
 	private void CheckKnockback() {
 		if (isKnockbackActive
-		  && ((Movement?.CurrentVelocity.y <= 0.01f && CollisionSenses.Ground)
+			&& ((Movement?.CurrentVelocity.y <= 0.01f && CollisionSenses.Ground)
 					|| Time.time >= knockbackStartTime + maxKnockbackTime)
-		) {
+			) 
+		{
 			isKnockbackActive = false;
 			Movement.CanSetVelocity = true;
 		}
 	}
+
+	public void SetInvincible(bool invincibility)
+    {
+		isInvincible = invincibility;
+    }
 }
