@@ -6,6 +6,8 @@ public class PlayerMoveState : PlayerGroundedState {
 	public PlayerMoveState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName) {
 	}
 
+	private bool dashInput;
+
 	public override void DoChecks() {
 		base.DoChecks();
 	}
@@ -25,8 +27,15 @@ public class PlayerMoveState : PlayerGroundedState {
 
 		Movement?.SetVelocityX(playerData.movementVelocity * xInput);
 
+		dashInput = player.InputHandler.DashInput;
+
 		if (!isExitingState) {
-			if (xInput == 0) {
+
+			if (dashInput && player.DashState.CheckIfCanDash())
+			{
+				stateMachine.ChangeState(player.DashState);
+			}
+			else if (xInput == 0) {
 				stateMachine.ChangeState(player.IdleState);
 			}/* else if (yInput == -1) {
 				stateMachine.ChangeState(player.CrouchMoveState);
