@@ -239,7 +239,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 80242381}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: Weapons
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1323,7 +1323,7 @@ GameObject:
   - component: {fileID: 399924623}
   - component: {fileID: 399924625}
   - component: {fileID: 399924626}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3095,7 +3095,7 @@ GameObject:
   m_Component:
   - component: {fileID: 779662073}
   - component: {fileID: 779662074}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: Sword1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46691,7 +46691,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 533e8cff15ffa52469060984e14d3a5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxKnockbackTime: 3
+  maxKnockbackTime: 0.2
 --- !u!61 &1381861433
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -51109,7 +51109,7 @@ GameObject:
   - component: {fileID: 2068296506}
   - component: {fileID: 2068296505}
   - component: {fileID: 2068296507}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}

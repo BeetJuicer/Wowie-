@@ -239,7 +239,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 80242381}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: Weapons
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1121,6 +1121,7 @@ MonoBehaviour:
   ledgeCheckVertical: {fileID: 1098739717}
   ceilingCheck: {fileID: 1533835924}
   groundCheckRadius: 0.3
+  ledgeCheckDistance: 0
   wallCheckDistance: 0.5
   groundCheckSize: {x: 1, y: 1}
   whatIsGround:
@@ -1179,6 +1180,7 @@ MonoBehaviour:
   ledgeCheckVertical: {fileID: 448712471}
   ceilingCheck: {fileID: 0}
   groundCheckRadius: 0.3
+  ledgeCheckDistance: 0
   wallCheckDistance: 0.03
   groundCheckSize: {x: 1, y: 1}
   whatIsGround:
@@ -1321,7 +1323,7 @@ GameObject:
   - component: {fileID: 399924623}
   - component: {fileID: 399924625}
   - component: {fileID: 399924626}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2163,6 +2165,7 @@ MonoBehaviour:
   ledgeCheckVertical: {fileID: 1704310397}
   ceilingCheck: {fileID: 0}
   groundCheckRadius: 0.3
+  ledgeCheckDistance: 0
   wallCheckDistance: 0.3
   groundCheckSize: {x: 1, y: 1}
   whatIsGround:
@@ -2772,6 +2775,7 @@ MonoBehaviour:
   ledgeCheckVertical: {fileID: 465706842}
   ceilingCheck: {fileID: 0}
   groundCheckRadius: 0.3
+  ledgeCheckDistance: 0.33
   wallCheckDistance: 0.3
   groundCheckSize: {x: 1, y: 1}
   whatIsGround:
@@ -3091,7 +3095,7 @@ GameObject:
   m_Component:
   - component: {fileID: 779662073}
   - component: {fileID: 779662074}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: Sword1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46592,6 +46596,7 @@ MonoBehaviour:
   ledgeCheckVertical: {fileID: 966215802}
   ceilingCheck: {fileID: 0}
   groundCheckRadius: 0.3
+  ledgeCheckDistance: 0
   wallCheckDistance: 0.3
   groundCheckSize: {x: 1, y: 1}
   whatIsGround:
@@ -51104,7 +51109,7 @@ GameObject:
   - component: {fileID: 2068296506}
   - component: {fileID: 2068296505}
   - component: {fileID: 2068296507}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51264,6 +51269,7 @@ MonoBehaviour:
   ledgeCheckVertical: {fileID: 320959950}
   ceilingCheck: {fileID: 800112516}
   groundCheckRadius: 0.11
+  ledgeCheckDistance: 0
   wallCheckDistance: 0.5
   groundCheckSize: {x: 1, y: 1}
   whatIsGround:
