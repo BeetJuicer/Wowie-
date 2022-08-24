@@ -9,7 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bca54aff0427c0540ae4f6aab316eda3, type: 3}
-  m_Name: E1_moveStateData
+  m_Script: {fileID: 11500000, guid: 2ddba91bfbc9f7741bb39c784ae0c26f, type: 3}
+  m_Name: E1_StunStateData
   m_EditorClassIdentifier: 
-  movementSpeed: 3
+  stunTime: 3
+  stunKnockbackTime: 0.2
+  stunKnockbackSpeed: 20
+  stunKnockbackAngle: {x: 1, y: 2}

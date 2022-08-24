@@ -75,6 +75,11 @@ public class CollisionSenses : CoreComponent {
 		get => Physics2D.Raycast(LedgeCheckVertical.position, Vector2.down, ledgeCheckDistance, whatIsGround);
 	}
 
+	public float GetLedgeCheckDistance()
+    {
+		return ledgeCheckDistance;
+    }
+
     private void OnDrawGizmos()
     {
 		Gizmos.color = Color.yellow;

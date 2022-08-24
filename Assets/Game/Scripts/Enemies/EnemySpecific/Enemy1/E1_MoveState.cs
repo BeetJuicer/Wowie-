@@ -25,12 +25,11 @@ public class E1_MoveState : MoveState
     {
         base.LogicUpdate();
 
-        if (isScared && isGrounded)
+        if (isPlayerInMinAgroRange)
         {
-            isScared = false;
-            stateMachine.ChangeState(enemy.dodgeState);
+            stateMachine.ChangeState(enemy.playerDetectedState);
         }
-        else if (isDetectingWall)
+        else if(isDetectingWall || !isDetectingLedge)
         {
             enemy.idleState.SetFlipAfterIdle(true);
             stateMachine.ChangeState(enemy.idleState);
