@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: Sword
   m_EditorClassIdentifier: 
   attackDetails:
-  - attackName: Left Slash
+  - attackName: Down Slash
     movementSpeed: 1
-    damageAmount: 10
-    knockbackStrength: 10
-    knockbackAngle: {x: 1, y: 1}
+    damageAmount: 15
+    knockbackStrength: 18
+    knockbackAngle: {x: 1.4, y: 1.1}
   - attackName: Right Slash
-    movementSpeed: 4
+    movementSpeed: 0.1
     damageAmount: 15
     knockbackStrength: 15
     knockbackAngle: {x: 1, y: 1}
@@ -27,4 +27,4 @@ MonoBehaviour:
     movementSpeed: 2
     damageAmount: 20
     knockbackStrength: 15
-    knockbackAngle: {x: 1, y: 1.4}
+    knockbackAngle: {x: 1, y: 1.5}
