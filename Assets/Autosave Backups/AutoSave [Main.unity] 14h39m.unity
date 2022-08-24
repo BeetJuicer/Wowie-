@@ -1180,7 +1180,7 @@ MonoBehaviour:
   ledgeCheckVertical: {fileID: 448712471}
   ceilingCheck: {fileID: 0}
   groundCheckRadius: 0.3
-  ledgeCheckDistance: 0.84
+  ledgeCheckDistance: 0
   wallCheckDistance: 0.03
   groundCheckSize: {x: 1, y: 1}
   whatIsGround:
@@ -2775,7 +2775,7 @@ MonoBehaviour:
   ledgeCheckVertical: {fileID: 465706842}
   ceilingCheck: {fileID: 0}
   groundCheckRadius: 0.3
-  ledgeCheckDistance: 0
+  ledgeCheckDistance: 0.33
   wallCheckDistance: 0.3
   groundCheckSize: {x: 1, y: 1}
   whatIsGround:
@@ -46596,7 +46596,7 @@ MonoBehaviour:
   ledgeCheckVertical: {fileID: 966215802}
   ceilingCheck: {fileID: 0}
   groundCheckRadius: 0.3
-  ledgeCheckDistance: 0.5
+  ledgeCheckDistance: 0
   wallCheckDistance: 0.3
   groundCheckSize: {x: 1, y: 1}
   whatIsGround:
@@ -46691,7 +46691,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 533e8cff15ffa52469060984e14d3a5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxKnockbackTime: 0.2
+  maxKnockbackTime: 3
 --- !u!61 &1381861433
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -51268,8 +51268,8 @@ MonoBehaviour:
   ledgeCheckHorizontal: {fileID: 320959950}
   ledgeCheckVertical: {fileID: 320959950}
   ceilingCheck: {fileID: 800112516}
-  groundCheckRadius: 0.3
-  ledgeCheckDistance: 0.98
+  groundCheckRadius: 0.11
+  ledgeCheckDistance: 0
   wallCheckDistance: 0.5
   groundCheckSize: {x: 1, y: 1}
   whatIsGround:

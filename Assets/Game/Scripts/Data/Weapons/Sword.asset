@@ -16,13 +16,13 @@ MonoBehaviour:
   - attackName: Down Slash
     movementSpeed: 1
     damageAmount: 15
-    knockbackStrength: 18
-    knockbackAngle: {x: 1.4, y: 1.1}
+    knockbackStrength: 15
+    knockbackAngle: {x: 1.4, y: 1.3}
   - attackName: Right Slash
-    movementSpeed: 0.1
+    movementSpeed: 1
     damageAmount: 15
     knockbackStrength: 15
-    knockbackAngle: {x: 1, y: 1}
+    knockbackAngle: {x: 1, y: 1.2}
   - attackName: Up Slash
     movementSpeed: 2
     damageAmount: 20

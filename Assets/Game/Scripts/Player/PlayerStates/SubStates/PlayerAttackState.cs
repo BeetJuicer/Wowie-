@@ -12,6 +12,8 @@ public class PlayerAttackState : PlayerAbilityState {
 	private bool setVelocity;
 	private bool shouldCheckFlip;
 
+	private float addMovement;
+
 	public PlayerAttackState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName) {
 	}
 
@@ -38,9 +40,10 @@ public class PlayerAttackState : PlayerAbilityState {
 			Movement?.CheckIfShouldFlip(xInput);
 		}
 
+		if (xInput != 0) { addMovement = 1; } else { addMovement = 0; }
 
 		if (setVelocity) {
-			Movement?.SetVelocityX(velocityToSet * Movement.FacingDirection);
+			Movement?.SetVelocityX((velocityToSet + addMovement) * Movement.FacingDirection);
 		}
 	}
 
