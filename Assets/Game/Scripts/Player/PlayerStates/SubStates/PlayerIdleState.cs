@@ -34,6 +34,10 @@ public class PlayerIdleState : PlayerGroundedState {
 			{
 				stateMachine.ChangeState(player.DodgeState);
 			}
+			else if (player.InputHandler.GetFirePressed())
+            {
+				stateMachine.ChangeState(player.SummonState);
+            }
 			/*
 			else if (dashInput && player.DashState.CheckIfCanDash())
 			{

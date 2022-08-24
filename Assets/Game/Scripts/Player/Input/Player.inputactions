@@ -60,15 +60,6 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Fire",
-                    "type": "Button",
-                    "id": "9b720491-3631-4236-94fb-f661cc47df3c",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "Escape",
                     "type": "Button",
                     "id": "448b7a83-597f-43da-9208-6e1147805e93",
@@ -99,6 +90,15 @@
                     "name": "Interact",
                     "type": "Button",
                     "id": "fb7b611c-e836-4380-a295-95e19c3f8da1",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Fire",
+                    "type": "Button",
+                    "id": "9b720491-3631-4236-94fb-f661cc47df3c",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -293,17 +293,6 @@
                 },
                 {
                     "name": "",
-                    "id": "e1f64310-2f9f-41ab-9aa7-64fd440a1c8a",
-                    "path": "<Keyboard>/r",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard",
-                    "action": "Fire",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "04e159ce-f096-4fc4-a29f-e6588c8a0c34",
                     "path": "<Keyboard>/escape",
                     "interactions": "",
@@ -398,6 +387,17 @@
                     "processors": "",
                     "groups": "Gamepad",
                     "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e1f64310-2f9f-41ab-9aa7-64fd440a1c8a",
+                    "path": "<Keyboard>/l",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Fire",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -24,6 +24,7 @@ public class Player : MonoBehaviour
     public PlayerCrouchMoveState CrouchMoveState { get; private set; }
     public PlayerAttackState PrimaryAttackState { get; private set; }
     public PlayerAttackState SecondaryAttackState { get; private set; }
+    public PlayerSummonState SummonState { get; private set; }
 
     [SerializeField]
     private PlayerData playerData;
@@ -67,6 +68,7 @@ public class Player : MonoBehaviour
         CrouchMoveState = new PlayerCrouchMoveState(this, StateMachine, playerData, "crouchMove");
         PrimaryAttackState = new PlayerAttackState(this, StateMachine, playerData, "attack");
         SecondaryAttackState = new PlayerAttackState(this, StateMachine, playerData, "attack");
+        SummonState = new PlayerSummonState(this, StateMachine, playerData, "summon");
     }
 
     private void Start()
@@ -111,6 +113,7 @@ public class Player : MonoBehaviour
     private void AnimationTrigger() => StateMachine.CurrentState.AnimationTrigger();
 
     private void AnimationFinishTrigger() => StateMachine.CurrentState.AnimationFinishTrigger();
+    private void AnimationSummonTrigger() => StateMachine.CurrentState.AnimationSummonTrigger();
 
     public void TurnOffGravity()
     {

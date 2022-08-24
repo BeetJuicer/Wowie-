@@ -49,6 +49,10 @@ public class PlayerData : ScriptableObject
     public float dodgeCooldown = .75f;
     public float dodgeDuration = .5f;
 
+    [Header("Summon State")]
+    public GameObject skeletonSoldier;
+    public Vector3 summonOffset;
+    public float summonCastDuration = 1.8f;
 
     [Header("Crouch States")]
     public float crouchMovementVelocity = 5f;
