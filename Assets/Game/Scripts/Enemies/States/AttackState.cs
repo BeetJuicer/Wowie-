@@ -37,8 +37,6 @@ public class AttackState : State {
 	public override void LogicUpdate() {
 		base.LogicUpdate();
 		Movement?.SetVelocityX(0f);
-
-		Debug.Log($"isAnimationFinished:" + isAnimationFinished);
 	}
 
 	public override void PhysicsUpdate() {
