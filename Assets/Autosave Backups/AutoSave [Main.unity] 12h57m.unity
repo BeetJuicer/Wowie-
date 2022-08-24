@@ -1403,15 +1403,15 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 756119877
-  m_SortingLayer: 0
+  m_SortingLayerID: -1011271891
+  m_SortingLayer: 3
   m_SortingOrder: 2
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 4, y: 4}
+  m_Size: {x: 3.5, y: 3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -1434,8 +1434,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4, y: 4}
-    newSize: {x: 4, y: 4}
+    oldSize: {x: 3.5, y: 3}
+    newSize: {x: 3.5, y: 3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -12582,11 +12582,6 @@ Transform:
   m_Father: {fileID: 243106659}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1142371479 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5472230673933743505, guid: dc9b4596dca4e1d49bfef707215288d8, type: 3}
-  m_PrefabInstance: {fileID: 1551343404}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1159913615
 GameObject:
   m_ObjectHideFlags: 0
@@ -47301,11 +47296,6 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
---- !u!1 &1563969611 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5472230673933743505, guid: dc9b4596dca4e1d49bfef707215288d8, type: 3}
-  m_PrefabInstance: {fileID: 1496782747}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1582864992
 GameObject:
   m_ObjectHideFlags: 0
@@ -48197,9 +48187,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9961a2199c8f4d448b50ea6e8381f73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenu: {fileID: 1563969611}
-  audioManager: {fileID: 1967844814}
-  fader: {fileID: 458029064}
 --- !u!114 &1730436391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48212,18 +48199,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ee0a5aa673c317459201de440e4822f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 519420028}
-  gameOverMenu: {fileID: 1142371479}
-  fader: {fileID: 458029064}
-  player: {fileID: 0}
-  cat: {fileID: 0}
-  respawnTime: 0.1
-  respawnPoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  checkpointCount: 0
 --- !u!1 &1739741459
 GameObject:
   m_ObjectHideFlags: 0
@@ -49965,17 +49940,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d58bb140c0637b43b06c5c07e3ffead, type: 3}
---- !u!114 &1967844814 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8041190452312107966, guid: 7d58bb140c0637b43b06c5c07e3ffead, type: 3}
-  m_PrefabInstance: {fileID: 1967844813}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31825005727aa9643b91186c335ed46c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1967844815 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8041190452312107967, guid: 7d58bb140c0637b43b06c5c07e3ffead, type: 3}
@@ -50604,15 +50568,15 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 756119877
-  m_SortingLayer: 0
+  m_SortingLayerID: -1011271891
+  m_SortingLayer: 3
   m_SortingOrder: 1
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 4, y: 4}
+  m_Size: {x: 3.5, y: 3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0

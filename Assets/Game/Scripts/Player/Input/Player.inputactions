@@ -327,7 +327,7 @@
                 {
                     "name": "",
                     "id": "9de238bf-752b-41e3-9c2b-3e88266a6b6d",
-                    "path": "<Mouse>/leftButton",
+                    "path": "<Keyboard>/k",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",
@@ -382,7 +382,7 @@
                 {
                     "name": "",
                     "id": "baf0fbd2-2cae-41f0-9f85-79ae248d6d1b",
-                    "path": "<Keyboard>/k",
+                    "path": "<Keyboard>/e",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",

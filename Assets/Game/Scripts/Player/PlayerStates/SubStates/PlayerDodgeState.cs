@@ -53,8 +53,6 @@ public class PlayerDodgeState : PlayerAbilityState
             CheckIfShouldPlaceAfterImage();
             Movement?.SetVelocityX(playerData.dodgeVelocity * Movement.FacingDirection);
 
-            // Set drag
-
             if (Time.time > startTime + playerData.dodgeDuration)
             {
                 player.RB.drag = 0f;

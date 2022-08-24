@@ -29,9 +29,9 @@ MonoBehaviour:
   holdTimeScale: 0.25
   dashTime: 0.2
   dashVelocity: 30
-  drag: 10
   dashEndYMultiplier: 0.2
-  distBetweenAfterImages: 0.5
+  drag: 10
+  distBetweenAfterImages: 0.4
   amountOfDodges: 2
   dodgeVelocity: 30
   dodgeCooldown: 0.5

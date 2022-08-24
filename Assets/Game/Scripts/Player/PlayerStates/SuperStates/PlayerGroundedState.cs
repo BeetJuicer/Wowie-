@@ -57,18 +57,22 @@ public class PlayerGroundedState : PlayerState {
 
 		if (player.InputHandler.AttackInputs[(int)CombatInputs.primary] && !isTouchingCeiling) {
 			stateMachine.ChangeState(player.PrimaryAttackState);
+			/*
 		} else if (player.InputHandler.AttackInputs[(int)CombatInputs.secondary] && !isTouchingCeiling) {
-			stateMachine.ChangeState(player.SecondaryAttackState);
+			stateMachine.ChangeState(player.SecondaryAttackState);*/
 		} else if (JumpInput && player.JumpState.CanJump()) {
 			stateMachine.ChangeState(player.JumpState);
 		} else if (!isGrounded) {
 			player.InAirState.StartCoyoteTime();
 			stateMachine.ChangeState(player.InAirState);
-		} else if (isTouchingWall && grabInput && isTouchingLedge) {
+		}
+		/*
+		 * else if (isTouchingWall && grabInput && isTouchingLedge) {
 			stateMachine.ChangeState(player.WallGrabState);
 		} else if (dashInput && player.DashState.CheckIfCanDash() && !isTouchingCeiling) {
 			stateMachine.ChangeState(player.DashState);
 		}
+		*/
 	}
 
 	public override void PhysicsUpdate() {

@@ -37,10 +37,11 @@ public class PlayerMoveState : PlayerGroundedState {
 			{
 				stateMachine.ChangeState(player.DodgeState);
 			}
+			/*
 			else if (dashInput && player.DashState.CheckIfCanDash())
 			{
 				stateMachine.ChangeState(player.DashState);
-			}
+			}*/
 			else if (xInput == 0) {
 				stateMachine.ChangeState(player.IdleState);
 			}/* else if (yInput == -1) {

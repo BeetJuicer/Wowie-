@@ -90,9 +90,12 @@ public class PlayerInAirState : PlayerState {
 			stateMachine.ChangeState(player.DodgeState);
 		} else if (player.InputHandler.AttackInputs[(int)CombatInputs.primary]) {
 			stateMachine.ChangeState(player.PrimaryAttackState);
-		} else if (player.InputHandler.AttackInputs[(int)CombatInputs.secondary]) {
+		} 
+		  /*
+		else if (player.InputHandler.AttackInputs[(int)CombatInputs.secondary]) {
 			stateMachine.ChangeState(player.SecondaryAttackState);
-		} else if (isGrounded && Movement?.CurrentVelocity.y < 0.01f) {
+		} */
+		  else if (isGrounded && Movement?.CurrentVelocity.y < 0.01f) {
 			stateMachine.ChangeState(player.LandState);/*
 		} else if (isTouchingWall && !isTouchingLedge && !isGrounded) {
 			stateMachine.ChangeState(player.LedgeClimbState);
@@ -106,9 +109,9 @@ public class PlayerInAirState : PlayerState {
 		} else if (isTouchingWall && grabInput && isTouchingLedge) {
 			stateMachine.ChangeState(player.WallGrabState);
 		} else if (isTouchingWall && xInput == Movement?.FacingDirection && Movement?.CurrentVelocity.y <= 0) {
-			stateMachine.ChangeState(player.WallSlideState);*/
+			stateMachine.ChangeState(player.WallSlideState);
 		} else if (dashInput && player.DashState.CheckIfCanDash()) {
-			stateMachine.ChangeState(player.DashState);
+			stateMachine.ChangeState(player.DashState);*/
 		} else 
 		{
 		  Movement?.CheckIfShouldFlip(xInput);
