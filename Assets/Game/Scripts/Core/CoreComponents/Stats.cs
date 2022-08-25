@@ -5,6 +5,8 @@ using UnityEngine;
 public class Stats : CoreComponent
 {
     [SerializeField] private float maxHealth;
+    [SerializeField] private GameObject deathChunks;
+    [SerializeField] private GameObject deathBlood;
     private float currentHealth;
 
     protected override void Awake()
@@ -21,7 +23,9 @@ public class Stats : CoreComponent
         if(currentHealth <= 0)
         {
             currentHealth = 0;
-            Debug.Log("Health is zero!!");
+            Instantiate(deathChunks, transform.position, Quaternion.identity);
+            Instantiate(deathBlood, transform.position, Quaternion.identity);
+            Destroy(gameObject.transform.parent.transform.parent.gameObject);
         }
     }
 
