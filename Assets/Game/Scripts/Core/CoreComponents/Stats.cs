@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class Stats : CoreComponent
 {
-    [SerializeField] private float maxHealth;
     [SerializeField] private GameObject deathChunks;
     [SerializeField] private GameObject deathBlood;
+    private GameObject mainBody;
+
+    [SerializeField] private float maxHealth;
     private float currentHealth;
 
     protected override void Awake()
     {
         base.Awake();
-
+        mainBody = gameObject.transform.parent.transform.parent.gameObject;
         currentHealth = maxHealth;
     }
 
@@ -25,7 +27,14 @@ public class Stats : CoreComponent
             currentHealth = 0;
             Instantiate(deathChunks, transform.position, Quaternion.identity);
             Instantiate(deathBlood, transform.position, Quaternion.identity);
-            Destroy(gameObject.transform.parent.transform.parent.gameObject);
+            if (mainBody.name != "Player")
+            {
+                Destroy(mainBody);
+            }
+            else
+            {
+                //put code here for respawning back to camp
+            }
         }
     }
 
