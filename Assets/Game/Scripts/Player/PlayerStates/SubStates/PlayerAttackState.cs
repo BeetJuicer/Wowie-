@@ -40,7 +40,7 @@ public class PlayerAttackState : PlayerAbilityState {
 			Movement?.CheckIfShouldFlip(xInput);
 		}
 
-		if (xInput != 0) { addMovement = 1; } else { addMovement = 0; }
+		if (xInput != 0) { addMovement = 0.5f; } else { addMovement = 0; }
 
 		if (setVelocity) {
 			Movement?.SetVelocityX((velocityToSet + addMovement) * Movement.FacingDirection);

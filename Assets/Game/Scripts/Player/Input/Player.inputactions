@@ -316,7 +316,7 @@
                 {
                     "name": "",
                     "id": "9de238bf-752b-41e3-9c2b-3e88266a6b6d",
-                    "path": "<Keyboard>/x",
+                    "path": "<Keyboard>/c",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",
@@ -360,7 +360,7 @@
                 {
                     "name": "",
                     "id": "6600d191-0258-4986-b5bb-f091021254e2",
-                    "path": "<Keyboard>/c",
+                    "path": "<Keyboard>/x",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",
@@ -393,7 +393,7 @@
                 {
                     "name": "",
                     "id": "e1f64310-2f9f-41ab-9aa7-64fd440a1c8a",
-                    "path": "<Keyboard>/s",
+                    "path": "<Keyboard>/v",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",

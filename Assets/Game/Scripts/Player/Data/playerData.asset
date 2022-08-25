@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65ca48738a7a0264884c833183f68271, type: 3}
   m_Name: playerData
   m_EditorClassIdentifier: 
-  movementVelocity: 15
-  jumpVelocity: 27
+  movementVelocity: 7.5
+  jumpVelocity: 13.5
   amountOfJumps: 1
   wallJumpVelocity: 20
   wallJumpTime: 0.4
@@ -33,7 +33,7 @@ MonoBehaviour:
   drag: 10
   distBetweenAfterImages: 0.4
   amountOfDodges: 2
-  dodgeVelocity: 30
+  dodgeVelocity: 15
   dodgeCooldown: 0.5
   dodgeDuration: 0.2
   skeletonSoldier: {fileID: 5828427097600593620, guid: 653f13feecbecf242ab1c2b160bec004, type: 3}
