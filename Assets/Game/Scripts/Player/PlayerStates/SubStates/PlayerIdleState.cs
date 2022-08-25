@@ -34,7 +34,7 @@ public class PlayerIdleState : PlayerGroundedState {
 			{
 				stateMachine.ChangeState(player.DodgeState);
 			}
-			else if (player.InputHandler.GetFirePressed())
+			else if (player.InputHandler.FireInput)
             {
 				stateMachine.ChangeState(player.SummonState);
             }

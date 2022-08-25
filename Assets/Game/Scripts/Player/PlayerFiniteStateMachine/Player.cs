@@ -113,7 +113,6 @@ public class Player : MonoBehaviour
     private void AnimationTrigger() => StateMachine.CurrentState.AnimationTrigger();
 
     private void AnimationFinishTrigger() => StateMachine.CurrentState.AnimationFinishTrigger();
-    private void AnimationSummonTrigger() => StateMachine.CurrentState.AnimationSummonTrigger();
 
     public void TurnOffGravity()
     {

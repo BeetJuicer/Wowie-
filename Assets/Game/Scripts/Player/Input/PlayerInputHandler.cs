@@ -27,6 +27,7 @@ public class PlayerInputHandler : MonoBehaviour
     public bool DodgeInput { get; private set; }
     public bool SubmitInput { get; private set; }
     public bool FireInput { get; private set; }
+    public bool FireInputStop { get; private set; }
     public bool EscapeInput { get; private set; }
 
     public bool[] AttackInputs { get; private set; }
@@ -36,6 +37,7 @@ public class PlayerInputHandler : MonoBehaviour
 
     private float jumpInputStarttime;
     private float dashInputStarttime;
+    private float fireInputStarttime;
 
     private bool jumpInputHold;
 
@@ -201,10 +203,12 @@ public class PlayerInputHandler : MonoBehaviour
         if (context.performed)
         {
             FireInput = true;
+            FireInputStop = false;
+            fireInputStarttime = Time.time;
         }
         else if (context.canceled)
         {
-            FireInput = false;
+            FireInputStop = true;
         }
     }
     
@@ -224,6 +228,7 @@ public class PlayerInputHandler : MonoBehaviour
     public void UseJumpInput() => JumpInput = false;
     public void UseDashInput() => DashInput = false;
     public void UseDodgeInput() => DodgeInput = false;
+    public void UseFireInput() => FireInput = false;
 
     private void CheckJumpInputHoldTime()
     {
@@ -267,13 +272,6 @@ public class PlayerInputHandler : MonoBehaviour
     {
         bool result = SubmitInput;
         SubmitInput = false;
-        return result;
-    }
-
-    public bool GetFirePressed()
-    {
-        bool result = FireInput;
-        FireInput = false;
         return result;
     }
 }

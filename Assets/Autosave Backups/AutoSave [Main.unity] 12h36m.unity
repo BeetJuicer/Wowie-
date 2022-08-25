@@ -51459,10 +51459,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1741453503}
     m_Modifications:
-    - target: {fileID: 5828427097600593610, guid: 653f13feecbecf242ab1c2b160bec004, type: 3}
-      propertyPath: m_FlipX
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5828427097600593620, guid: 653f13feecbecf242ab1c2b160bec004, type: 3}
       propertyPath: m_Name
       value: Skelly-Warrior

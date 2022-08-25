@@ -67,11 +67,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
 
     private void Update()
     {
-        if (PlayerInputHandler.GetInstance().GetFirePressed())
-        {
-            Debug.Log("Fire Pressed");
-            Respawn();
-        }
+
     }
 
     public void Respawn()

@@ -7,6 +7,7 @@ public class PlayerSummonState : PlayerAbilityState
     private Vector3 summonPosition;
 
     private bool isHolding;
+    private bool fireInputStop;
 
     private float holdStartTime;
 
@@ -17,6 +18,9 @@ public class PlayerSummonState : PlayerAbilityState
     public override void Enter()
     {
         base.Enter();
+
+        player.InputHandler.UseFireInput();
+
         summonPosition = player.transform.position + (playerData.summonOffset * Movement.FacingDirection);
 
         player.Anim.SetFloat("summonCastDuration", 1);
@@ -28,12 +32,32 @@ public class PlayerSummonState : PlayerAbilityState
     {
         base.LogicUpdate();
 
-        if (isHolding)
+        Movement?.SetVelocityZero();
+
+
+
+        if (!isExitingState)
         {
-            player.Anim.SetFloat("summonCastDuration", (holdStartTime + playerData.summonCastDuration) - Time.time);
+            if (isHolding)
+            {
+                player.Anim.SetFloat("summonCastDuration", (holdStartTime + playerData.summonCastDuration) - Time.time);
+                fireInputStop = player.InputHandler.FireInputStop;
+
+                if (fireInputStop)
+                {
+                    player.Anim.SetFloat("summonCastDuration", 0);
+                    isAbilityDone = true;
+                    isHolding = false;
+                }
+                else if ((holdStartTime + playerData.summonCastDuration) - Time.time <= 0)
+                {
+                    GameObject.Instantiate(playerData.skeletonSoldier, summonPosition, Quaternion.identity);
+                    isAbilityDone = true;
+                    isHolding = false;
+                }
+            }
         }
 
-        Movement?.SetVelocityZero();
     }
 
     #region Animation Triggers
@@ -44,11 +68,6 @@ public class PlayerSummonState : PlayerAbilityState
 
         isHolding = true;
         holdStartTime = Time.time;
-    }
-
-    public override void AnimationSummonTrigger()
-    {
-        GameObject.Instantiate(playerData.skeletonSoldier, summonPosition, Quaternion.identity);
     }
 
     public override void AnimationFinishTrigger()

@@ -56,7 +56,6 @@ public class PlayerState
     public virtual void DoChecks() { }
 
     public virtual void AnimationTrigger() { }
-    public virtual void AnimationSummonTrigger() { }
 
     public virtual void AnimationFinishTrigger() => isAnimationFinished = true;
     
