@@ -12,9 +12,21 @@ public class RoomTemplates : MonoBehaviour
     public List<GameObject> leftRooms = new List<GameObject> ();
 
     public GameObject closedRoom;
+    [SerializeField] private GameObject bossRoom;
 
     public List<GameObject> rooms;
- 
+
+    private void Start()
+    {
+        Invoke("SpawnBossRoom", 2);
+    }
+
+    private void SpawnBossRoom()
+    {
+        Instantiate(bossRoom, rooms[rooms.Count - 1].transform.position, Quaternion.identity);
+        Destroy(rooms[rooms.Count - 1]);
+    }
+
 }
 
 

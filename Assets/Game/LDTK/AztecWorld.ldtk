@@ -10,7 +10,7 @@
 	},
 	"jsonVersion": "1.1.3",
 	"appBuildId": 458364,
-	"nextUid": 102,
+	"nextUid": 104,
 	"identifierStyle": "Capitalize",
 	"worldLayout": "GridVania",
 	"worldGridWidth": 256,
@@ -365,7 +365,7 @@
 			"__neighbours": [
 				{ "levelIid": "a0fd5e00-02f0-11ed-b966-b5671451be5f", "levelUid": 84, "dir": "n" },
 				{ "levelIid": "e32f0e80-02f0-11ed-b966-1982a10ebc44", "levelUid": 94, "dir": "e" },
-				{ "levelIid": "379b1610-02f0-11ed-967e-9f4dceecef01", "levelUid": 100, "dir": "w" }
+				{ "levelIid": "82fdd790-02f0-11ed-88dd-21e688ddf407", "levelUid": 102, "dir": "w" }
 			]
 		},
 		{
@@ -389,7 +389,11 @@
 			"externalRelPath": "AztecWorld/RL.ldtkl",
 			"fieldInstances": [],
 			"layerInstances": null,
-			"__neighbours": [ { "levelIid": "ddbf7480-02f0-11ed-b966-27b420ea29f4", "levelUid": 93, "dir": "w" }, { "levelIid": "a51fb780-02f0-11ed-b966-e12595a06742", "levelUid": 85, "dir": "n" } ]
+			"__neighbours": [
+				{ "levelIid": "ddbf7480-02f0-11ed-b966-27b420ea29f4", "levelUid": 93, "dir": "w" },
+				{ "levelIid": "a51fb780-02f0-11ed-b966-e12595a06742", "levelUid": 85, "dir": "n" },
+				{ "levelIid": "cf71fc50-02f0-11ed-88dd-8db2cd5ae94a", "levelUid": 103, "dir": "e" }
+			]
 		},
 		{
 			"identifier": "TL",
@@ -441,36 +445,55 @@
 			"layerInstances": null,
 			"__neighbours": [
 				{ "levelIid": "a0fd5e00-02f0-11ed-b966-b5671451be5f", "levelUid": 84, "dir": "e" },
-				{ "levelIid": "379b1610-02f0-11ed-967e-9f4dceecef01", "levelUid": 100, "dir": "s" },
+				{ "levelIid": "82fdd790-02f0-11ed-88dd-21e688ddf407", "levelUid": 102, "dir": "s" },
 				{ "levelIid": "8eb2c000-02f0-11ed-b966-97716578f4d1", "levelUid": 82, "dir": "n" }
 			]
 		},
 		{
-			"identifier": "Level_6",
-			"iid": "51a00060-02f0-11ed-88dd-ddf5657f0cea",
-			"uid": 101,
-			"worldX": 0,
-			"worldY": 0,
+			"identifier": "BossRoom",
+			"iid": "82fdd790-02f0-11ed-88dd-21e688ddf407",
+			"uid": 102,
+			"worldX": -1024,
+			"worldY": 1024,
 			"worldDepth": 0,
-			"pxWid": 256,
-			"pxHei": 256,
+			"pxWid": 1024,
+			"pxHei": 512,
 			"__bgColor": "#696A79",
 			"bgColor": null,
-			"useAutoIdentifier": true,
+			"useAutoIdentifier": false,
 			"bgRelPath": null,
 			"bgPos": null,
 			"bgPivotX": 0.5,
 			"bgPivotY": 0.5,
 			"__smartColor": "#ADADB5",
 			"__bgPos": null,
-			"externalRelPath": "AztecWorld/Level_6.ldtkl",
+			"externalRelPath": "AztecWorld/BossRoom.ldtkl",
 			"fieldInstances": [],
 			"layerInstances": null,
-			"__neighbours": [
-				{ "levelIid": "253aee40-02f0-11ed-b245-e3f3075ac76f", "levelUid": 0, "dir": "s" },
-				{ "levelIid": "8eb2c000-02f0-11ed-b966-97716578f4d1", "levelUid": 82, "dir": "w" },
-				{ "levelIid": "81331790-02f0-11ed-b966-5314b75e43f2", "levelUid": 79, "dir": "n" }
-			]
+			"__neighbours": [ { "levelIid": "ddbf7480-02f0-11ed-b966-27b420ea29f4", "levelUid": 93, "dir": "e" }, { "levelIid": "9cbb4781-02f0-11ed-b966-5b0c816ef62f", "levelUid": 83, "dir": "n" } ]
+		},
+		{
+			"identifier": "ClosedRoom",
+			"iid": "cf71fc50-02f0-11ed-88dd-8db2cd5ae94a",
+			"uid": 103,
+			"worldX": 2048,
+			"worldY": 1024,
+			"worldDepth": 0,
+			"pxWid": 1024,
+			"pxHei": 512,
+			"__bgColor": "#696A79",
+			"bgColor": null,
+			"useAutoIdentifier": false,
+			"bgRelPath": null,
+			"bgPos": null,
+			"bgPivotX": 0.5,
+			"bgPivotY": 0.5,
+			"__smartColor": "#ADADB5",
+			"__bgPos": null,
+			"externalRelPath": "AztecWorld/ClosedRoom.ldtkl",
+			"fieldInstances": [],
+			"layerInstances": null,
+			"__neighbours": [{ "levelIid": "e32f0e80-02f0-11ed-b966-1982a10ebc44", "levelUid": 94, "dir": "w" }]
 		},
 		{
 			"identifier": "R",
@@ -595,7 +618,6 @@
 			"layerInstances": null,
 			"__neighbours": [
 				{ "levelIid": "253aee40-02f0-11ed-b245-e3f3075ac76f", "levelUid": 0, "dir": "s" },
-				{ "levelIid": "51a00060-02f0-11ed-88dd-ddf5657f0cea", "levelUid": 101, "dir": "s" },
 				{ "levelIid": "757e4410-02f0-11ed-b966-afc3d4a09e21", "levelUid": 78, "dir": "w" },
 				{ "levelIid": "86819501-02f0-11ed-b966-f1c17fd2e83b", "levelUid": 80, "dir": "e" }
 			]

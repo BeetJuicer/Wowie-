@@ -5091,7 +5091,8 @@ MonoBehaviour:
   - {fileID: 8612829271171122266, guid: 07219d556a4af544dacfbd7829753c7b, type: 3}
   - {fileID: 6054989201484517703, guid: fb2c85223c99b594a8430c3f16fc87d1, type: 3}
   - {fileID: 7629213069373229948, guid: 7a1c6d0c2a7c58748be39641046bc24c, type: 3}
-  closedRoom: {fileID: 1646149318201618426, guid: 5cd89d852fdc0184d95bafd7c37f1b56, type: 3}
+  closedRoom: {fileID: -8034211163515268395, guid: a6b629e7f7be7a2429045370cbad2260, type: 3}
+  bossRoom: {fileID: 8816333854663275292, guid: 197727816357e9a47a2d6afadd4b3d21, type: 3}
   rooms: []
 --- !u!1 &1506444291
 GameObject:

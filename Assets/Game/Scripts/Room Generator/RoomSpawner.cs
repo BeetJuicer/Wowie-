@@ -11,7 +11,7 @@ public class RoomSpawner : MonoBehaviour
 
     private Vector3 offset = new Vector3(16, 8, 0);
 
-    public float waitTime = 4;
+    public float waitTime = 2;
 
     private int rand;
 

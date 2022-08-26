@@ -184,7 +184,7 @@
 	],
 	"__neighbours": [
 		{ "levelIid": "a0fd5e00-02f0-11ed-b966-b5671451be5f", "levelUid": 84, "dir": "e" },
-		{ "levelIid": "379b1610-02f0-11ed-967e-9f4dceecef01", "levelUid": 100, "dir": "s" },
+		{ "levelIid": "82fdd790-02f0-11ed-88dd-21e688ddf407", "levelUid": 102, "dir": "s" },
 		{ "levelIid": "8eb2c000-02f0-11ed-b966-97716578f4d1", "levelUid": 82, "dir": "n" }
 	]
 }
