@@ -44,24 +44,18 @@ SpriteAtlas:
     secondaryTextureSettings: {}
     variantMultiplier: 1
     packables:
-    - {fileID: 9215043450241086923, guid: 4837a4ab9f195a042ab567c7c86da66b, type: 3}
+    - {fileID: 2792474039402842062, guid: 4837a4ab9f195a042ab567c7c86da66b, type: 3}
     - {fileID: 2131343049377327401, guid: 4837a4ab9f195a042ab567c7c86da66b, type: 3}
-    - {fileID: 7337463237476490734, guid: 4837a4ab9f195a042ab567c7c86da66b, type: 3}
-    - {fileID: -3572864604408348551, guid: 4837a4ab9f195a042ab567c7c86da66b, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
-  - {fileID: 7337463237476490734, guid: 4837a4ab9f195a042ab567c7c86da66b, type: 3}
   - {fileID: 2131343049377327401, guid: 4837a4ab9f195a042ab567c7c86da66b, type: 3}
-  - {fileID: -3572864604408348551, guid: 4837a4ab9f195a042ab567c7c86da66b, type: 3}
-  - {fileID: 9215043450241086923, guid: 4837a4ab9f195a042ab567c7c86da66b, type: 3}
+  - {fileID: 2792474039402842062, guid: 4837a4ab9f195a042ab567c7c86da66b, type: 3}
   m_PackedSpriteNamesToIndex:
-  - Pixtogether4_Tileset_Platfom_32_64_32_32
   - Pixtogether4_Tileset_Platfom_32_32_32_32
-  - Pixtogether4_Tileset_Platfom_64_0_32_32
-  - Pixtogether4_Tileset_Platfom_0_32_32_32
+  - Pixtogether4_Tileset_Platfom_0_64_32_32
   m_RenderDataMap: {}
   m_Tag: AztecWorld_Atlas
   m_IsVariant: 0
