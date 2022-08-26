@@ -1952,9 +1952,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0
-    width: 1
-    height: 1
+    y: 0.055555556
+    width: 0.33333334
+    height: 0.3333333
   near clip plane: 0.1
   far clip plane: 5000
   field of view: 40
@@ -5093,7 +5093,6 @@ MonoBehaviour:
   - {fileID: 7629213069373229948, guid: 7a1c6d0c2a7c58748be39641046bc24c, type: 3}
   closedRoom: {fileID: 1646149318201618426, guid: 5cd89d852fdc0184d95bafd7c37f1b56, type: 3}
   rooms: []
-  boss: {fileID: 5828427097600593620, guid: 653f13feecbecf242ab1c2b160bec004, type: 3}
 --- !u!1 &1506444291
 GameObject:
   m_ObjectHideFlags: 0
@@ -7342,7 +7341,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7777778, y: 1}
+    m_SensorSize: {x: 1.7777779, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0

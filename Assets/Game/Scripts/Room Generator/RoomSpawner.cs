@@ -35,29 +35,32 @@ public class RoomSpawner : MonoBehaviour
             //-Spawn a room with a bottom door
             if (openingDirection == 1)
             {
-                rand = Random.Range(0, templates.bottomRooms.Count);
-                Instantiate(templates.bottomRooms[rand], transform.position - offset, Quaternion.identity);
+                SpawnRoom(templates.bottomRooms);
             }
             //-Spawn a room with a top door
             else if (openingDirection == 2)
             {
-                rand = Random.Range(0, templates.topRooms.Count);
-                Instantiate(templates.topRooms[rand], transform.position - offset, Quaternion.identity);
+                SpawnRoom(templates.topRooms);
             }
             //-Spawn a room with a left door
             else if (openingDirection == 3)
             {
-                rand = Random.Range(0, templates.leftRooms.Count);
-                Instantiate(templates.leftRooms[rand], transform.position - offset, Quaternion.identity);
+                SpawnRoom(templates.leftRooms);
             }
             //-Spawn a room with a right door
             else if (openingDirection == 4)
             {
-                rand = Random.Range(0, templates.rightRooms.Count);
-                Instantiate(templates.rightRooms[rand], transform.position - offset, Quaternion.identity);
+                SpawnRoom(templates.rightRooms);
             }
             spawned = true;
         }
+    }
+
+    private void SpawnRoom(List<GameObject> roomList)
+    {
+        rand = Random.Range(0, roomList.Count);
+        Instantiate(roomList[rand], transform.position - offset, Quaternion.identity);
+        RemoveRoomFromLists(roomList[rand]);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -70,5 +73,25 @@ public class RoomSpawner : MonoBehaviour
             }
             spawned = true;
         }
-    }   
+    }
+    
+    private void RemoveRoomFromLists(GameObject room)
+    {
+        if (templates.topRooms.Contains(room))
+        {
+            templates.topRooms.Remove(room);
+        }
+        if (templates.bottomRooms.Contains(room))
+        {
+            templates.bottomRooms.Remove(room);
+        }
+        if (templates.leftRooms.Contains(room))
+        {
+            templates.leftRooms.Remove(room);
+        }
+        if (templates.rightRooms.Contains(room))
+        {
+            templates.rightRooms.Remove(room);
+        }
+    }
 }

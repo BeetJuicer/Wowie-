@@ -5093,7 +5093,6 @@ MonoBehaviour:
   - {fileID: 7629213069373229948, guid: 7a1c6d0c2a7c58748be39641046bc24c, type: 3}
   closedRoom: {fileID: 1646149318201618426, guid: 5cd89d852fdc0184d95bafd7c37f1b56, type: 3}
   rooms: []
-  boss: {fileID: 5828427097600593620, guid: 653f13feecbecf242ab1c2b160bec004, type: 3}
 --- !u!1 &1506444291
 GameObject:
   m_ObjectHideFlags: 0
@@ -6208,22 +6207,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e336ae5e2bc3b5d4590d3997e95efaec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entityData: {fileID: 11400000, guid: c4b96808ceb2fee429a857c7ee9c504c, type: 2}
-  wallCheck: {fileID: 1326062946}
-  ledgeCheck: {fileID: 1704310397}
-  playerCheck: {fileID: 2044105988}
-  groundCheck: {fileID: 2105771701}
-  moveStateData: {fileID: 11400000, guid: 943765f339413144794fd27a6894dfcc, type: 2}
-  idleStateData: {fileID: 11400000, guid: 390268659f42098499c7b4c3e3c02e04, type: 2}
-  playerDetectedStateData: {fileID: 11400000, guid: 81e40338c851d014c8c8f2cb5de623e9, type: 2}
-  meleeAttackStateData: {fileID: 11400000, guid: bfdfc956d041b684aad6069992ebe1aa, type: 2}
-  lookForPlayerStateData: {fileID: 11400000, guid: f7493f57f9b8cd54ba3edb9480a87782, type: 2}
-  stunStateData: {fileID: 11400000, guid: a70709937ac093745b1ebe44217bc75b, type: 2}
-  deadStateData: {fileID: 11400000, guid: a889f74363b812944a9c285aae1606c0, type: 2}
-  dodgeStateData: {fileID: 11400000, guid: 3f4657ca74ba50a4fb7578ae5e043abd, type: 2}
-  rangedAttackStateData: {fileID: 11400000, guid: 0ad3801fd63b05b45ad2876e57223e9b, type: 2}
-  meleeAttackPosition: {fileID: 2116236311}
-  rangedAttackPosition: {fileID: 5891248}
+  entityData: {fileID: 0}
+  wallCheck: {fileID: 0}
+  ledgeCheck: {fileID: 0}
+  playerCheck: {fileID: 0}
+  groundCheck: {fileID: 0}
+  moveStateData: {fileID: 0}
+  idleStateData: {fileID: 0}
+  playerDetectedStateData: {fileID: 0}
+  meleeAttackStateData: {fileID: 0}
+  lookForPlayerStateData: {fileID: 0}
+  stunStateData: {fileID: 0}
+  deadStateData: {fileID: 0}
+  dodgeStateData: {fileID: 0}
+  rangedAttackStateData: {fileID: 0}
+  meleeAttackPosition: {fileID: 0}
+  rangedAttackPosition: {fileID: 0}
 --- !u!1 &1704310396
 GameObject:
   m_ObjectHideFlags: 0
