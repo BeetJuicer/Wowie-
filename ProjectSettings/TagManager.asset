@@ -9,6 +9,7 @@ TagManager:
   - Projectile
   - Cube
   - Enemy
+  - SpawnPoint
   layers:
   - Default
   - TransparentFX
