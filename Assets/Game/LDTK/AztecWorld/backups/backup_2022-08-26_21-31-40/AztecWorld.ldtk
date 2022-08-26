@@ -286,7 +286,7 @@
 	], "enums": [], "externalEnums": [], "levelFields": [] },
 	"levels": [
 		{
-			"identifier": "TBRL",
+			"identifier": "Level_0",
 			"iid": "253aee40-02f0-11ed-b245-e3f3075ac76f",
 			"uid": 0,
 			"worldX": 0,
@@ -303,7 +303,7 @@
 			"bgPivotY": 0.5,
 			"__smartColor": "#ADADB5",
 			"__bgPos": null,
-			"externalRelPath": "AztecWorld/TBRL.ldtkl",
+			"externalRelPath": "AztecWorld/Level_0.ldtkl",
 			"fieldInstances": [],
 			"layerInstances": null,
 			"__neighbours": [
@@ -314,7 +314,7 @@
 			]
 		},
 		{
-			"identifier": "T",
+			"identifier": "Level_1",
 			"iid": "a0fd5e00-02f0-11ed-b966-b5671451be5f",
 			"uid": 84,
 			"worldX": 0,
@@ -331,7 +331,7 @@
 			"bgPivotY": 0.5,
 			"__smartColor": "#ADADB5",
 			"__bgPos": null,
-			"externalRelPath": "AztecWorld/T.ldtkl",
+			"externalRelPath": "AztecWorld/Level_1.ldtkl",
 			"fieldInstances": [],
 			"layerInstances": null,
 			"__neighbours": [
@@ -342,7 +342,7 @@
 			]
 		},
 		{
-			"identifier": "TB",
+			"identifier": "Level_3",
 			"iid": "ddbf7480-02f0-11ed-b966-27b420ea29f4",
 			"uid": 93,
 			"worldX": 0,
@@ -359,13 +359,40 @@
 			"bgPivotY": 0.5,
 			"__smartColor": "#ADADB5",
 			"__bgPos": null,
-			"externalRelPath": "AztecWorld/TB.ldtkl",
+			"externalRelPath": "AztecWorld/Level_3.ldtkl",
 			"fieldInstances": [],
 			"layerInstances": null,
-			"__neighbours": [ { "levelIid": "a0fd5e00-02f0-11ed-b966-b5671451be5f", "levelUid": 84, "dir": "n" }, { "levelIid": "e32f0e80-02f0-11ed-b966-1982a10ebc44", "levelUid": 94, "dir": "e" } ]
+			"__neighbours": [
+				{ "levelIid": "a0fd5e00-02f0-11ed-b966-b5671451be5f", "levelUid": 84, "dir": "n" },
+				{ "levelIid": "3acbba62-02f0-11ed-b966-9bc4d733fa51", "levelUid": 97, "dir": "s" },
+				{ "levelIid": "e32f0e80-02f0-11ed-b966-1982a10ebc44", "levelUid": 94, "dir": "e" }
+			]
 		},
 		{
-			"identifier": "RL",
+			"identifier": "Level_7",
+			"iid": "3acbba62-02f0-11ed-b966-9bc4d733fa51",
+			"uid": 97,
+			"worldX": 0,
+			"worldY": 1536,
+			"worldDepth": 0,
+			"pxWid": 1024,
+			"pxHei": 512,
+			"__bgColor": "#696A79",
+			"bgColor": null,
+			"useAutoIdentifier": false,
+			"bgRelPath": null,
+			"bgPos": null,
+			"bgPivotX": 0.5,
+			"bgPivotY": 0.5,
+			"__smartColor": "#ADADB5",
+			"__bgPos": null,
+			"externalRelPath": "AztecWorld/Level_7.ldtkl",
+			"fieldInstances": [],
+			"layerInstances": null,
+			"__neighbours": [{ "levelIid": "ddbf7480-02f0-11ed-b966-27b420ea29f4", "levelUid": 93, "dir": "n" }]
+		},
+		{
+			"identifier": "Level_10",
 			"iid": "e32f0e80-02f0-11ed-b966-1982a10ebc44",
 			"uid": 94,
 			"worldX": 1024,
@@ -382,13 +409,13 @@
 			"bgPivotY": 0.5,
 			"__smartColor": "#ADADB5",
 			"__bgPos": null,
-			"externalRelPath": "AztecWorld/RL.ldtkl",
+			"externalRelPath": "AztecWorld/Level_10.ldtkl",
 			"fieldInstances": [],
 			"layerInstances": null,
 			"__neighbours": [ { "levelIid": "ddbf7480-02f0-11ed-b966-27b420ea29f4", "levelUid": 93, "dir": "w" }, { "levelIid": "a51fb780-02f0-11ed-b966-e12595a06742", "levelUid": 85, "dir": "n" } ]
 		},
 		{
-			"identifier": "TL",
+			"identifier": "Level_2",
 			"iid": "a51fb780-02f0-11ed-b966-e12595a06742",
 			"uid": 85,
 			"worldX": 1024,
@@ -405,7 +432,7 @@
 			"bgPivotY": 0.5,
 			"__smartColor": "#ADADB5",
 			"__bgPos": null,
-			"externalRelPath": "AztecWorld/TL.ldtkl",
+			"externalRelPath": "AztecWorld/Level_2.ldtkl",
 			"fieldInstances": [],
 			"layerInstances": null,
 			"__neighbours": [
@@ -415,7 +442,7 @@
 			]
 		},
 		{
-			"identifier": "TR",
+			"identifier": "Level_5",
 			"iid": "9cbb4781-02f0-11ed-b966-5b0c816ef62f",
 			"uid": 83,
 			"worldX": -1024,
@@ -432,13 +459,13 @@
 			"bgPivotY": 0.5,
 			"__smartColor": "#ADADB5",
 			"__bgPos": null,
-			"externalRelPath": "AztecWorld/TR.ldtkl",
+			"externalRelPath": "AztecWorld/Level_5.ldtkl",
 			"fieldInstances": [],
 			"layerInstances": null,
 			"__neighbours": [ { "levelIid": "a0fd5e00-02f0-11ed-b966-b5671451be5f", "levelUid": 84, "dir": "e" }, { "levelIid": "8eb2c000-02f0-11ed-b966-97716578f4d1", "levelUid": 82, "dir": "n" } ]
 		},
 		{
-			"identifier": "R",
+			"identifier": "Level_4",
 			"iid": "8eb2c000-02f0-11ed-b966-97716578f4d1",
 			"uid": 82,
 			"worldX": -1024,
@@ -455,7 +482,7 @@
 			"bgPivotY": 0.5,
 			"__smartColor": "#ADADB5",
 			"__bgPos": null,
-			"externalRelPath": "AztecWorld/R.ldtkl",
+			"externalRelPath": "AztecWorld/Level_4.ldtkl",
 			"fieldInstances": [],
 			"layerInstances": null,
 			"__neighbours": [
@@ -465,7 +492,7 @@
 			]
 		},
 		{
-			"identifier": "BR",
+			"identifier": "Level_6",
 			"iid": "757e4410-02f0-11ed-b966-afc3d4a09e21",
 			"uid": 78,
 			"worldX": -1024,
@@ -482,13 +509,13 @@
 			"bgPivotY": 0.5,
 			"__smartColor": "#ADADB5",
 			"__bgPos": null,
-			"externalRelPath": "AztecWorld/BR.ldtkl",
+			"externalRelPath": "AztecWorld/Level_6.ldtkl",
 			"fieldInstances": [],
 			"layerInstances": null,
 			"__neighbours": [ { "levelIid": "8eb2c000-02f0-11ed-b966-97716578f4d1", "levelUid": 82, "dir": "s" }, { "levelIid": "81331790-02f0-11ed-b966-5314b75e43f2", "levelUid": 79, "dir": "e" } ]
 		},
 		{
-			"identifier": "BL",
+			"identifier": "Level_11",
 			"iid": "86819501-02f0-11ed-b966-f1c17fd2e83b",
 			"uid": 80,
 			"worldX": 1024,
@@ -498,20 +525,20 @@
 			"pxHei": 512,
 			"__bgColor": "#696A79",
 			"bgColor": null,
-			"useAutoIdentifier": false,
+			"useAutoIdentifier": true,
 			"bgRelPath": null,
 			"bgPos": null,
 			"bgPivotX": 0.5,
 			"bgPivotY": 0.5,
 			"__smartColor": "#ADADB5",
 			"__bgPos": null,
-			"externalRelPath": "AztecWorld/BL.ldtkl",
+			"externalRelPath": "AztecWorld/Level_11.ldtkl",
 			"fieldInstances": [],
 			"layerInstances": null,
 			"__neighbours": [ { "levelIid": "8b16d490-02f0-11ed-b966-23ff17044807", "levelUid": 81, "dir": "s" }, { "levelIid": "81331790-02f0-11ed-b966-5314b75e43f2", "levelUid": 79, "dir": "w" } ]
 		},
 		{
-			"identifier": "L",
+			"identifier": "Level_8",
 			"iid": "8b16d490-02f0-11ed-b966-23ff17044807",
 			"uid": 81,
 			"worldX": 1024,
@@ -528,7 +555,7 @@
 			"bgPivotY": 0.5,
 			"__smartColor": "#ADADB5",
 			"__bgPos": null,
-			"externalRelPath": "AztecWorld/L.ldtkl",
+			"externalRelPath": "AztecWorld/Level_8.ldtkl",
 			"fieldInstances": [],
 			"layerInstances": null,
 			"__neighbours": [
@@ -538,7 +565,7 @@
 			]
 		},
 		{
-			"identifier": "B",
+			"identifier": "Level_9",
 			"iid": "81331790-02f0-11ed-b966-5314b75e43f2",
 			"uid": 79,
 			"worldX": 0,
@@ -555,7 +582,7 @@
 			"bgPivotY": 0.5,
 			"__smartColor": "#ADADB5",
 			"__bgPos": null,
-			"externalRelPath": "AztecWorld/B.ldtkl",
+			"externalRelPath": "AztecWorld/Level_9.ldtkl",
 			"fieldInstances": [],
 			"layerInstances": null,
 			"__neighbours": [
