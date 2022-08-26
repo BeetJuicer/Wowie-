@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class RoomCameraManager : MonoBehaviour
 {
@@ -8,29 +9,23 @@ public class RoomCameraManager : MonoBehaviour
     [SerializeField]
     GameObject virtualCam;
 
-    [SerializeField]
-    private GameObject cat;
-
-    private GameObject ghostPlayer;
-
-    private void Start()
+    private void Awake()
     {
-        ghostPlayer = GameObject.FindGameObjectWithTag("Player");
+        CinemachineVirtualCamera cam = virtualCam.GetComponent<CinemachineVirtualCamera>();
+        cam.Follow = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-
-        if (other.CompareTag("Enemy"))
+        if (other.CompareTag("Player"))
         {
             virtualCam.SetActive(true);
-            ghostPlayer.transform.position = cat.transform.position;
         }
 
     }
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Enemy"))
+        if (other.CompareTag("Player"))
         {
             virtualCam.SetActive(false);
         }
