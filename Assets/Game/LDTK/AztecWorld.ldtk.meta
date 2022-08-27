@@ -21,7 +21,9 @@ ScriptedImporter:
     _asset: {fileID: 11400000, guid: 8798509ac28c39240b166acd63e816be, type: 2}
   - _key: Ground_2
     _asset: {instanceID: 0}
-  _entities: []
+  _entities:
+  - _key: Entity
+    _asset: {fileID: 5903424158894744761, guid: 5f17b024ebe9bba49a1bceb367a9294b, type: 3}
   _enumGenerate: 0
   _enumPath: 
   _enumNamespace: 

@@ -67,7 +67,7 @@ public class RoomSpawner : MonoBehaviour
     {
         if (collision.CompareTag("SpawnPoint"))
         {
-            if (collision.GetComponent<RoomSpawner>().spawned == false && spawned == false)
+            if (collision.GetComponent<RoomSpawner>().spawned == false && spawned == false && transform.position.x != 16 && transform.position.y != 8)
             {
                 Instantiate(templates.closedRoom, transform.position - offset, Quaternion.identity);
             }
