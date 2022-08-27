@@ -53,6 +53,7 @@ public class PlayerData : ScriptableObject
     public GameObject skeletonSoldier;
     public Vector3 summonOffset;
     public float summonCastDuration = 1.8f;
+    public int soulCount = 0;
 
     [Header("Crouch States")]
     public float crouchMovementVelocity = 5f;

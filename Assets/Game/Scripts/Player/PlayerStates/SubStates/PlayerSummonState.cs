@@ -6,6 +6,7 @@ public class PlayerSummonState : PlayerAbilityState
 {
     private Vector3 summonPosition;
 
+    private bool canSummon;
     private bool isHolding;
     private bool fireInputStop;
 
@@ -34,8 +35,6 @@ public class PlayerSummonState : PlayerAbilityState
 
         Movement?.SetVelocityZero();
 
-
-
         if (!isExitingState)
         {
             if (isHolding)
@@ -52,12 +51,26 @@ public class PlayerSummonState : PlayerAbilityState
                 else if ((holdStartTime + playerData.summonCastDuration) - Time.time <= 0)
                 {
                     GameObject.Instantiate(playerData.skeletonSoldier, summonPosition, Quaternion.identity);
+                    player.soulStats.soulCount--;
                     isAbilityDone = true;
                     isHolding = false;
                 }
             }
         }
 
+    }
+
+    public bool CanSummon()
+    {
+        if (player.soulStats.soulCount > 0)
+        {
+            canSummon = true;
+        }
+        else
+        {
+            canSummon = false;
+        }
+        return canSummon;
     }
 
     #region Animation Triggers

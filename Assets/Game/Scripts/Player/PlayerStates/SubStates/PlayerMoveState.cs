@@ -37,6 +37,10 @@ public class PlayerMoveState : PlayerGroundedState {
 			{
 				stateMachine.ChangeState(player.DodgeState);
 			}
+			else if (player.InputHandler.FireInput && player.SummonState.CanSummon())
+			{
+				stateMachine.ChangeState(player.SummonState);
+			}
 			/*
 			else if (dashInput && player.DashState.CheckIfCanDash())
 			{

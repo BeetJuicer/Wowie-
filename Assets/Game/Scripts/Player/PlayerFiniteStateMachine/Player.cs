@@ -38,6 +38,9 @@ public class Player : MonoBehaviour
     public Transform DashDirectionIndicator { get; private set; }
     public BoxCollider2D MovementCollider { get; private set; }
     public PlayerInventory Inventory { get; private set; }
+
+    //--Brackeys Jam Game components
+    public SoulStats soulStats { get; private set; }
     #endregion
 
     #region Other Variables         
@@ -79,6 +82,7 @@ public class Player : MonoBehaviour
         DashDirectionIndicator = transform.Find("DashDirectionIndicator");
         MovementCollider = GetComponent<BoxCollider2D>();
         Inventory = GetComponent<PlayerInventory>();
+        soulStats = GetComponent<SoulStats>();
 
         PrimaryAttackState.SetWeapon(Inventory.weapons[(int)CombatInputs.primary]);
         //SecondaryAttackState.SetWeapon(Inventory.weapons[(int)CombatInputs.primary]);
