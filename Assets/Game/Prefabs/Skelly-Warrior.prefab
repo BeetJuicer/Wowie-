@@ -241,7 +241,6 @@ GameObject:
   - component: {fileID: 5828427097600593608}
   - component: {fileID: 5828427097600593623}
   - component: {fileID: 5828427097600593622}
-  - component: {fileID: 4523179757643954369}
   m_Layer: 11
   m_Name: Skelly-Warrior
   m_TagString: Enemy
@@ -424,19 +423,6 @@ MonoBehaviour:
   stunStateData: {fileID: 11400000, guid: feb476734f45df242b04c3b50b211dc5, type: 2}
   deadStateData: {fileID: 11400000, guid: 803c5f6895b75114087f77743674c1bc, type: 2}
   meleeAttackPosition: {fileID: 5828427099098570007}
---- !u!114 &4523179757643954369
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5828427097600593620}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea2fed48fb01bd44badb148883b2de8e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  summonDuration: 3
 --- !u!1 &5828427097799057929
 GameObject:
   m_ObjectHideFlags: 0
@@ -596,6 +582,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5828427097549341901}
     m_Modifications:
+    - target: {fileID: 5769987899958072275, guid: 6583b8fb058aa694daa9ae414c53693f, type: 3}
+      propertyPath: maxHealth
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 5769987899958072276, guid: 6583b8fb058aa694daa9ae414c53693f, type: 3}
       propertyPath: m_RootOrder
       value: 3

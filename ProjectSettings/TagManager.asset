@@ -12,6 +12,7 @@ TagManager:
   - SpawnPoint
   - Rooms
   - Cinemachine
+  - Summon
   layers:
   - Default
   - TransparentFX

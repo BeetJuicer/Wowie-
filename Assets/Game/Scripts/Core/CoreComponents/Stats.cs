@@ -6,6 +6,8 @@ public class Stats : CoreComponent
 {
     [SerializeField] private GameObject deathChunks;
     [SerializeField] private GameObject deathBlood;
+
+    [SerializeField] private GameObject soulDrop;
     private GameObject mainBody;
 
     [SerializeField] private float maxHealth;
@@ -27,8 +29,12 @@ public class Stats : CoreComponent
             currentHealth = 0;
             Instantiate(deathChunks, transform.position, Quaternion.identity);
             Instantiate(deathBlood, transform.position, Quaternion.identity);
-            if (mainBody.name != "Player")
+            if (!mainBody.CompareTag("Player"))
             {
+                if (mainBody.CompareTag("Enemy"))
+                {
+                    Instantiate(soulDrop, mainBody.transform.position, Quaternion.identity);
+                }
                 Destroy(mainBody);
             }
             else

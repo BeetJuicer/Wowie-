@@ -23,6 +23,7 @@ public class RoomTemplates : MonoBehaviour
 
     private void SpawnBossRoom()
     {
+        // -- Replace the last spawned room with the boss room.
         Instantiate(bossRoom, rooms[rooms.Count - 1].transform.position, Quaternion.identity);
         Destroy(rooms[rooms.Count - 1]);
     }
