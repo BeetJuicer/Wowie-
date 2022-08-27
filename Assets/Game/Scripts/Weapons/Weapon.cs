@@ -6,7 +6,7 @@ public class Weapon : MonoBehaviour
 {
     [SerializeField] protected SO_WeaponData weaponData;
 
-    protected Animator baseAnimator;
+//    protected Animator baseAnimator; ---> base is disabled because game only uses one weapon.
     protected Animator weaponAnimator;
 
     protected PlayerAttackState state;
@@ -17,7 +17,7 @@ public class Weapon : MonoBehaviour
 
     protected virtual void Awake()
     {
-        baseAnimator = transform.Find("Base").GetComponent<Animator>();
+ //       baseAnimator = transform.Find("Base").GetComponent<Animator>();
         weaponAnimator = transform.Find("Weapon").GetComponent<Animator>();
 
         gameObject.SetActive(false);
@@ -32,16 +32,16 @@ public class Weapon : MonoBehaviour
             attackCounter = 0;
         }
 
-        baseAnimator.SetBool("attack", true);
+ //       baseAnimator.SetBool("attack", true);
         weaponAnimator.SetBool("attack", true);
 
-        baseAnimator.SetInteger("attackCounter", attackCounter);
+ //       baseAnimator.SetInteger("attackCounter", attackCounter);
         weaponAnimator.SetInteger("attackCounter", attackCounter);
     }
 
     public virtual void ExitWeapon()
     {
-        baseAnimator.SetBool("attack", false);
+ //       baseAnimator.SetBool("attack", false);
         weaponAnimator.SetBool("attack", false);
 
         attackCounter++;

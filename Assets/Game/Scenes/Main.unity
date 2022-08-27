@@ -1150,7 +1150,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f434c3d4ae1a734ca688a1cf3c2c5f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponAnim: {fileID: 399924623}
   soulCount: 0
+  attackSpeedMultiplier: 1
 --- !u!1 &243106658
 GameObject:
   m_ObjectHideFlags: 0
