@@ -43,7 +43,7 @@ public class Stats : CoreComponent
                 {
                     Instantiate(soulDrop, mainBody.transform.position, Quaternion.identity);
                 }
-                Destroy(mainBody);
+                mainBody.SetActive(false);
             }
 
             Instantiate(deathChunks, transform.position, Quaternion.identity);
