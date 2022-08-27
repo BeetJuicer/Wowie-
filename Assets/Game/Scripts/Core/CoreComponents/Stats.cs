@@ -27,8 +27,12 @@ public class Stats : CoreComponent
         if (currentHealth <= 0)
         {
             currentHealth = 0;
-            Instantiate(deathChunks, transform.position, Quaternion.identity);
-            Instantiate(deathBlood, transform.position, Quaternion.identity);
+
+            if (mainBody.CompareTag("Player"))
+            {
+                GameManager.GetInstance().Respawn();
+                mainBody.SetActive(false);
+            }
 
             if (!mainBody.CompareTag("Player"))
             {
@@ -39,11 +43,8 @@ public class Stats : CoreComponent
                 Destroy(mainBody);
             }
 
-            if (mainBody.CompareTag("Player"))
-            {
-                GameManager.GetInstance().Respawn();
-                gameObject.SetActive(false);
-            }
+            Instantiate(deathChunks, transform.position, Quaternion.identity);
+            Instantiate(deathBlood, transform.position, Quaternion.identity);
         }
     }
 
