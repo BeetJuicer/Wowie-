@@ -6,9 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour, IDataPersistence
 {
-    //Gameobjects
-    [SerializeField]
-    private GameObject cam;
+    private static GameManager instance;
+
+    //---> Gameobjects
     [SerializeField]
     private GameObject gameOverMenu;
 
@@ -17,10 +17,8 @@ public class GameManager : MonoBehaviour, IDataPersistence
 
     [SerializeField]
     private GameObject player;
-    [SerializeField]
-    private GameObject cat;
 
-    //----Respawn Values---
+    //---> Respawn Values
     [SerializeField]
     private float respawnTime;
 
@@ -28,8 +26,6 @@ public class GameManager : MonoBehaviour, IDataPersistence
     private Transform[] respawnPoints;
 
     public int checkpointCount;
-
-    private static GameManager instance;
 
     public void LoadData(GameData data)
     {
@@ -54,8 +50,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
 
     private void Start()
     {
-   //     SetPlayerPosition();
-        //Inward scene fade.
+        //----> Inward scene fade.
         fader.gameObject.SetActive(true);
         AudioManager.instance.Play("Open");
         AudioManager.instance.Play("Theme_2");
@@ -65,27 +60,21 @@ public class GameManager : MonoBehaviour, IDataPersistence
         });
     }
 
-    private void Update()
-    {
-
-    }
-
     public void Respawn()
     {
         PauseMenu.gamePaused = true;
-        //Outward
+        //---> Outward Scene Fade
         fader.gameObject.SetActive(true);
         AudioManager.instance.Play("Close");
         LeanTween.scale(fader, Vector3.zero, 0);
         LeanTween.scale(fader, new Vector3(1, 1, 1), 0.5f).setEase(LeanTweenType.easeInOutQuad).setOnComplete(() => {
-            Invoke("LoadScene", 0.3f);//LoadScene previously.
+            Invoke("LoadScene", 0.3f);
         });
     }
 
     private void SetPlayerPosition()
     {
         player.transform.position = respawnPoints[checkpointCount].position;
-        cat.transform.position = respawnPoints[checkpointCount].position;
     }
 
     private void LoadScene()

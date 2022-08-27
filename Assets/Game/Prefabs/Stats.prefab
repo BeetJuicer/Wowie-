@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38b855a94ad4b374daa7555873414221, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
   deathChunks: {fileID: 1962614393226834858, guid: 3d13ef1f52d189642930444f906fc622, type: 3}
   deathBlood: {fileID: 5096148057906189823, guid: 4a122dcc68153794295f6953dd91521e, type: 3}
+  soulDrop: {fileID: 1863026705128291205, guid: 079e68f9ce074d645a58083aa8a8e85c, type: 3}
+  maxHealth: 50

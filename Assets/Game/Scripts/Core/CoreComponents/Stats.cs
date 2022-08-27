@@ -24,11 +24,12 @@ public class Stats : CoreComponent
     {
         currentHealth -= amount;
 
-        if(currentHealth <= 0)
+        if (currentHealth <= 0)
         {
             currentHealth = 0;
             Instantiate(deathChunks, transform.position, Quaternion.identity);
             Instantiate(deathBlood, transform.position, Quaternion.identity);
+
             if (!mainBody.CompareTag("Player"))
             {
                 if (mainBody.CompareTag("Enemy"))
@@ -37,9 +38,11 @@ public class Stats : CoreComponent
                 }
                 Destroy(mainBody);
             }
-            else
+
+            if (mainBody.CompareTag("Player"))
             {
-                //put code here for respawning back to camp
+                GameManager.GetInstance().Respawn();
+                gameObject.SetActive(false);
             }
         }
     }
