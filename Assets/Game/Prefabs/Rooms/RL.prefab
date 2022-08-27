@@ -615,6 +615,18 @@ PrefabInstance:
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[2].Array.data[11].Y
       value: 60000000
       objectReference: {fileID: 0}
+    - target: {fileID: -1504059976752214872, guid: a594c382b3c7fe74eb928b97f668268f, type: 3}
+      propertyPath: m_SortingLayer
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -1504059976752214872, guid: a594c382b3c7fe74eb928b97f668268f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1504059976752214872, guid: a594c382b3c7fe74eb928b97f668268f, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1442805431
+      objectReference: {fileID: 0}
     - target: {fileID: 2101830010059754494, guid: a594c382b3c7fe74eb928b97f668268f, type: 3}
       propertyPath: m_Name
       value: RL

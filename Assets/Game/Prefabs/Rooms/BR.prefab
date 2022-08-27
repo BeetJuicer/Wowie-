@@ -653,6 +653,18 @@ PrefabInstance:
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[7].Array.data[3].X
       value: 320000000
       objectReference: {fileID: 0}
+    - target: {fileID: 7577129225974597991, guid: 56cf8259ae070974ba57827df690c8c1, type: 3}
+      propertyPath: m_SortingLayer
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7577129225974597991, guid: 56cf8259ae070974ba57827df690c8c1, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7577129225974597991, guid: 56cf8259ae070974ba57827df690c8c1, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1442805431
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: -1934345717165055291, guid: 56cf8259ae070974ba57827df690c8c1, type: 3}
 --- !u!4 &240516631068143513 stripped

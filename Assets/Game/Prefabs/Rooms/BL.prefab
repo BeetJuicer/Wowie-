@@ -961,6 +961,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: BL
       objectReference: {fileID: 0}
+    - target: {fileID: 5671086467817559040, guid: 43a3fec81ecf82d47a714e91a8f1abac, type: 3}
+      propertyPath: m_SortingLayer
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5671086467817559040, guid: 43a3fec81ecf82d47a714e91a8f1abac, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5671086467817559040, guid: 43a3fec81ecf82d47a714e91a8f1abac, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1442805431
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: -1934345717165055291, guid: 43a3fec81ecf82d47a714e91a8f1abac, type: 3}
 --- !u!19719996 &4645999641945357153 stripped
