@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Stats : CoreComponent
 {
+    //--> This code is dirty, so replace with old stats from another file.
+
     [SerializeField] private GameObject deathChunks;
     [SerializeField] private GameObject deathBlood;
 
@@ -11,7 +13,8 @@ public class Stats : CoreComponent
     private GameObject mainBody;
 
     [SerializeField] private float maxHealth;
-    private float currentHealth;
+    //private float currentHealth;
+    [HideInInspector] public float currentHealth;
 
     protected override void Awake()
     {
@@ -51,5 +54,20 @@ public class Stats : CoreComponent
     public void IncreaseHealth(float amount)
     {
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
+    }
+    
+    public void IncreaseMaxHealth(float multiplier)
+    {
+        maxHealth += maxHealth * multiplier;
+        currentHealth += maxHealth * multiplier;
+    }
+
+    private void Update()
+    {
+        if (mainBody.CompareTag("Player"))
+        {
+            DebugPanel.Log("Current Health", currentHealth);
+            DebugPanel.Log("Max Health", maxHealth);
+        }
     }
 }

@@ -5,6 +5,8 @@ using System.Linq;
 
 public class AggressiveWeapon : Weapon {
 
+	[SerializeField] private SoulStats soulStats;
+
 	private Movement Movement { get => movement ?? core.GetCoreComponent(ref movement); }
 
 	private Movement movement;
@@ -34,7 +36,7 @@ public class AggressiveWeapon : Weapon {
 		WeaponAttackDetails details = aggressiveWeaponData.AttackDetails[attackCounter];
 
 		foreach (IDamageable item in detectedDamageables.ToList()) {
-			item.Damage(details.damageAmount);
+			item.Damage(details.damageAmount + (details.damageAmount * soulStats.attackDamageMultiplier));
 		}
 
 		foreach (IKnockbackable item in detectedKnockbackables.ToList()) {
