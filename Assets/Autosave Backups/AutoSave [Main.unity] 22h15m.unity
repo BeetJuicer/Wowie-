@@ -1626,7 +1626,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &458029064
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1644,7 +1644,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.2623, y: 0}
+  m_AnchoredPosition: {x: 844.3334, y: 0}
   m_SizeDelta: {x: 955.8368, y: 664.3414}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &458029065
@@ -2439,6 +2439,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 654964893}
   m_CullTransparentMesh: 1
+--- !u!1 &659140678 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5472230673933743505, guid: dc9b4596dca4e1d49bfef707215288d8, type: 3}
+  m_PrefabInstance: {fileID: 1496782747}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &687075623 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2629361568243322191, guid: 2d1efe469c00dea43ba6ff27677b544f, type: 3}
@@ -3748,7 +3753,7 @@ GameObject:
   m_Layer: 11
   m_Name: SummonPosition
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -5938655980376293919, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3797,7 +3802,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1309982297}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9, y: 18, z: 0}
+  m_LocalPosition: {x: 9, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4006,6 +4011,11 @@ Transform:
   m_Father: {fileID: 501013666}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1336637768 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5472230673933743505, guid: dc9b4596dca4e1d49bfef707215288d8, type: 3}
+  m_PrefabInstance: {fileID: 1551343404}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1348919688
 GameObject:
   m_ObjectHideFlags: 0
@@ -6262,9 +6272,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1730436388}
+  - component: {fileID: 1730436389}
   - component: {fileID: 1730436391}
   - component: {fileID: 1730436390}
-  - component: {fileID: 1730436389}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -6305,7 +6315,7 @@ MonoBehaviour:
     m_Events:
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1730436390}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
           m_MethodName: GoToMainMenu
           m_Mode: 1
@@ -6326,9 +6336,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1730436387}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9961a2199c8f4d448b50ea6e8381f73, type: 3}
+  m_Script: {fileID: 11500000, guid: 3c40bd9d7595113499bf106a66db8807, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameOverMenu: {fileID: 1336637768}
+  fader: {fileID: 458029064}
+  player: {fileID: 225787429}
+  respawnTime: 0.5
+  respawnPoints: []
+  checkpointCount: 0
 --- !u!114 &1730436391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6338,9 +6354,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1730436387}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ee0a5aa673c317459201de440e4822f, type: 3}
+  m_Script: {fileID: 11500000, guid: cf0f7556f2fb5ae40b916683e1b37d0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 659140678}
+  fader: {fileID: 458029064}
 --- !u!1 &1739741459
 GameObject:
   m_ObjectHideFlags: 0
@@ -8517,7 +8535,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2068296504
 Transform:
   m_ObjectHideFlags: 0
@@ -8907,10 +8925,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1160202612}
     m_Modifications:
-    - target: {fileID: 5769987899958072275, guid: 6583b8fb058aa694daa9ae414c53693f, type: 3}
-      propertyPath: maxHealth
-      value: 50
-      objectReference: {fileID: 0}
     - target: {fileID: 5769987899958072276, guid: 6583b8fb058aa694daa9ae414c53693f, type: 3}
       propertyPath: m_RootOrder
       value: 3
