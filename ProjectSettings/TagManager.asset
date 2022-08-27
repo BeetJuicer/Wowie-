@@ -7,12 +7,12 @@ TagManager:
   - AudioManager
   - Bounds
   - Projectile
-  - Cube
   - Enemy
   - SpawnPoint
   - Rooms
   - Cinemachine
   - Summon
+  - Door
   layers:
   - Default
   - TransparentFX
@@ -27,7 +27,7 @@ TagManager:
   - Dead
   - Player
   - Weapon
-  - 
+  - Door
   - 
   - 
   - 

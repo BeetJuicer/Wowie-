@@ -18,7 +18,7 @@ public class RoomTemplates : MonoBehaviour
 
     private void Start()
     {
-        Invoke("SpawnBossRoom", 3);
+        Invoke("SpawnBossRoom", 4);
     }
 
     private void SpawnBossRoom()

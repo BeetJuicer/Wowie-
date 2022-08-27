@@ -652,6 +652,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6946946257670216911}
     m_Modifications:
+    - target: {fileID: 3383644979934263286, guid: fdfcc7b83d285b443a2b54f8d2ee176d, type: 3}
+      propertyPath: top
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3383644979934263286, guid: fdfcc7b83d285b443a2b54f8d2ee176d, type: 3}
+      propertyPath: bottom
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5603084923711431759, guid: fdfcc7b83d285b443a2b54f8d2ee176d, type: 3}
       propertyPath: m_Lens.m_SensorSize.x
       value: 1.7777779
