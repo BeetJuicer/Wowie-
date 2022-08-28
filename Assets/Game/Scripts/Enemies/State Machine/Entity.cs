@@ -58,8 +58,6 @@ public class Entity : MonoBehaviour {
 		if (Time.time >= lastDamageTime + entityData.stunRecoveryTime) {
 			ResetStunResistance();
 		}
-
-		DebugPanel.Log("State of enemy", stateMachine.currentState);
 	}
 
 	public virtual void FixedUpdate() {

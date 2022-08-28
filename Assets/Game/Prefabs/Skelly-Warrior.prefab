@@ -243,7 +243,7 @@ GameObject:
   - component: {fileID: 5828427097600593622}
   m_Layer: 11
   m_Name: Skelly-Warrior
-  m_TagString: Enemy
+  m_TagString: Summon
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -584,7 +584,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5769987899958072275, guid: 6583b8fb058aa694daa9ae414c53693f, type: 3}
       propertyPath: maxHealth
-      value: 20
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 5769987899958072276, guid: 6583b8fb058aa694daa9ae414c53693f, type: 3}
       propertyPath: m_RootOrder

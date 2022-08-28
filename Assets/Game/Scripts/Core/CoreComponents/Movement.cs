@@ -27,7 +27,6 @@ public class Movement : CoreComponent
     public override void LogicUpdate()
     {
         CurrentVelocity = RB.velocity;
-        DebugPanel.Log("CurrentVelocity", CurrentVelocity);
     }
 
     #region Set Functions

@@ -36,8 +36,6 @@ public class Assassin_MoveState : MoveState
         }
         else if (isDetectingWall || !isDetectingLedge)
         {
-            DebugPanel.Log("isDetectingWall", isDetectingWall);
-            DebugPanel.Log("isDetectingLedge", isDetectingLedge);
             enemy.idleState.SetFlipAfterIdle(true);
             stateMachine.ChangeState(enemy.idleState);
         }

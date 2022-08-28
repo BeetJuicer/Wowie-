@@ -37,8 +37,8 @@ MonoBehaviour:
   dodgeCooldown: 1
   dodgeDuration: 0.2
   skeletonSoldier: {fileID: 5828427097600593620, guid: 653f13feecbecf242ab1c2b160bec004, type: 3}
-  summonOffset: {x: 3, y: 0, z: 0}
-  summonCastDuration: 1
+  summonOffset: {x: 2, y: 0, z: 0}
+  summonCastDuration: 0.5
   soulCount: 0
   crouchMovementVelocity: 5
   crouchColliderHeight: 0.8

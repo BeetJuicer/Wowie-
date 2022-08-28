@@ -66,8 +66,7 @@ public class Stats : CoreComponent
     {
         if (mainBody.CompareTag("Player"))
         {
-            DebugPanel.Log("Current Health", currentHealth);
-            DebugPanel.Log("Max Health", maxHealth);
+
         }
     }
 }

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7178484259167476633}
   - component: {fileID: 476223012323048043}
   - component: {fileID: 3723033733469758056}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: Left Door
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -157,7 +157,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4154392709248520563}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: check
   m_TagString: Untagged
   m_Icon: {fileID: 0}

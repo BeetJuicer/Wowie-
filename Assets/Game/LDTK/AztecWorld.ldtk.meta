@@ -17,13 +17,15 @@ ScriptedImporter:
   _useCompositeCollider: 1
   _createBackgroundColor: 0
   _intGridValues:
+  - _key: Platform2_1
+    _asset: {fileID: 11400000, guid: ce01ff059bebd324b8f3b5894b72485c, type: 2}
   - _key: Ground_1
     _asset: {fileID: 11400000, guid: 8798509ac28c39240b166acd63e816be, type: 2}
-  - _key: Ground_2
-    _asset: {instanceID: 0}
   _entities:
   - _key: Enemies
     _asset: {fileID: 5903424158894744761, guid: 5f17b024ebe9bba49a1bceb367a9294b, type: 3}
+  - _key: Spike
+    _asset: {fileID: 2146137250244607566, guid: 51e7431c7bd34a04ea32e92e6c482f3a, type: 3}
   _enumGenerate: 0
   _enumPath: 
   _enumNamespace: 
