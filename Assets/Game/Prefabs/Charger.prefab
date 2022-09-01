@@ -49,7 +49,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.456
   m_Color: {r: 0.9245283, g: 0.64762866, b: 0.6061766, a: 1}
-  m_Intensity: 0.75
+  m_Intensity: 0.54
   m_LightVolumeIntensity: 0
   m_LightVolumeIntensityEnabled: 0
   m_ApplyToSortingLayers: 00000000ad31a4212d37b9c3b776ff55f7964ba6
@@ -322,7 +322,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8725a7cc0389fa04da596f57fcc8b08c, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.735849, g: 0.46164113, b: 0.46164113, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -692,6 +692,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5903424158776333204}
     m_Modifications:
+    - target: {fileID: 5769987899958072275, guid: 6583b8fb058aa694daa9ae414c53693f, type: 3}
+      propertyPath: damageColor.b
+      value: 0.4627451
+      objectReference: {fileID: 0}
+    - target: {fileID: 5769987899958072275, guid: 6583b8fb058aa694daa9ae414c53693f, type: 3}
+      propertyPath: damageColor.g
+      value: 0.4627451
+      objectReference: {fileID: 0}
+    - target: {fileID: 5769987899958072275, guid: 6583b8fb058aa694daa9ae414c53693f, type: 3}
+      propertyPath: damageColor.r
+      value: 0.7372549
+      objectReference: {fileID: 0}
     - target: {fileID: 5769987899958072276, guid: 6583b8fb058aa694daa9ae414c53693f, type: 3}
       propertyPath: m_RootOrder
       value: 3

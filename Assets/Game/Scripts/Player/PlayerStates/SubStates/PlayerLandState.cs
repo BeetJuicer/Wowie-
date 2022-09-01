@@ -8,6 +8,7 @@ public class PlayerLandState : PlayerGroundedState
     {
     }
 
+
     public override void LogicUpdate()
     {
         base.LogicUpdate();
@@ -23,5 +24,11 @@ public class PlayerLandState : PlayerGroundedState
                 stateMachine.ChangeState(player.IdleState);
             }
         }       
+    }
+    public override void AnimationFinishTrigger()
+    {
+        base.AnimationFinishTrigger();
+
+        isAnimationFinished = true;
     }
 }

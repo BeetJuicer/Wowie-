@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using MEC;
 
 public class Stats : CoreComponent
 {
@@ -10,17 +11,26 @@ public class Stats : CoreComponent
     [SerializeField] private GameObject deathBlood;
 
     [SerializeField] private GameObject soulDrop;
+
     private GameObject mainBody;
 
     [SerializeField] private float maxHealth;
-    //private float currentHealth;
-    [HideInInspector] public float currentHealth;
+    [HideInInspector] public float currentHealth; // -- previously private
+
+    [SerializeField]
+    private Color damageColor = Color.red;
+    private SpriteRenderer spriteRenderer;
+    private Color origColor;
 
     protected override void Awake()
     {
         base.Awake();
+
         mainBody = gameObject.transform.parent.transform.parent.gameObject;
         currentHealth = maxHealth;
+
+        spriteRenderer = gameObject.transform.parent.transform.parent.gameObject.GetComponent<SpriteRenderer>();
+        origColor = spriteRenderer.color;
     }
 
     public void DecreaseHealth(float amount)
@@ -49,6 +59,21 @@ public class Stats : CoreComponent
             Instantiate(deathChunks, transform.position, Quaternion.identity);
             Instantiate(deathBlood, transform.position, Quaternion.identity);
         }
+
+        if (gameObject != null)
+        {
+            Timing.RunCoroutine(ChangeColor().CancelWith(gameObject));
+        }
+
+    }
+
+    IEnumerator<float> ChangeColor()
+    {
+        spriteRenderer.color = damageColor;
+
+        yield return Timing.WaitForSeconds(0.3f);
+
+        spriteRenderer.color = origColor;
     }
 
     public void IncreaseHealth(float amount)
@@ -64,9 +89,5 @@ public class Stats : CoreComponent
 
     private void Update()
     {
-        if (mainBody.CompareTag("Player"))
-        {
-
-        }
     }
 }

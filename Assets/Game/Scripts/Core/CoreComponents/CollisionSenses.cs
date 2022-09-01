@@ -33,8 +33,7 @@ public class CollisionSenses : CoreComponent {
 	public float GroundCheckRadius { get => groundCheckRadius; set => groundCheckRadius = value; }
 	public float WallCheckDistance { get => wallCheckDistance; set => wallCheckDistance = value; }
 	public LayerMask WhatIsGround { get => whatIsGround; set => whatIsGround = value; }
-
-
+	
 	[SerializeField] private Transform groundCheck;
 	[SerializeField] private Transform wallCheck;
 	[SerializeField] private Transform ledgeCheckHorizontal;
@@ -45,8 +44,7 @@ public class CollisionSenses : CoreComponent {
 	[SerializeField] private float ledgeCheckDistance;
 	[SerializeField] private float wallCheckDistance;
 
-	[SerializeField] private Vector2 groundCheckSize = new Vector2 (1f,1f);
-
+	[SerializeField] private Vector2 groundCheckSize;
 	[SerializeField] private LayerMask whatIsGround;
 
 	#endregion
@@ -56,7 +54,8 @@ public class CollisionSenses : CoreComponent {
 	}
 
 	public bool Ground {
-		get => Physics2D.OverlapCircle(GroundCheck.position, groundCheckRadius, whatIsGround);
+		//get => Physics2D.OverlapCircle(GroundCheck.position, groundCheckRadius, whatIsGround);
+		get => BoxCastDrawer.BoxCastAndDraw(GroundCheck.position, groundCheckSize, 0f, Vector2.down, 0f, whatIsGround);
 	}
 
 	public bool WallFront {
@@ -86,6 +85,6 @@ public class CollisionSenses : CoreComponent {
 		Gizmos.DrawLine(ledgeCheckVertical.position, ledgeCheckVertical.position + (Vector3)(Vector2.down * ledgeCheckDistance));
 		Gizmos.DrawLine(wallCheck.position, wallCheck.position + Vector3.right * Movement.FacingDirection * wallCheckDistance);
 
-		Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+	//	Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
 	}
 }
