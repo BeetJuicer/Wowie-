@@ -31,9 +31,9 @@
 		{
 			"__identifier": "Enemies",
 			"__type": "Entities",
-			"__cWid": 32,
-			"__cHei": 16,
-			"__gridSize": 32,
+			"__cWid": 64,
+			"__cHei": 32,
+			"__gridSize": 16,
 			"__opacity": 1,
 			"__pxTotalOffsetX": 0,
 			"__pxTotalOffsetY": 0,
@@ -54,7 +54,7 @@
 			"entityInstances": [
 				{
 					"__identifier": "Enemies",
-					"__grid": [2,9],
+					"__grid": [4,18],
 					"__pivot": [0,0],
 					"__tags": [],
 					"__tile": null,
@@ -68,7 +68,7 @@
 				},
 				{
 					"__identifier": "Enemies",
-					"__grid": [6,9],
+					"__grid": [12,18],
 					"__pivot": [0,0],
 					"__tags": [],
 					"__tile": null,
@@ -82,7 +82,7 @@
 				},
 				{
 					"__identifier": "Enemies",
-					"__grid": [8,9],
+					"__grid": [16,18],
 					"__pivot": [0,0],
 					"__tags": [],
 					"__tile": null,
@@ -96,7 +96,7 @@
 				},
 				{
 					"__identifier": "Enemies",
-					"__grid": [13,9],
+					"__grid": [26,18],
 					"__pivot": [0,0],
 					"__tags": [],
 					"__tile": null,
@@ -110,7 +110,7 @@
 				},
 				{
 					"__identifier": "Enemies",
-					"__grid": [17,11],
+					"__grid": [34,22],
 					"__pivot": [0,0],
 					"__tags": [],
 					"__tile": null,
@@ -124,7 +124,7 @@
 				},
 				{
 					"__identifier": "Enemies",
-					"__grid": [17,6],
+					"__grid": [34,12],
 					"__pivot": [0,0],
 					"__tags": [],
 					"__tile": null,
@@ -138,7 +138,7 @@
 				},
 				{
 					"__identifier": "Enemies",
-					"__grid": [21,5],
+					"__grid": [42,10],
 					"__pivot": [0,0],
 					"__tags": [],
 					"__tile": null,
@@ -152,7 +152,7 @@
 				},
 				{
 					"__identifier": "Enemies",
-					"__grid": [28,5],
+					"__grid": [56,10],
 					"__pivot": [0,0],
 					"__tags": [],
 					"__tile": null,
@@ -166,7 +166,7 @@
 				},
 				{
 					"__identifier": "Enemies",
-					"__grid": [26,8],
+					"__grid": [52,16],
 					"__pivot": [0,0],
 					"__tags": [],
 					"__tile": null,
@@ -180,7 +180,7 @@
 				},
 				{
 					"__identifier": "Enemies",
-					"__grid": [29,11],
+					"__grid": [58,22],
 					"__pivot": [0,0],
 					"__tags": [],
 					"__tile": null,
@@ -194,7 +194,7 @@
 				},
 				{
 					"__identifier": "Enemies",
-					"__grid": [26,12],
+					"__grid": [52,24],
 					"__pivot": [0,0],
 					"__tags": [],
 					"__tile": null,
@@ -208,7 +208,7 @@
 				},
 				{
 					"__identifier": "Enemies",
-					"__grid": [3,14],
+					"__grid": [6,28],
 					"__pivot": [0,0],
 					"__tags": [],
 					"__tile": null,
@@ -222,7 +222,7 @@
 				},
 				{
 					"__identifier": "Enemies",
-					"__grid": [6,14],
+					"__grid": [12,28],
 					"__pivot": [0,0],
 					"__tags": [],
 					"__tile": null,
@@ -236,7 +236,7 @@
 				},
 				{
 					"__identifier": "Enemies",
-					"__grid": [12,14],
+					"__grid": [24,28],
 					"__pivot": [0,0],
 					"__tags": [],
 					"__tile": null,
@@ -250,7 +250,7 @@
 				},
 				{
 					"__identifier": "Enemies",
-					"__grid": [18,14],
+					"__grid": [36,28],
 					"__pivot": [0,0],
 					"__tags": [],
 					"__tile": null,
@@ -264,7 +264,7 @@
 				},
 				{
 					"__identifier": "Enemies",
-					"__grid": [21,14],
+					"__grid": [42,28],
 					"__pivot": [0,0],
 					"__tags": [],
 					"__tile": null,
@@ -278,7 +278,7 @@
 				},
 				{
 					"__identifier": "Enemies",
-					"__grid": [3,3],
+					"__grid": [6,6],
 					"__pivot": [0,0],
 					"__tags": [],
 					"__tile": null,
@@ -292,7 +292,7 @@
 				},
 				{
 					"__identifier": "Enemies",
-					"__grid": [7,3],
+					"__grid": [14,6],
 					"__pivot": [0,0],
 					"__tags": [],
 					"__tile": null,

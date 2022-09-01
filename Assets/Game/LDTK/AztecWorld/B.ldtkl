@@ -31,9 +31,9 @@
 		{
 			"__identifier": "Enemies",
 			"__type": "Entities",
-			"__cWid": 32,
-			"__cHei": 16,
-			"__gridSize": 32,
+			"__cWid": 64,
+			"__cHei": 32,
+			"__gridSize": 16,
 			"__opacity": 1,
 			"__pxTotalOffsetX": 0,
 			"__pxTotalOffsetY": 0,
@@ -54,7 +54,7 @@
 			"entityInstances": [
 				{
 					"__identifier": "Enemies",
-					"__grid": [13,14],
+					"__grid": [26,28],
 					"__pivot": [0,0],
 					"__tags": [],
 					"__tile": null,
@@ -68,7 +68,7 @@
 				},
 				{
 					"__identifier": "Enemies",
-					"__grid": [12,14],
+					"__grid": [24,28],
 					"__pivot": [0,0],
 					"__tags": [],
 					"__tile": null,
@@ -82,7 +82,7 @@
 				},
 				{
 					"__identifier": "Enemies",
-					"__grid": [11,14],
+					"__grid": [22,28],
 					"__pivot": [0,0],
 					"__tags": [],
 					"__tile": null,
@@ -96,7 +96,7 @@
 				},
 				{
 					"__identifier": "Enemies",
-					"__grid": [10,14],
+					"__grid": [20,28],
 					"__pivot": [0,0],
 					"__tags": [],
 					"__tile": null,
@@ -110,7 +110,7 @@
 				},
 				{
 					"__identifier": "Enemies",
-					"__grid": [9,14],
+					"__grid": [18,28],
 					"__pivot": [0,0],
 					"__tags": [],
 					"__tile": null,
@@ -124,7 +124,7 @@
 				},
 				{
 					"__identifier": "Enemies",
-					"__grid": [8,14],
+					"__grid": [16,28],
 					"__pivot": [0,0],
 					"__tags": [],
 					"__tile": null,
@@ -138,7 +138,7 @@
 				},
 				{
 					"__identifier": "Enemies",
-					"__grid": [7,14],
+					"__grid": [14,28],
 					"__pivot": [0,0],
 					"__tags": [],
 					"__tile": null,
@@ -152,7 +152,7 @@
 				},
 				{
 					"__identifier": "Enemies",
-					"__grid": [6,14],
+					"__grid": [12,28],
 					"__pivot": [0,0],
 					"__tags": [],
 					"__tile": null,
@@ -166,7 +166,7 @@
 				},
 				{
 					"__identifier": "Enemies",
-					"__grid": [4,14],
+					"__grid": [8,28],
 					"__pivot": [0,0],
 					"__tags": [],
 					"__tile": null,
@@ -180,7 +180,7 @@
 				},
 				{
 					"__identifier": "Enemies",
-					"__grid": [5,14],
+					"__grid": [10,28],
 					"__pivot": [0,0],
 					"__tags": [],
 					"__tile": null,
@@ -194,7 +194,7 @@
 				},
 				{
 					"__identifier": "Enemies",
-					"__grid": [3,14],
+					"__grid": [6,28],
 					"__pivot": [0,0],
 					"__tags": [],
 					"__tile": null,
@@ -208,7 +208,7 @@
 				},
 				{
 					"__identifier": "Enemies",
-					"__grid": [2,14],
+					"__grid": [4,28],
 					"__pivot": [0,0],
 					"__tags": [],
 					"__tile": null,
@@ -222,7 +222,7 @@
 				},
 				{
 					"__identifier": "Enemies",
-					"__grid": [1,14],
+					"__grid": [2,28],
 					"__pivot": [0,0],
 					"__tags": [],
 					"__tile": null,
@@ -236,7 +236,7 @@
 				},
 				{
 					"__identifier": "Enemies",
-					"__grid": [18,14],
+					"__grid": [36,28],
 					"__pivot": [0,0],
 					"__tags": [],
 					"__tile": null,
@@ -250,7 +250,7 @@
 				},
 				{
 					"__identifier": "Enemies",
-					"__grid": [20,14],
+					"__grid": [40,28],
 					"__pivot": [0,0],
 					"__tags": [],
 					"__tile": null,
@@ -264,7 +264,7 @@
 				},
 				{
 					"__identifier": "Enemies",
-					"__grid": [19,14],
+					"__grid": [38,28],
 					"__pivot": [0,0],
 					"__tags": [],
 					"__tile": null,
@@ -278,7 +278,7 @@
 				},
 				{
 					"__identifier": "Enemies",
-					"__grid": [21,14],
+					"__grid": [42,28],
 					"__pivot": [0,0],
 					"__tags": [],
 					"__tile": null,
@@ -292,7 +292,7 @@
 				},
 				{
 					"__identifier": "Enemies",
-					"__grid": [23,14],
+					"__grid": [46,28],
 					"__pivot": [0,0],
 					"__tags": [],
 					"__tile": null,
@@ -306,7 +306,7 @@
 				},
 				{
 					"__identifier": "Enemies",
-					"__grid": [22,14],
+					"__grid": [44,28],
 					"__pivot": [0,0],
 					"__tags": [],
 					"__tile": null,
@@ -320,7 +320,7 @@
 				},
 				{
 					"__identifier": "Enemies",
-					"__grid": [24,14],
+					"__grid": [48,28],
 					"__pivot": [0,0],
 					"__tags": [],
 					"__tile": null,
@@ -334,7 +334,7 @@
 				},
 				{
 					"__identifier": "Enemies",
-					"__grid": [26,14],
+					"__grid": [52,28],
 					"__pivot": [0,0],
 					"__tags": [],
 					"__tile": null,
@@ -348,7 +348,7 @@
 				},
 				{
 					"__identifier": "Enemies",
-					"__grid": [25,14],
+					"__grid": [50,28],
 					"__pivot": [0,0],
 					"__tags": [],
 					"__tile": null,
@@ -362,7 +362,7 @@
 				},
 				{
 					"__identifier": "Enemies",
-					"__grid": [27,14],
+					"__grid": [54,28],
 					"__pivot": [0,0],
 					"__tags": [],
 					"__tile": null,
@@ -376,7 +376,7 @@
 				},
 				{
 					"__identifier": "Enemies",
-					"__grid": [28,14],
+					"__grid": [56,28],
 					"__pivot": [0,0],
 					"__tags": [],
 					"__tile": null,
@@ -390,7 +390,7 @@
 				},
 				{
 					"__identifier": "Enemies",
-					"__grid": [29,14],
+					"__grid": [58,28],
 					"__pivot": [0,0],
 					"__tags": [],
 					"__tile": null,
@@ -404,7 +404,7 @@
 				},
 				{
 					"__identifier": "Enemies",
-					"__grid": [30,14],
+					"__grid": [60,28],
 					"__pivot": [0,0],
 					"__tags": [],
 					"__tile": null,
@@ -418,42 +418,42 @@
 				},
 				{
 					"__identifier": "Spike",
-					"__grid": [6,10],
+					"__grid": [13,21],
 					"__pivot": [0.5,0.5],
 					"__tags": [],
 					"__tile": null,
 					"__smartColor": "#D9333D",
 					"iid": "1c380590-02f0-11ed-95ee-b5662fef3e0a",
-					"width": 32,
-					"height": 32,
+					"width": 16,
+					"height": 16,
 					"defUid": 126,
 					"px": [208,336],
 					"fieldInstances": []
 				},
 				{
 					"__identifier": "Spike",
-					"__grid": [15,10],
+					"__grid": [31,21],
 					"__pivot": [0.5,0.5],
 					"__tags": [],
 					"__tile": null,
 					"__smartColor": "#D9333D",
 					"iid": "1c98c330-02f0-11ed-95ee-7fd7f63ffcce",
-					"width": 32,
-					"height": 32,
+					"width": 16,
+					"height": 16,
 					"defUid": 126,
 					"px": [496,336],
 					"fieldInstances": []
 				},
 				{
 					"__identifier": "Spike",
-					"__grid": [23,10],
+					"__grid": [47,21],
 					"__pivot": [0.5,0.5],
 					"__tags": [],
 					"__tile": null,
 					"__smartColor": "#D9333D",
 					"iid": "1d1d5c80-02f0-11ed-95ee-d95f6a2e3076",
-					"width": 32,
-					"height": 32,
+					"width": 16,
+					"height": 16,
 					"defUid": 126,
 					"px": [752,336],
 					"fieldInstances": []

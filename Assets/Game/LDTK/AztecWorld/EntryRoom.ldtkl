@@ -31,9 +31,9 @@
 		{
 			"__identifier": "Enemies",
 			"__type": "Entities",
-			"__cWid": 32,
-			"__cHei": 16,
-			"__gridSize": 32,
+			"__cWid": 64,
+			"__cHei": 32,
+			"__gridSize": 16,
 			"__opacity": 1,
 			"__pxTotalOffsetX": 0,
 			"__pxTotalOffsetY": 0,
@@ -51,7 +51,50 @@
 			"seed": 3713260,
 			"overrideTilesetUid": null,
 			"gridTiles": [],
-			"entityInstances": []
+			"entityInstances": [
+				{
+					"__identifier": "Spike",
+					"__grid": [21,29],
+					"__pivot": [0.5,0.5],
+					"__tags": [],
+					"__tile": null,
+					"__smartColor": "#D9333D",
+					"iid": "fb911220-02f0-11ed-b78d-93fead40d718",
+					"width": 16,
+					"height": 16,
+					"defUid": 126,
+					"px": [344,472],
+					"fieldInstances": []
+				},
+				{
+					"__identifier": "Spike",
+					"__grid": [22,29],
+					"__pivot": [0.5,0.5],
+					"__tags": [],
+					"__tile": null,
+					"__smartColor": "#D9333D",
+					"iid": "fbbc8ef0-02f0-11ed-b78d-3ddb00e67149",
+					"width": 16,
+					"height": 16,
+					"defUid": 126,
+					"px": [360,472],
+					"fieldInstances": []
+				},
+				{
+					"__identifier": "Spike",
+					"__grid": [23,29],
+					"__pivot": [0.5,0.5],
+					"__tags": [],
+					"__tile": null,
+					"__smartColor": "#D9333D",
+					"iid": "fc2785c0-02f0-11ed-b78d-612f00179640",
+					"width": 16,
+					"height": 16,
+					"defUid": 126,
+					"px": [376,472],
+					"fieldInstances": []
+				}
+			]
 		},
 		{
 			"__identifier": "Platform2",

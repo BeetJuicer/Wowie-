@@ -31,9 +31,9 @@
 		{
 			"__identifier": "Enemies",
 			"__type": "Entities",
-			"__cWid": 32,
-			"__cHei": 16,
-			"__gridSize": 32,
+			"__cWid": 64,
+			"__cHei": 32,
+			"__gridSize": 16,
 			"__opacity": 1,
 			"__pxTotalOffsetX": 0,
 			"__pxTotalOffsetY": 0,
