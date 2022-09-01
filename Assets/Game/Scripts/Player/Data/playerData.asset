@@ -40,6 +40,9 @@ MonoBehaviour:
   summonOffset: {x: 2, y: 0, z: 0}
   summonCastDuration: 0.5
   soulCount: 0
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 256
   crouchMovementVelocity: 5
   crouchColliderHeight: 0.8
   standColliderHeight: 1.6

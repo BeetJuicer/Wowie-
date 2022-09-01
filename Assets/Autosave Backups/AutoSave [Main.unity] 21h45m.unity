@@ -234,6 +234,7 @@ MonoBehaviour:
   soulDrop: {fileID: 0}
   maxHealth: 100
   currentHealth: 0
+  damageColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &80242380
 GameObject:
   m_ObjectHideFlags: 0
@@ -273,6 +274,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 172407430}
     m_Modifications:
+    - target: {fileID: 5769987899958072275, guid: 6583b8fb058aa694daa9ae414c53693f, type: 3}
+      propertyPath: damageColor.b
+      value: 0.43137255
+      objectReference: {fileID: 0}
+    - target: {fileID: 5769987899958072275, guid: 6583b8fb058aa694daa9ae414c53693f, type: 3}
+      propertyPath: damageColor.g
+      value: 0.43137255
+      objectReference: {fileID: 0}
     - target: {fileID: 5769987899958072276, guid: 6583b8fb058aa694daa9ae414c53693f, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -1212,7 +1221,7 @@ MonoBehaviour:
   groundCheckRadius: 0.3
   ledgeCheckDistance: 0
   wallCheckDistance: 0.5
-  groundCheckSize: {x: 1, y: 1}
+  groundCheckSize: {x: 0, y: 0}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 256
@@ -1271,7 +1280,7 @@ MonoBehaviour:
   groundCheckRadius: 0.3
   ledgeCheckDistance: 0
   wallCheckDistance: 0.03
-  groundCheckSize: {x: 1, y: 1}
+  groundCheckSize: {x: 0, y: 0}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 320
@@ -1408,6 +1417,7 @@ MonoBehaviour:
   soulDrop: {fileID: 0}
   maxHealth: 100
   currentHealth: 0
+  damageColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &399924621
 GameObject:
   m_ObjectHideFlags: 0
@@ -1759,7 +1769,7 @@ MonoBehaviour:
   groundCheckRadius: 0.3
   ledgeCheckDistance: 0
   wallCheckDistance: 0.3
-  groundCheckSize: {x: 1, y: 1}
+  groundCheckSize: {x: 0, y: 0}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 320
@@ -1878,9 +1888,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0
-    width: 1
-    height: 1
+    y: 0.055555556
+    width: 0.33333334
+    height: 0.3333333
   near clip plane: 0.1
   far clip plane: 5000
   field of view: 40
@@ -2834,6 +2844,7 @@ MonoBehaviour:
   soulDrop: {fileID: 0}
   maxHealth: 100
   currentHealth: 0
+  damageColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &853901306
 GameObject:
   m_ObjectHideFlags: 0
@@ -4060,7 +4071,7 @@ MonoBehaviour:
   groundCheckRadius: 0.3
   ledgeCheckDistance: 0
   wallCheckDistance: 0.3
-  groundCheckSize: {x: 1, y: 1}
+  groundCheckSize: {x: 0, y: 0}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 320
@@ -4163,13 +4174,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1741453503}
     m_Modifications:
-    - target: {fileID: 1256097352, guid: 5f17b024ebe9bba49a1bceb367a9294b, type: 3}
-      propertyPath: m_Intensity
-      value: 0.54
-      objectReference: {fileID: 0}
     - target: {fileID: 5903424158894744761, guid: 5f17b024ebe9bba49a1bceb367a9294b, type: 3}
       propertyPath: m_Name
       value: Charger
+      objectReference: {fileID: 0}
+    - target: {fileID: 5903424158894744761, guid: 5f17b024ebe9bba49a1bceb367a9294b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5903424158894744762, guid: 5f17b024ebe9bba49a1bceb367a9294b, type: 3}
       propertyPath: m_RootOrder
@@ -4226,6 +4237,18 @@ PrefabInstance:
     - target: {fileID: 5903424158894744767, guid: 5f17b024ebe9bba49a1bceb367a9294b, type: 3}
       propertyPath: m_Color.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5903424159317615313, guid: 5f17b024ebe9bba49a1bceb367a9294b, type: 3}
+      propertyPath: groundCheckRadius
+      value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 5903424159317615313, guid: 5f17b024ebe9bba49a1bceb367a9294b, type: 3}
+      propertyPath: groundCheckSize.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5903424159317615313, guid: 5f17b024ebe9bba49a1bceb367a9294b, type: 3}
+      propertyPath: groundCheckSize.y
+      value: 0.05
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f17b024ebe9bba49a1bceb367a9294b, type: 3}
@@ -6455,6 +6478,7 @@ MonoBehaviour:
   soulDrop: {fileID: 0}
   maxHealth: 100
   currentHealth: 0
+  damageColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &1821177324
 GameObject:
   m_ObjectHideFlags: 0
@@ -8236,7 +8260,7 @@ MonoBehaviour:
   groundCheckRadius: 0.1
   ledgeCheckDistance: 0
   wallCheckDistance: 0.5
-  groundCheckSize: {x: 1, y: 1}
+  groundCheckSize: {x: 0.3, y: 0.05}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 320

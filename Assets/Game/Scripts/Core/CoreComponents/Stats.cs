@@ -86,8 +86,4 @@ public class Stats : CoreComponent
         maxHealth += maxHealth * multiplier;
         currentHealth += maxHealth * multiplier;
     }
-
-    private void Update()
-    {
-    }
 }

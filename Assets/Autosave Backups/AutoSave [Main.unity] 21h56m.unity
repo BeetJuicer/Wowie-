@@ -1221,7 +1221,7 @@ MonoBehaviour:
   groundCheckRadius: 0.3
   ledgeCheckDistance: 0
   wallCheckDistance: 0.5
-  groundCheckSize: {x: 1, y: 1}
+  groundCheckSize: {x: 0, y: 0}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 256
@@ -1280,7 +1280,7 @@ MonoBehaviour:
   groundCheckRadius: 0.3
   ledgeCheckDistance: 0
   wallCheckDistance: 0.03
-  groundCheckSize: {x: 1, y: 1}
+  groundCheckSize: {x: 0, y: 0}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 320
@@ -1769,7 +1769,7 @@ MonoBehaviour:
   groundCheckRadius: 0.3
   ledgeCheckDistance: 0
   wallCheckDistance: 0.3
-  groundCheckSize: {x: 1, y: 1}
+  groundCheckSize: {x: 0, y: 0}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 320
@@ -4071,7 +4071,7 @@ MonoBehaviour:
   groundCheckRadius: 0.3
   ledgeCheckDistance: 0
   wallCheckDistance: 0.3
-  groundCheckSize: {x: 1, y: 1}
+  groundCheckSize: {x: 0, y: 0}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 320
@@ -4178,6 +4178,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Charger
       objectReference: {fileID: 0}
+    - target: {fileID: 5903424158894744761, guid: 5f17b024ebe9bba49a1bceb367a9294b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5903424158894744762, guid: 5f17b024ebe9bba49a1bceb367a9294b, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -4233,6 +4237,18 @@ PrefabInstance:
     - target: {fileID: 5903424158894744767, guid: 5f17b024ebe9bba49a1bceb367a9294b, type: 3}
       propertyPath: m_Color.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5903424159317615313, guid: 5f17b024ebe9bba49a1bceb367a9294b, type: 3}
+      propertyPath: groundCheckRadius
+      value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 5903424159317615313, guid: 5f17b024ebe9bba49a1bceb367a9294b, type: 3}
+      propertyPath: groundCheckSize.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5903424159317615313, guid: 5f17b024ebe9bba49a1bceb367a9294b, type: 3}
+      propertyPath: groundCheckSize.y
+      value: 0.05
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f17b024ebe9bba49a1bceb367a9294b, type: 3}
@@ -8244,7 +8260,7 @@ MonoBehaviour:
   groundCheckRadius: 0.1
   ledgeCheckDistance: 0
   wallCheckDistance: 0.5
-  groundCheckSize: {x: 1, y: 1}
+  groundCheckSize: {x: 0.3, y: 0.05}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 320

@@ -62,16 +62,11 @@ public class GameManager : MonoBehaviour, IDataPersistence
 
     public void Respawn()
     {
-        Debug.Log("1");
         PauseMenu.gamePaused = true;
-        Debug.Log("2");
         //---> Outward Scene Fade
         fader.gameObject.SetActive(true);
-        Debug.Log("3");
         AudioManager.instance.Play("Close");
-        Debug.Log("4");
         LeanTween.scale(fader, Vector3.zero, 0);
-        Debug.Log("5");
         Invoke("LoadScene", 0.3f);
         //uncomment below after playmode
         //LeanTween.scale(fader, new Vector3(1, 1, 1), 0.5f).setEase(LeanTweenType.easeInOutQuad).setOnComplete(() => {
@@ -86,7 +81,6 @@ public class GameManager : MonoBehaviour, IDataPersistence
 
     private void LoadScene()
     {
-        Debug.Log("6");
         Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);
         PauseMenu.gamePaused = false;

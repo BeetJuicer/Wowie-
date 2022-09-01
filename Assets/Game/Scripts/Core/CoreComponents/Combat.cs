@@ -28,7 +28,7 @@ public class Combat : CoreComponent, IDamageable, IKnockbackable {
 	public void Damage(float amount) {
 		if (!isInvincible)
         {
-			Debug.Log(core.transform.parent.name + " was damaged for " + amount + " damage!");
+		//	Debug.Log(core.transform.parent.name + " was damaged for " + amount + " damage!");
 			Stats?.DecreaseHealth(amount);
         }
 	}

@@ -62,7 +62,16 @@ public class PlayerSummonState : PlayerAbilityState
 
     public bool CanSummon()
     {
-        if (player.soulStats.soulCount > 0)
+        if (CheckForWall())
+        {
+            Debug.Log("There is a wall in the way.");
+        }
+        else
+        {
+            Debug.Log("There is no wall, summon allowed.");
+        }
+
+        if (player.soulStats.soulCount > 0 && !CheckForWall())
         {
             canSummon = true;
         }
@@ -71,6 +80,11 @@ public class PlayerSummonState : PlayerAbilityState
             canSummon = false;
         }
         return canSummon;
+    }
+
+    private bool CheckForWall()
+    {
+        return Physics2D.Raycast(player.transform.position, Vector2.right * Movement.FacingDirection, playerData.summonOffset.x, playerData.whatIsGround);
     }
 
     #region Animation Triggers

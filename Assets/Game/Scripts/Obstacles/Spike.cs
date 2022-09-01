@@ -52,7 +52,6 @@ public class Spike : MonoBehaviour
 
     public void Damage()
     {
-        Debug.Log("call count");
         Collider2D[] detectedObjects = Physics2D.OverlapCircleAll(damager.transform.position, damageRadius);
 
         foreach (Collider2D collider in detectedObjects)
