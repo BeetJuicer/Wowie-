@@ -2236,6 +2236,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1548097009}
     m_Modifications:
+    - target: {fileID: 951832501446476971, guid: 29291e83c65dbd94d957cbe5f877083a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1284804782063451784, guid: 29291e83c65dbd94d957cbe5f877083a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.25
+      objectReference: {fileID: 0}
     - target: {fileID: 5030427088722463891, guid: 29291e83c65dbd94d957cbe5f877083a, type: 3}
       propertyPath: m_Name
       value: Entry Room
