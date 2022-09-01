@@ -46,6 +46,7 @@ SpriteAtlas:
     packables:
     - {fileID: -2807470100308123181, guid: 4837a4ab9f195a042ab567c7c86da66b, type: 3}
     - {fileID: 7476300941828745752, guid: 4837a4ab9f195a042ab567c7c86da66b, type: 3}
+    - {fileID: -1622713793457519315, guid: 4837a4ab9f195a042ab567c7c86da66b, type: 3}
     - {fileID: -8468603578660062582, guid: 4837a4ab9f195a042ab567c7c86da66b, type: 3}
     - {fileID: 7204421394813506363, guid: 4837a4ab9f195a042ab567c7c86da66b, type: 3}
     - {fileID: 4284347348910874058, guid: 4837a4ab9f195a042ab567c7c86da66b, type: 3}
@@ -74,6 +75,7 @@ SpriteAtlas:
   - {fileID: -1736446986250641404, guid: 4837a4ab9f195a042ab567c7c86da66b, type: 3}
   - {fileID: -1032308351857270120, guid: 4837a4ab9f195a042ab567c7c86da66b, type: 3}
   - {fileID: -1779618160144063108, guid: 4837a4ab9f195a042ab567c7c86da66b, type: 3}
+  - {fileID: -1622713793457519315, guid: 4837a4ab9f195a042ab567c7c86da66b, type: 3}
   - {fileID: -5939153224745983862, guid: 4837a4ab9f195a042ab567c7c86da66b, type: 3}
   - {fileID: 7204421394813506363, guid: 4837a4ab9f195a042ab567c7c86da66b, type: 3}
   - {fileID: 6937596598687460790, guid: 4837a4ab9f195a042ab567c7c86da66b, type: 3}
@@ -95,6 +97,7 @@ SpriteAtlas:
   - Pixtogether4_Tileset_Ground_48_16_16_16
   - Pixtogether4_Tileset_Ground_32_16_16_16
   - Pixtogether4_Tileset_Ground_32_32_16_16
+  - Pixtogether4_Tileset_Ground_0_64_16_16
   - Pixtogether4_Tileset_Ground_48_48_16_16
   - Pixtogether4_Tileset_Ground_16_32_16_16
   - Pixtogether4_Tileset_Ground_48_32_16_16
