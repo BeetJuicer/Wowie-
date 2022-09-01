@@ -4178,10 +4178,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Charger
       objectReference: {fileID: 0}
-    - target: {fileID: 5903424158894744761, guid: 5f17b024ebe9bba49a1bceb367a9294b, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5903424158894744762, guid: 5f17b024ebe9bba49a1bceb367a9294b, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -4225,30 +4221,6 @@ PrefabInstance:
     - target: {fileID: 5903424158894744762, guid: 5f17b024ebe9bba49a1bceb367a9294b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5903424158894744767, guid: 5f17b024ebe9bba49a1bceb367a9294b, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5903424158894744767, guid: 5f17b024ebe9bba49a1bceb367a9294b, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5903424158894744767, guid: 5f17b024ebe9bba49a1bceb367a9294b, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5903424159317615313, guid: 5f17b024ebe9bba49a1bceb367a9294b, type: 3}
-      propertyPath: groundCheckRadius
-      value: 0.04
-      objectReference: {fileID: 0}
-    - target: {fileID: 5903424159317615313, guid: 5f17b024ebe9bba49a1bceb367a9294b, type: 3}
-      propertyPath: groundCheckSize.x
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5903424159317615313, guid: 5f17b024ebe9bba49a1bceb367a9294b, type: 3}
-      propertyPath: groundCheckSize.y
-      value: 0.05
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f17b024ebe9bba49a1bceb367a9294b, type: 3}

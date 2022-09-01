@@ -322,7 +322,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8725a7cc0389fa04da596f57fcc8b08c, type: 3}
-  m_Color: {r: 0.735849, g: 0.46164113, b: 0.46164113, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -603,10 +603,10 @@ MonoBehaviour:
   ledgeCheckHorizontal: {fileID: 0}
   ledgeCheckVertical: {fileID: 5903424160158696890}
   ceilingCheck: {fileID: 0}
-  groundCheckRadius: 0.3
+  groundCheckRadius: 0.04
   ledgeCheckDistance: 0.33
   wallCheckDistance: 0.3
-  groundCheckSize: {x: 1, y: 1}
+  groundCheckSize: {x: 0.2, y: 0.05}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 320
