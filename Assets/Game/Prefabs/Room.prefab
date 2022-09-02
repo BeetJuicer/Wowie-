@@ -200,7 +200,9 @@ MonoBehaviour:
   left: 0
   right: 0
   doors: []
+  enemyList: []
   startDetection: 0
+  startEnemyCount: 0
 --- !u!1 &5603084924412148116
 GameObject:
   m_ObjectHideFlags: 0
