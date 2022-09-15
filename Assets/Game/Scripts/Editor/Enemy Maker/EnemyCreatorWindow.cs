@@ -40,8 +40,9 @@ public class EnemyCreatorWindow : EditorWindow
 
         enemyName = EditorGUILayout.TextField("Enemy Name", enemyName);
 
+        // Create a folder for all enemy states.
         GUILayout.Label($"Path: {path}");
-        path = $"Assets/Scripts/Enemies/EnemySpecific/{enemyName}";
+        path = $"Assets/Game/Scripts/Enemies/EnemySpecific/{enemyName}";
 
         // Display all states
         for (int i = 0; i < states.Length; i++)
@@ -71,11 +72,11 @@ public class EnemyCreatorWindow : EditorWindow
                 Directory.CreateDirectory($"{path}/Data");
 
                 //Create Base Data
-                textToWrite = File.ReadAllText("Assets/Scripts/Editor/enemyBase.txt");
+                textToWrite = File.ReadAllText("Assets/Game/Scripts/Editor/Enemy Maker/enemyBase.txt");
                 CreateEnemyBase();
                 
                 //Create State files 
-                textToWrite = File.ReadAllText("Assets/Scripts/Editor/enemyStateData.txt");
+                textToWrite = File.ReadAllText("Assets/Game/Scripts/Editor/Enemy Maker/enemyStateData.txt");
                 foreach (var state in states)
                 {
                     // Create state scripts if true
